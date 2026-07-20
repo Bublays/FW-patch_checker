@@ -1,0 +1,57 @@
+<Manifest version="1.0" baseLocation="downloads.dell.com" baseLocationAccessProtocols="HTTPS">
+  <SoftwareComponent dellVersion="2.19.2" vendorVersion="2.19.2" releaseDate="2026-04-15" path="FOLDER01/1/BIOS_R740_WN64_2.19.2.EXE" hashMD5="abc" packageID="1" packageType="LWXP">
+    <Name>
+      <Display lang="en">BIOS Update</Display>
+    </Name>
+    <Category>
+      <Display lang="en">BIOS</Display>
+    </Category>
+    <Description>
+      <Display lang="en">This package provides the BIOS update for PowerEdge R740/R740XD.</Display>
+    </Description>
+    <SupportedSystems>
+      <Brand key="3" prefix="PE">
+        <Display lang="en">PowerEdge</Display>
+        <Model systemID="0A3B" systemIDType="BIOS">
+          <Display lang="en">PowerEdge R740</Display>
+        </Model>
+      </Brand>
+    </SupportedSystems>
+    <ImportantInfo URL="https://www.dell.com/support/kbdoc/000123456"/>
+  </SoftwareComponent>
+  <SoftwareComponent dellVersion="1.15.15" vendorVersion="1.15.15" releaseDate="2026-01-10" path="FOLDER02/2/iDRAC_R440_2.EXE" hashMD5="def" packageID="2" packageType="LWXP">
+    <Name>
+      <Display lang="en">iDRAC with Lifecycle Controller</Display>
+    </Name>
+    <Category>
+      <Display lang="en">Firmware</Display>
+    </Category>
+    <Description>
+      <Display lang="en">iDRAC firmware update for PowerEdge R440.</Display>
+    </Description>
+    <SupportedSystems>
+      <Brand key="3" prefix="PE">
+        <Display lang="en">PowerEdge</Display>
+        <Model systemID="0A3C" systemIDType="BIOS">
+          <Display lang="en">PowerEdge R440</Display>
+        </Model>
+      </Brand>
+    </SupportedSystems>
+  </SoftwareComponent>
+  <SoftwareComponent dellVersion="9.9.9" vendorVersion="9.9.9" releaseDate="2025-06-01" path="FOLDER03/3/Unrelated.EXE" hashMD5="ghi" packageID="3" packageType="LWXP">
+    <Name>
+      <Display lang="en">Some other system driver</Display>
+    </Name>
+    <Category>
+      <Display lang="en">Driver</Display>
+    </Category>
+    <SupportedSystems>
+      <Brand key="3" prefix="PE">
+        <Display lang="en">PowerEdge</Display>
+        <Model systemID="0X99" systemIDType="BIOS">
+          <Display lang="en">PowerEdge R6515</Display>
+        </Model>
+      </Brand>
+    </SupportedSystems>
+  </SoftwareComponent>
+</Manifest>

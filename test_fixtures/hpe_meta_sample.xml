@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest schema_version="2.0.0.0">
+  <meta lang="en">
+    <product id="prodA">
+      <product_version>
+        <id product="prodA" version="verA" lucid_version="x"/>
+      </product_version>
+      <different>new</different>
+      <build number="1"/>
+      <type id="smartcomponent-firmware"/>
+      <name>
+        <name_xlate lang="en">Online ROM Flash Component for Windows - System ROM U54</name_xlate>
+      </name>
+      <version value="U54" revision="v2.60"/>
+      <manufacturer_name>
+        <manufacturer_name_xlate lang="en">Hewlett Packard Enterprise</manufacturer_name_xlate>
+      </manufacturer_name>
+      <category key="123">
+        <category_xlate lang="en">BIOS</category_xlate>
+      </category>
+      <release_date year="2026" month="05" day="12" hour="0" minute="0" second="0"/>
+      <description>
+        <description_xlate lang="en"><![CDATA[This component provides System ROM (BIOS) firmware for HPE ProLiant DL380 Gen11 servers.]]></description_xlate>
+      </description>
+    </product>
+    <product id="prodB">
+      <product_version>
+        <id product="prodB" version="verB" lucid_version="y"/>
+      </product_version>
+      <name>
+        <name_xlate lang="en">Online iLO 5 Firmware Component</name_xlate>
+      </name>
+      <version value="2.90" revision=""/>
+      <category key="124">
+        <category_xlate lang="en">Firmware - Lights-Out Management</category_xlate>
+      </category>
+      <release_date year="2026" month="04" day="01" hour="0" minute="0" second="0"/>
+      <description>
+        <description_xlate lang="en"><![CDATA[iLO 5 firmware update.]]></description_xlate>
+      </description>
+    </product>
+  </meta>
+</manifest>

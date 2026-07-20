@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest schema_version="2.0.0.0">
+  <systems>
+    <system id="10983" systemid="" firmwareid="A56" effectivedate="">
+      <name>
+        <name_xlate lang="en">HPE ProLiant DL325 Gen11 Server</name_xlate>
+      </name>
+      <product_version>
+        <id product="954cfb4b6d544fe6ae4246347676d978" version="cc65dcf4f2e94cdba3ba96a38ab716d2" lucid_version="UBM7_FWPKG@1.10(B)__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="270849c2dba647ceb1f5f641d466f681" version="108c2c6c505e48f1a6dd0e16f4cb61d5" lucid_version="bnxtnet.vmware90@2025.11.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="9ec75eae1cc649cdaebc3408c7b37d59" version="595c4e9de08f47949c322d352d37ec06" lucid_version="A56.linux@3.12_04-02-2026__sc-linux-uefi-sys_en"/>
+      </product_version>
+      <product_version>
+        <id product="01e0939311154208bbd5b8d9e5157a9c" version="ce76dc9b3af14383b0c03a0be0be0bb7" lucid_version="ssacli.win_x64@6.60.8.0__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="a162b7594d8d4a02bf2f3f7d9fe2609d" version="991082d63ec04d0bac0e9ca762c9657c" lucid_version="igb.sles15@6.19.10-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="ddc8bdca3abc4ab8823e820be1ed4dfd" version="fa241aa0a39b4f01acb7dcad24b81808" lucid_version="smartpqi.sles15.x86_64.rpm@2.1.38-022__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="80ea6cb0c7d14159a1a37d37866e5b0c" version="49e6c99f43004489b7e90043d5d9952d" lucid_version="nicfwpkg_bcme_57412_2p10ocp@235.1.164.14-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="2433baff8f4443ed8ddae6e9a115bc4d" version="a556c13877764198a3876ee835f32a53" lucid_version="intel_pvl.w2k22@14.0.13.0(B)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="23452ce6ae6f410f8e11e448b677d128" version="31e159c4f47f4f6ea06ca59bb182517d" lucid_version="HPE_MR416i-o_Gen11@52.36.3-6584__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="7f5cc2735e814d67a516e6e72cb03eec" version="29e86213c3ab4e94b0b54906f7366af0" lucid_version="SmartPqi.win019@1016.10.0.1004(B)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="4899e6b54e3941a4b9c3090a539cf6db" version="2933eb4cd94144adb521f0300cd2a420" lucid_version="Gen10P_Gen11_Storcli-sut.esxi80@2026.03.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="1ba6abb4e9ff40ab8c8d2a6c0f1a1860" version="51e4703baf5541a39b8cedc42cbdbead" lucid_version="Gen10P_Gen11_StorCLI.ubuntu@007.3604.0000.0000__pubsw-linux_de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="38ed4a06a93d4f528109cbfb58421372" version="02f87f09479c47c8978da9100dcc6c4f" lucid_version="genoa-bergamo-siena-turin.win2022.x64@8.3.16.641__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="58dd146b67a34b2492cfd64a1feceec4" version="d4aa3d00e1e34dccbb8740f00844aded" lucid_version="mlnx_en_roce_mlx5.sles15sp6.x86_64.rpm@26.01__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="8927cfd49bdd4662a4005f15b8eb6847" version="40bbed5bc9b4407e9f9fe2ae77e30982" lucid_version="ubuntu2604amsd@4.7.0__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="fd79732b69c747a4ba4278e32ef12a49" version="299e3fe8b55e4a29be6501b2933e902a" lucid_version="broadcom_nxe.w2k25@235.1.122.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="6ca4dd262131408db10af90451555128" version="c3a89bd3dd2e4858859f3d6ee5f7e2cd" lucid_version="FWPKG-P23666-B21@20.43.8004__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="84f4d8cbba034646b75e0fce6c455870" version="65dc772cca1e40df9753ff841de74c49" lucid_version="broadcom_nx1.win64@221.0.8.0(C)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="27053985f2354572a6633cc6a63bb7ef" version="44ffce87ed0447a39042c477864b4c57" lucid_version="FWPKG-P42041-B21@26.48.1000__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="3ba76aeb89f84af9bfe377b634628ab1" version="69e604474754449c9774e704fe9b1a2b" lucid_version="igbn.vmware91@2026.03.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="2bde69486dfb4f12be7e98996160e455" version="3b25f192a6e94fb6b86ac134f5d6bc5c" lucid_version="iLO6_FW.LINUX@1.76__sc-linux-fw-ilo_en"/>
+      </product_version>
+      <product_version>
+        <id product="5413adceb7d241de900274e399d9c777" version="4a14deaf10d5470da0e2b4e08f9da3ee" lucid_version="intel_pvl.w2k19@14.0.7.0(B)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="cd4b5a9c9ed9405abbc5be7a9f037870" version="04fe871c55c6491ea8373a2789ff4804" lucid_version="amsd_sles15@4.7.0__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="01dd36b9ad8145f48edf876566d56fdb" version="66bb24ccc3574c59912c4b91169c0d8e" lucid_version="FWPKG-S2A69A@26.45.1020__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="710acbec2a70445381651a2e1f3c55ab" version="1e8d6ce0a2844f278f512b54bb9813d3" lucid_version="mlnx_en_roce_mlx5.sles15sp7.x86_64.rpm@26.01__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="7a201554eb654a4fa5bf0b9e23666148" version="a2c5105a57a74840af432657928cad01" lucid_version="nicfwpkg_bcme_57416_2p10ocp@235.1.164.14-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="29a000381a7c4ec8a72063a155821a0a" version="9771c6a4d4534bf7be368c5507723b07" lucid_version="ice.sles15@2.4.5-1-rev1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="b5ac73de9425409183ef365cff98819d" version="041426aa06144075a264fc45d06d4ae7" lucid_version="qlogic_storport_x64.w2k19_rt_gen11@9.4.11.20(d)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="75b226eeea7c4059b46a8ebaf1741729" version="fb0aa12c83184b04a71456cef38dc8e6" lucid_version="ssacli.vmware9.1.sc@2026.03.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="96378e2061d845f3850110a4f2a6ae57" version="d84f28affb894a66b91e00fd038e62d1" lucid_version="trinity.chif.win2025.x64@4.7.2.0(G)__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="0300daf553df4e699178bc1f12267a1f" version="b56236f7b43f42acbc43a51ff5c3bf4d" lucid_version="Gen10P_Gen11_Storcli-sut.esxi90@2026.03.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="435031f572ea43b79bd116d63a99a58a" version="2b965028c8404b848ffa9d7f56cf8f4e" lucid_version="nicfwpkg_bcme_57414_2p25@235.1.164.14-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="641caff481b246c3bc5c2cd37f1fb425" version="bcecd792d2ab47978094bf035e939145" lucid_version="igb.sles16@5.19.10-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="93312d51d8f7459ba48a2a8cbf6722a2" version="1decdc7a90514de49ce94757cbae9943" lucid_version="ssacli.vmware8.0.sc@2026.03.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="573f7f971c6f4f0290ae22ee282e3265" version="2e00fbaea3d34cbc8ca2a4653819c0b5" lucid_version="FWPKG-P45641-B21@28.48.1000-rev1__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="5156ee2ce74d4685bd9c2931c6170220" version="4822206d12a6446a94667a7ef05ef52e" lucid_version="iavf.sles15@4.13.20-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="39676e9bd8d74e11b8837e3f6ebabd5c" version="50cd52f793c142a59934e609300224e8" lucid_version="ssa.linux.x64@6.60.8.0__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="3d51e7d6b8674f16bd8f67bee278e11a" version="c1a1e73eca0649aba8389a70d7e7b502" lucid_version="HPE_SR_Gen10_SR308i_Gen11@8.00__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="7a0e2103ab3d449ea173c873ce94c871" version="b655bf12f1ec45248db5262428b859da" lucid_version="ssaducli.linux.x64@6.60.8.0__pubsw-linux_de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="17ddd4982753427c9eac8be3bb37e260" version="3d0531102ecb4982b8848d2e844ed84a" lucid_version="trinity.asr.win2022.x64@4.7.1.0(I)__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="ea54045e376e4b2ba3a50ebd9d55a9a5" version="4691d6d97ad14b04b51d012ce2158bab" lucid_version="mlnx_en_roce_mlx5.sles16.x86_64@26.01__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="6b0653271f3e4e3a8e730542d61ffed8" version="4d76931c26af4d43986103fc1ca896c6" lucid_version="Gen10P_Gen11_MR_Controller.esxi8.0_bundle@2026.03.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="deacd63eca7d4b18a289de656e325260" version="1539852ca9094c07b5816ee6673cc315" lucid_version="trinity.chif.win2019.x64@4.7.1.0(E)__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="b8cab2acffab4f63833f5213954deee9" version="88c91b35200f48c9859426ecf3d2836f" lucid_version="HPE_MR416i-p_Gen11@52.36.3-6584__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="a07f8ac11b4a440d99aa61ea5fb0b63f" version="2726ab012ef34fed81d4afe7df3657cd" lucid_version="bnxtnet.vmware80@2025.11.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="0b5ea35199d249309413cdf1ab404c23" version="af1dca40ea14406c99ff8d8fa1f958af" lucid_version="nicfwupg_intel_open.win64@5.4.7.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="6ca442c991c749709fbf69d8d57a3358" version="ec125a04c65848c09f2ceb45d6aa89b6" lucid_version="UBM5_FWPKG@1.16-rev1__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="000bfbde35e84381b78976b2c1748662" version="2782e9828ea24cbfb4448825ce1a9cba" lucid_version="intel_vf.w2k22@1.18.161.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="188764648e874fd98523f669c6e5a042" version="bb3447a059d64fbba936fb336cf6f42c" lucid_version="intel_cvl.w2k22@1.20.39.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="c013d920d5db4350b0283f4634a4df97" version="570b95e792e14a2d994ae68b730ee8fa" lucid_version="nicfwpkg_bcme_57608_2p100ocp@235.1.164.14-rev1__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="3ac61ed209fd49fb908341fa7b77c3ea" version="bca28cc15a484d30b263b703e9e833ce" lucid_version="ssaducli.win_x64@6.60.8.0__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="955cffa0d4fe4b76923c0ea7afeca0bf" version="081aedd3c74d4f6ba6a7d66111ca7300" lucid_version="nicfwpkg_intel_e810_xxv4@4.91__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="74e8451e230741319455926a99f9eebc" version="bcc49fb9f2b04da186a208f3551937e7" lucid_version="igb.rhel10@5.19.10-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="d80efba56d6440a59887be20b62b45c9" version="59f5aeac00c741ae91df0f9662b39eb5" lucid_version="A56.win.x64@3.12_04-02-2026__sc-windows-uefi-sys_en"/>
+      </product_version>
+      <product_version>
+        <id product="96fe9c5a9b9741d5bcf4ae73623359e0" version="a81c9cecac1b4a8fa8d6901c0532a8ae" lucid_version="FWPKG-P31246-B21@16.35.8002__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="72b6bd7095ec40a7947f8f947956c698" version="8f615e32ccf54da4a7ac306326bb396f" lucid_version="Gen10P_Gen11_Storcli-sut.esxi91@2026.03.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="7f5cc2735e814d67a516e6e72cb03eec" version="6c1e95ec13354cdd998cd911da77c3d9" lucid_version="SmartPqi.win2022.2025@1016.30.0.1014__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="ad3fba5acbb54355b6ab78730e8d2635" version="27e0af300e254765a9b481eb030268f2" lucid_version="intel_vf.w2k25@1.18.158.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="dcff0c4699e341cf85f18eb94d85147c" version="5c2ad4196c7e42169f6d89cfef5629c4" lucid_version="tg3.rhel9@3.139w-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="ae86717eaef841a7919ea42f85ca3fe7" version="1bee086dba7449cbb397135184317107" lucid_version="Gen10P_Gen11_MR_Controller.win2025@7.736.3.0__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="f56420e1793d48958fc061b802e973db" version="b86554bf52994fa69e0aa1a946645fcf" lucid_version="FWPKG-P45642-B22@28.48.1000-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="745e0fe9bd84457584ee2742aafdffba" version="d5f95882303749f8b2614b0790bc74f9" lucid_version="genoa-bergamo-siena-turin.win2019.x64@6.9.12.232__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="b50552ebf09d445294b0b81e162643cf" version="ba7d8ce8c9444440b2fabed4f0887ce2" lucid_version="FWPKG-P42044-B21@26.48.1000__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="e6f849009cd744778f6706ec5a38d5d7" version="54dd745e32fe4b9a891e03e3624df598" lucid_version="qla2xxx.driver.esx80.zip_rt_gen11@2026.04.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="1d4bdf01ac864288af51e73784711598" version="3ec471e24dfc409bb3e1c84690e8ac7d" lucid_version="mlnx_en_roce_mlx5.rhel10.x86_64.rpm@26.01__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="c549eb5726da4e0ab54cbcdd6abecebd" version="66e0ee09018e463c9b0da88f6f3702f5" lucid_version="bnxt.rhel9@1.10.3-235.1.164.14__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="f3f8a4081d78499e9a2dd9c8d9fb4059" version="7ba069824fd74ad0839f78daf18a16bb" lucid_version="nicfwpkg_intel_e810_cq2@4.91__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="eeaaff922a754e178b46a3315fd0a64a" version="bfe9bee2e6884849874b0f4ec7cea816" lucid_version="nicfwupg_intel_open.linux_x64@1.36.0__sc-linux-fw_en"/>
+      </product_version>
+      <product_version>
+        <id product="2e4ac8b988164dc087668639a95037d3" version="946679b18e0a483397d4dc7e3773f91e" lucid_version="tg3.rhel10@3.139w-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="3c3b18c087cf4abfa2c47b59042d0c23" version="7acf4ed3c2c34b6ca53e4278f6da5fd6" lucid_version="icen.vmware91@2026.03.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="41b320ad66f042c0996f23c6087a171e" version="7119986212bc4928a0c2b52ab982490d" lucid_version="nicfwpkg_bcme_57412_2p10@235.1.164.14-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="28de3e043e834f31b4e3ce7c0005a2ff" version="e6fc2952468e4c8b814b21ae61d372e2" lucid_version="lpfc.rhel10.x86_64_gen11@14.4.731.6__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="dc41774861a945f28d388059e656b2ca" version="3dac84cbe13f448aa40cc30f6843f523" lucid_version="nicfwpkg_intel_e810_cq2ocp@4.91__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="6aac2d7fdad54ca7910ee0bb1e81d6f3" version="62c7d9e237d4439a913ea50f84c47db9" lucid_version="FWPKG-P45642-B21@28.48.1000-rev1__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="015fb436dd2948789e37f0213e4e8ee0" version="776acf16b7cb4651b5fbd3e97d099240" lucid_version="Gen10P_Gen11_MR_Controller.rhel10.x86_64.rpm@07.736.04.00__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="83f19a40734047f1a91d25f9cd465999" version="be35bd5a9ee946649d38850274696205" lucid_version="nicfwupg_bcm_open.vmware@1.43.0(B)__sc-linux-fw_en"/>
+      </product_version>
+      <product_version>
+        <id product="fee0c98ee3b34ad8b2bf559d463d2acb" version="ace234a43c9d4248808001a8cff4d6d6" lucid_version="iLO6_FW_WIN.X64@1.76__sc-windows-fw-ilo_en"/>
+      </product_version>
+      <product_version>
+        <id product="343e8a6548a64a5db3bb59065b4afa89" version="96f048efa1ba46448cd09f795609669b" lucid_version="qla2xxx.driver.esx91.zip_rt_gen11@2026.04.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="3f4d9eceae63421389745abdf06f001a" version="105eae77db3d48ce97184e7c75c7822d" lucid_version="FWPKG-P31348-B21@20.43.8004__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="ce9f91a90e53444d84d0e7a4367d6fd4" version="21aa2066d8ea4cb6b8ed6a9cb6398ce4" lucid_version="icen.vmware80@2026.03.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="8cf1ad038d0041138bca0e81fbfc4764" version="8a3507cf3e914166b8879955e946e215" lucid_version="mlnx_en_roce_mlx5.rhel9u7.x86_64.rpm@26.01__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="51c52bf006bd4c60b09797563ff886bf" version="5ee7637cddbb4b778e4943aa0b18c662" lucid_version="ssacli.linux.x64@6.60.8.0__pubsw-linux_de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="594618f566cc4fbca055e8866278e53d" version="505b38c67605470996f78145939919a0" lucid_version="ssa.win_64@6.60.8.0__sc-windows_cn,de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="a97585904133422cb1c458c1fa560f04" version="e7cae46baff54255a1e66a57ba732f68" lucid_version="matrox.G200eH3.win2025.x64@9.15.1.268(F)__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="d9d151c798d94a31a9d263cef309ab70" version="a7e83a973d674a43902b49a6eef62041" lucid_version="ubuntu2404amsd@4.7.0__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="a00e6ed1db904ebf80004d7820172e46" version="283804e10b744386918b8ec6ad804f0a" lucid_version="ice.rhel10@2.4.5-1-rev1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="8796bf21e8204a0da4179cfbcd105e85" version="35defd3e087b41669dcdb71f86fc971a" lucid_version="Gen10P_Gen11_MR_Controller.rhel9.x86_64.rpm@07.736.04.00__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="5a8d151d774940d08a210f6951af49b1" version="a1cdae3a39324df58ad3ebd514ec3641" lucid_version="lpfc.rhel9.x86_64_legacy_gen11@14.4.731.6__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="217841160b0c4aed95a72c22a4036f5d" version="b4124fce68a74de281a4bf6dd1c2c3bf" lucid_version="emulex_storport_x64.w2k25_rt_gen11@14.4.624.1(b)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="df57af7543b34ffbb722ca05255bf445" version="bc8e3b1eb8804b47acb76ad46bb94011" lucid_version="UBM3_FWPKG@1.24(G)__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="536e0c1257c64ae79953cabc359cd629" version="7ff76655fd4e458f93183ef067149a61" lucid_version="qlogic_storport_x64.w2k22_rt_gen11@9.4.11.20(c)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="af675de276974e75910c4bb39f260fc6" version="0ebc39c00c2e419cae21faa5e47fd0fa" lucid_version="qla2xxx.sles15.x86_64_legacy_gen11@10.02.15.00-k1__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="5f87cfcaa78847d59e1bfff7203034fc" version="a11e2b841a61400ea5dbbb30416951bb" lucid_version="mlnx_en_roce_mlx5.rhel9u6.x86_64.rpm@26.01__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="fc1120f3f40a4668949b2fe6ec27923f" version="d36a7fbcf3334b399e724c961fc1a020" lucid_version="PICGen11.win.x64@1.0.4(D)__sc-windows-fw_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="d32e3e2cf68a47998f06cb81ab591bd1" version="6b130a31fe0d448fb1f50b6eaee27c6a" lucid_version="isut.deb_x64@6.7.0.0__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="ec9be2d62b6d4bb78b41f4e500d70240" version="2087ae0c509a4375b1e87fbc7bc1c3d4" lucid_version="smartpqi.esxi9.0_bundle@2026.01.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="ba33978f935d4d70a43d19a4ccc19b7f" version="d288ef41b92e4ebb8a506e70a207ad7d" lucid_version="qla2xxx.sles16.x86_64_gen11@10.02.15.00-k1__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="e8f02987fae14861a37eb27a43adf117" version="da9ea0f674284c5bb3e75189abfbfa55" lucid_version="Gen10P_Gen11_Gen12_hpemrsa.win.x64@8.16.13.0__sc-windows_de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="110c3bd2bca349b2ba7b9fec9e58ee8d" version="bf00447b00864df490758d5629c2d6f3" lucid_version="nicfwupg_bcm_open.linux_x64@2.42.0-rev1__sc-linux-fw_en"/>
+      </product_version>
+      <product_version>
+        <id product="2d62a41160fe429aa485decf567460bc" version="f93b0be8d8d84dfdba90c317d70c7754" lucid_version="qlogic_storport_x64.w2k25_rt_gen11@9.4.11.20(e)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="32e70edc717a4f199fb4d966f5a2ab73" version="96c18a3cdac44b61aa2e328d135be76c" lucid_version="ssacli.ubuntu@6.60.8.0(B)__pubsw-linux_de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="b3a8e7e2c4ea466a9b404955f474449e" version="8328fb5e06d04fdaba15b5a0918ea252" lucid_version="isut.linux_x64@6.7.0.0__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="62021655cc7a4243bff40ebe6e1c46ab" version="e92f18b442974aed89680b2e601e9fcc" lucid_version="trinity.chif.win2022.x64@4.7.1.0(I)__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="6effbd9b20c44e679f60ca813043aa5f" version="f087c66c023d4c828bc50dfbf7af3ff1" lucid_version="lpfc.rhel9.x86_64_gen11@14.4.731.6__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="19810cc433a442df903276a4b0c34598" version="968461aa41754673b4c1d8e287c72a72" lucid_version="mellanox_winof2.w2k19@26.1.27016.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="3d28404b009047cd9c6ade47efd24ca6" version="eb93d80bd5624648b0ca4bca05228c97" lucid_version="nicfwpkg_bcme_57504_4p25ocp@235.1.164.14-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="3b175f364fc14c6da598ff868e4cfb48" version="03cdf815345f4efd94751eaefd47e77f" lucid_version="UBM2_FWPKG@1.20(F)__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="614a0c688deb4def90dafbe34fab64bb" version="2ddbb9895d1240bd95290044d55545dd" lucid_version="smartpqi.esxi8.0_bundle@2026.01.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="d6af9ba976c74a2fbbad80fa8b7b2b63" version="0d58f538be824df2a92d8692912c9b8d" lucid_version="emulex_storport_x64.w2k22_rt_gen11@14.4.624.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="6a4f9209b5474891beaf50886f41470e" version="90afaf91d183433597dbb4d307804d85" lucid_version="nicfwpkg_intel_e810_xxv4t@4.91__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="58e30c6460374d34ab64c2a8547dafe2" version="526837a94da34ff39f8183978e99b2a5" lucid_version="nicfwpkg_intel_e810_2cq2sec@4.91__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="4b7bb75be74941e8987c342978cb18f9" version="38f66438673e4c28a2393b82f5a51be5" lucid_version="nicfwpkg_bcme_57416_2p10@235.1.164.14-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="378cdf1de2de48e7bfb2a8d18ef9e12e" version="e4a9611fcf284038abe9701bb7a836a0" lucid_version="HPE_MR216i-p_Gen11@52.36.3-6584__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="fa217e18522644f8949ab01ded6c682e" version="63c1b906fb3e42fbb4fd26f530a32447" lucid_version="lpfc.sles15.x86_64_gen11@14.4.731.6__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="15698eb1529646ec8ffe029388a40fea" version="4180e3928a07496182ad95557039ed89" lucid_version="ice.sles16@2.4.5-1-rev1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="930ec7c21c864080921bd1f4201e5153" version="ccb85424cab3452096c091c19eb8fc01" lucid_version="ssa.ubuntu@6.60.8.0(B)__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="41fa8420de8d497db38df0b5cd7ea429" version="7656525f40b04d9fb5c50bf0a8729b0a" lucid_version="ubuntu2204amsd@4.7.0__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="f907a07a90884dc7b70bfe96abed1e23" version="6db42c3af36b4bdebb1e3fe4f789c401" lucid_version="FWPKG-P45641-H24@28.48.1000__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="3a7e67e38ff34c2d97d557fc64c8c1cd" version="3e2af8e1cc9f4127bc2559e1f783e41b" lucid_version="lpfc.sles15.x86_64_legacy_gen11@14.4.731.6__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="C9113" version="2e68cf7c5c944e8dac3a1c14e1da06af" lucid_version="hponcfg.w2k3_64@6.0.0.0(B)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="0a1bd2e7b61541c2bab363dfb955ff0b" version="d51ecf4c308749148cf685f20b723f7e" lucid_version="bnxtnet.vmware91@2026.03.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="eaf211f134ef40ba8eea9bd4163e6e57" version="b262cfae6ec543a2aceb25b000278edf" lucid_version="igb.rhel9@5.19.10-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="0134d053d49b43b1add04e5a51f6ff18" version="47516fe2805f4e9ab3bc3e01fb96aba6" lucid_version="nicfwpkg_intel_e810_xxv2@4.91__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="7110bed6c26549368389f3bcb730b760" version="7cf496c4d74e4697a6ce4179f9ab59be" lucid_version="lpfc.sles16.x86_64_gen11@14.4.731.6__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="a6830ae5a0164a2791c4b777337e9547" version="d8d576b5c7a64fa483768cbcde70dc97" lucid_version="FWPKG-P65333-B21@28.48.1000-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="e485f42530b84989a3373bff82088143" version="9001e38f8173493b9fb7ad5c3a48876e" lucid_version="amdpshed.win2019.x64@1.0.0.51(B)__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="b274766f773d4b9aac8be65ae43773a2" version="3c6dd8941d2446f2ad029200c0312964" lucid_version="trinity.asr.win2019.x64@4.7.1.0(E)__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="fc90f99dec3d4432a73ac738a336cdc1" version="44d3b0b01c1f481aa71f46f0b41ea42b" lucid_version="amsd_rhel10@4.7.0__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="b8bfd68496a643cdaece510776fb4ad2" version="3119d5cadfcc43c7ad4f3bffb49d7fa9" lucid_version="broadcom_nxe.w2k22@235.1.122.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="d07b5a0cbd2f474bb57432be8e7463ef" version="0916b7f38b2e4cd8806174e6d7ba3e36" lucid_version="qla2xxx.rhel10.x86_64_legacy_gen11@10.02.15.00-k1__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="0f59bee85417473c96533a82e57659e8" version="617e6664d28244e7a7f8f22541d32eb1" lucid_version="PICGen11.Linux@1.0.4(G)__sc-linux-fw_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="62f2efcf05984f9a88dcadfa697876a7" version="f10f6a4bbc5d4385b5fc1301c65d1342" lucid_version="emulex_32G_64GFC_FW_Gen11@14.4.731.10__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="9fa8f147668540cfa95c3ce2a3bb1316" version="ab5ce8ef9e744f46a4310acf02ea8529" lucid_version="lpfc.rhel10.x86_64_legacy_gen11@14.4.731.6__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="77057f17d85c42018e33e3454cf6ece5" version="602639d355fd43f18b42a7d4d7693567" lucid_version="mlnx_OFED_Driver@25.4.50020.0(d)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="9681dd7da3ad4cfa8b9f5d2fa3efb5ac" version="bc3de517782147afa79bbf057ec34708" lucid_version="intel_pvl.w2k25@14.1.24.0(B)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="9117053fed1245019c94aab3982b0102" version="3499ad24a1394d098cf83303fba5de87" lucid_version="smartpqi.sles16.x86_64.rpm@2.1.38-022(B)__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="e6fc00ad6a3e4c539778e7419a9fafa6" version="3f15f1eccb2e40be946ded02ab1b14f2" lucid_version="FWPKG-P31323-B21@20.43.8004__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="2ed4fb56e81f45b0b8ae601a61b78e6c" version="417cb571a27e44a5b9cd0ee1e069f9cc" lucid_version="bnxt.sles15@1.10.3-235.1.164.14__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="a08198f75ae64d5f81f313aee3e10a81" version="3d40be5189da4a0cb6ac81eeef899e67" lucid_version="nicfwupg_intel_open.vmware@3.29.0__sc-linux-fw_en"/>
+      </product_version>
+      <product_version>
+        <id product="994a0b6ce04a44b9b4daabf9aed11e4c" version="74f767c43f7945eeb251b5b71675b1d5" lucid_version="iLO6.fwpkg@1.76__fwpkg-ilo_en"/>
+      </product_version>
+      <product_version>
+        <id product="f5b93810cc2347bb802707c26e414376" version="aa42e00a34be43ca9d52add704619c1b" lucid_version="FWPKG-P10180-B21@22.48.1000__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="ffe236b3c9414886ad6bebd19a87b8d3" version="e04c7094cab24fe2852e7a023aa61fde" lucid_version="nicfwpkg_bcme_57608_2p100@235.1.164.14-rev1__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="1174220fe8354722a040071980d1eb37" version="42c425060451475ab163d4176929f4fe" lucid_version="mellanox_winof2.w2k25@26.1.27016.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="aa57601c0db347e68c835baf96f72938" version="39e78da9fa98457683e5343e1131981f" lucid_version="HPE_MR408i-o_Gen11@52.36.3-6584__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="bf5a29acd1f3479b992d2d5cdfa14600" version="7d7a2582d1e145e180ce13f7f63eea9b" lucid_version="HPE-CNA_FC-hpeqlgc-enablement_gen11@6.0.0.1-4(e)__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="f753d0d85d5c40278c0a50daf001c162" version="48aca792bb5f49a8bea429185350764b" lucid_version="HPE_MR408i-p_Gen11@52.36.3-6584__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="29921b6ba8e14e7cbeb3829f2308a0f5" version="4b651fe2c7f1478eb6aa102fbf31bf1b" lucid_version="HPE_SR416_SR932_Gen10P_Gen11@03.01.44.040__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="a77901ff235c43f18df58616eefb654e" version="7319fd82a07c4804b3f42bdb8e099c29" lucid_version="FWPKG-P46603-B21@22.45.1020__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="23c569ea92fb47f091a7a0c891acff72" version="6a7332dbeacd418a9cb8b8ece729e4e7" lucid_version="FWPKG-P25960-B21@22.48.1000__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="ada99fb833d94a8ba8e825827baed488" version="0c199dea1c8d415faceafdc7df41cbf7" lucid_version="ams.gen11.gen12.win.x64@4.80.0.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="6d4e51e8b4c040cc80275ae447831403" version="025dcd5ad1234463a055d4da8b53f5fe" lucid_version="Gen10P_Gen11_StorCLI.win@7.3604.0.0__sc-windows_de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="d1aac94e34b141a88019fc9cf64a81de" version="693b5833d19f4a56b99b8304961cdf00" lucid_version="qla2xxx.rhel9.x86_64_legacy_gen11@10.02.15.00-k1__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="fbb53cf22a594dbb99b8c7f89e562124" version="f35925bfc51f45d1bd846ca78d19ca43" lucid_version="nicfwpkg_intel_e810_xxv2ocp@4.91__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="39040fa72ee34e15b8d90d8ca174f1ed" version="7eaf15c47df143f49aab9806e11c534d" lucid_version="Gen10P_Gen11_MR_Controller.esxi9.0_bundle@2026.03.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="5373c16feb6444f5add5e7de11e158d0" version="2ce09f2fe00643b39cb42139d3b93add" lucid_version="FWPKG-P45642-H23@28.48.1000-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="20e8272651c0421db480e44b69d4a77a" version="46c907c739294cb58c63e50b8a0c7181" lucid_version="trinity.asr.win2025.x64@4.7.2.0(G)__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="b0150fa8c3c74fa8a3415a136a3cc117" version="6b3174f2fe2543b3948ec32253f39295" lucid_version="nicfwupg_bcm_open.win64@5.4.6.0(B)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="50ff7a93036b4fcfb72d3ae3805b167c" version="0ec24b8775274e229c80b2114ba9989d" lucid_version="qla2xxx.rhel10.x86_64_gen11@10.02.15.00-k1__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="3013cefa4fe14260a6f6811796f9b1c0" version="d9082dc816c54769bf2fbe1cc35ac182" lucid_version="Gen10P_Gen11_Gen12_hpemrsa.rhel10@8.16.13.0__pubsw-linux_de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="43151427676f44dcaced68356cf6359c" version="91eedfc8544c413bbd1e5e7e2f1c20f9" lucid_version="igbn.vmware80@2025.05.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="2079058db213445cb2b49d341b2df92d" version="b11e8e7c1bdc476e8fdc7209faa5cfd0" lucid_version="iavf.rhel10@4.13.20-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="a5b53b4bfa36450dafe72d3912e27c73" version="97b039db4584420b85bdb193c2effa00" lucid_version="ice.rhel9@2.4.5-1-rev1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="43699ba116594728bcf30612b7c6f5f5" version="25de805a4fb64ddbb381a6e1259c2315" lucid_version="nicfwpkg_bcme_57504_4p25@235.1.164.14-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="ec20938f2dbe43099ae9347f73dc19f7" version="778bc34e162746eba64a0f912c77f4d4" lucid_version="mlnx_en_roce_mlx5.rhel10u1x86_64.rpm@26.01__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="e6bb5c297d78402ab079f188773b5efc" version="72ffec95c5fc40e8a73c7c76603092c0" lucid_version="mellanox_winof2.w2k22@26.1.27016.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="a83500e26a4d4bb89a4eb5821b7b2ca6" version="77c0abf6e6e340938e331cc9e83e5a7f" lucid_version="amdpshed.win2022.x64@1.0.0.51(E)__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="6d646143d845471b959d65babb13943e" version="5a3243ff398440baa049cf99470fb928" lucid_version="emulex_32G_64GFC_FW_Gen12@14.4.731.12-rev1__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="7dd14e7585784238bb6caec32dcf1d80" version="49fe9081c9ee40c6ad89c24ecc0b358b" lucid_version="Gen10P_Gen11_MR_Controller.win2019@7.732.3.0(B)__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="ab42380273374a988dbcb1a25432ed96" version="d7dbaac55fac4085ac7ee79631542401" lucid_version="FWPKG-P31324-B21@20.43.8004__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="5001641cfd584f64b9c97177cdbea490" version="f67b1d6fd35e464395696c86a4640466" lucid_version="qlogic_32G_64G_FC_FW_Gen11@02.11.13__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="8e8482d9e6e6494a8e54ec40143d190a" version="556f22f571aa44958d24b4b56cbc3bf3" lucid_version="tg3.sles15@3.139w-2__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="6e47868a4c52411285405d34ddf4456a" version="f7850debc2b6433e8f6bf8acee218095" lucid_version="Gen10P_Gen11_MR_Controller.sles16.x86_64.rpm@07.736.04.00-rev1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="4b815ec03a2e4252b115ca93b508aaed" version="dce6897b815b481b8d7a26dd05889a97" lucid_version="qla2xxx.sles15.x86_64_gen11@10.02.15.00-k1__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="adefe97a484140f28ccdb1e9dfb3903c" version="3b50c8b0a8594143bd43ac3e1ddeb4c5" lucid_version="icen.vmware90@2026.03.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="68526791858d42b69b174ffed2a35fa0" version="290bf32b748e4b8f9c4cbe3f9cfe6e6d" lucid_version="amsd_sles16@4.7.0__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="8c4f7b25cd054f74b804a271ef25619f" version="13f5a57fd4bb451c85bc523068e5002b" lucid_version="smartpqi.rhel10_x86_64.rpm@2.1.38-022__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="e23bcb549aac496ebbb23f95f73870c2" version="65774ffac59f48abb19289c25c83afdd" lucid_version="A56.fwpkg@3.12_04-02-2026__fwpkg-sys_en"/>
+      </product_version>
+      <product_version>
+        <id product="a529a1b0d8b0405f80457239f0d32b29" version="8e35585af64849d9a9b92d4cb546c7b9" lucid_version="bnxt.rhel10@1.10.3-235.1.164.14__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="6d5b098230e341e9881e9381bf19ba96" version="431bcf46da794f4b882c6a8f1cfb176b" lucid_version="iavf.rhel9@4.13.20-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="923bb6bba3254a6d80257c1bf056f39d" version="a8fa943c5e2c47098e12c288641108f2" lucid_version="UBM6_FWPKG@1.06(B)__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="ae807ea8d44943a3b60bbbbd54cd062d" version="eb551c6b6b314fbfa83789debb75d74d" lucid_version="igbn.vmware90@2025.11.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="d473378e1f2847f48383c6be4c105511" version="aae60f5f3c27471e93887588c376e7da" lucid_version="isut-esxi@2026.05.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="8737ae26e7954415ac1ce9fe455fdd07" version="913462c97f3b4427bfabd689d93cea7f" lucid_version="HPE_MR216i-o_Gen11@52.36.3-6584__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="c94878ce1a3442eca368e62460770912" version="a4baff443cfe4f1fb1bd88340daf8418" lucid_version="bnxt_roce.rhel10u0@235.1.164.14__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="6adb26c5fc564f219877ab6a448e709b" version="df7b7b39b7ad460b81b893a773d6831e" lucid_version="nicfwpkg_intel_e810_xxv4ocp@4.91__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="6b091dcf4ee1419ba5b96976da014a69" version="ffa72cc6dc6f4096b3f3a27e068bf1d4" lucid_version="iavf.sles16@4.13.20-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="8f24173ef2e740d2b110bb710e861366" version="c34ffdfde0b2461ea76af03f721fd3e2" lucid_version="Gen10P_Gen11_Gen12_hpemrsa.rhel9.sles15.sles16@8.16.13.0-rev1__pubsw-linux_de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="c73603f447664d53b84b56e38b35a86b" version="4dd9819d2a844736b3709222a082209e" lucid_version="bnxt_roce.rhel9u6@235.1.164.14__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="e01aaedc1c6c4e4090054a22e89562d4" version="be8b2b439bf74624967d809ec0d8ad70" lucid_version="esxi-ilo-drv-bundle-sc@2026.03.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="8fe22752c5324386870794853904b4ba" version="c8bd39758b0847a287bcd760f1f32b36" lucid_version="isut.windows_64@6.7.0.0__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="da435657efe64ff1a664870254b46a1c" version="78cb53d697014ce796cce57d53362723" lucid_version="FWPKG-P23664-B21@20.43.8004__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="002a872d6fa9471f8242a026687aaf44" version="13c4275be191460d962c68ffc5e39483" lucid_version="emulex_storport_x64.w2k19_rt_gen11@14.4.393.20(d)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="683278c3722a411eb75e30e9eb4f543d" version="0dff3ce052a549f2aa7c4d1e12627d2d" lucid_version="intel_vf.w2k19@1.18.162.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="a4dfe483f7df4c3993a498bb13f08613" version="f16d6604fc9649d4b2bfea072a3bc652" lucid_version="nicfwpkg_bcme_57414_2p25ocp@235.1.164.14-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="5aad4922b5f54198b1d9a8e400dcfdda" version="2a756b63d2e040fb99d837295c5421bb" lucid_version="Gen10P_Gen11_MR_Controller.sles15.x86_64.rpm@07.736.04.00-rev1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="4e3802b484324394ada6924af481323b" version="6aec0619ce4e437692d7574f735b7911" lucid_version="intel_cvl.w2k25@1.20.43.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="0883e4abd7344c9b834b5e5585107933" version="174fd416142d4649aa647bf3a8479dc7" lucid_version="Gen10P_Gen11_StorCLI.linux@007.3604.0000.0000__pubsw-linux_de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="6e4df08455db4ce3a3b07b6eecea6280" version="0b525994e9d040ab8968ba959bb37602" lucid_version="amsd_rhel9@4.7.0__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="cca7377cd12644cab41f5bd7e94cc2bd" version="ec3d440efe554dd3a41ae6e2f4f4e966" lucid_version="FWPKG-P23665-B21@20.43.8004__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="fd26ddd38bb048c080fa29d32f6510ab" version="6b933655133147d287ce912aac913564" lucid_version="PICGen11.FWPKG@1.0.4(B)__fwpkg-power_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="db808d6aa2e24648bcc5e3f46d635b1a" version="6abdf231475c435c92bb558b96dfc97b" lucid_version="hponcfg.linux.x86_64@6.1.0.0(A)__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="3126d8d47de5417a878b30ed83f0673f" version="d532712810154a58b955eafff4cbb3c6" lucid_version="Gen10P_Gen11_MR_Controller.win2022@7.736.3.0__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="c9a886ea365f4176b94f3b79760661ab" version="26b0aecc7f704eb6856dffa4889d1307" lucid_version="qla2xxx.driver.esx90.zip_rt_gen11@2026.04.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="3d53bc8a77a54c5c8d22dd7da0b150b2" version="3aa00a87780c4b7d8ab99807e7fff144" lucid_version="qla2xxx.rhel9.x86_64_gen11@10.02.15.00-k1__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="2f9cefc3934e4e93835fb42cb71a4161" version="739e07fb385e4106b6105dff3be1990c" lucid_version="ssaducli.ubuntu@6.60.8.0(B)__pubsw-linux_de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="332a1cff050e45b999d3c0f17ade482b" version="f1eb364b44104b1681f2888a5aa237ce" lucid_version="bnxt_roce.sles15sp7@235.1.164.14__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="21705c05438d4e42ab093aa8ea61bd57" version="6b8cf057a9034aebbdad3c52be87a701" lucid_version="esxi80-amsdv-sw-bundle-sc@2026.05.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="5e67b3914b754070a44558f816a7dbab" version="e20ca1f61da14377a6bfc47ca79ce4b8" lucid_version="intel_cvl.w2k19@1.20.45.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="3d8cb748df644cf3a26ed91efafffb67" version="3ba8955d2eee4602a11446ec07e9a45c" lucid_version="smartpqi.rhel9_x86_64.rpm@2.1.38-022__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="1e88e3b27b814bcdbc8dcf6390d324d1" version="4e14138c4c714237bcc8bfb333533ccd" lucid_version="UBM4_FWPKG@1.24(G)__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="b00b4afad66b4dd386d098e91550601d" version="980bc003e1324c0089fc7f56d030bb97" lucid_version="bnxt_roce.sles15sp6@235.1.164.14__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="5d636f95f482471a9bd020c928d3b4af" version="f807c9c2ce5c459197e66ec2d1b36e36" lucid_version="HPE_NS204i_Gen10P_Gen11_Gen12@1.2.14.1029(B)__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="85a59acb7d634eb691745a6c9906ad03" version="f938549da08643888919a5c57a12883c" lucid_version="ssacli.vmware9.0.sc@2026.03.01-rev1__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="82fd00d58ad545188ccd0ab41b66633b" version="05971723b4464e358a81d2c05d275d48" lucid_version="FWPKG-P45641-B23@28.48.1000-rev2__fwpkg-generic_en"/>
+      </product_version>
+    </system>
+    <system id="10982" systemid="" firmwareid="A56" effectivedate="">
+      <name>
+        <name_xlate lang="en">HPE ProLiant DL345 Gen11 Server</name_xlate>
+      </name>
+      <product_version>
+        <id product="954cfb4b6d544fe6ae4246347676d978" version="cc65dcf4f2e94cdba3ba96a38ab716d2" lucid_version="UBM7_FWPKG@1.10(B)__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="270849c2dba647ceb1f5f641d466f681" version="108c2c6c505e48f1a6dd0e16f4cb61d5" lucid_version="bnxtnet.vmware90@2025.11.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="9ec75eae1cc649cdaebc3408c7b37d59" version="595c4e9de08f47949c322d352d37ec06" lucid_version="A56.linux@3.12_04-02-2026__sc-linux-uefi-sys_en"/>
+      </product_version>
+      <product_version>
+        <id product="01e0939311154208bbd5b8d9e5157a9c" version="ce76dc9b3af14383b0c03a0be0be0bb7" lucid_version="ssacli.win_x64@6.60.8.0__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="a162b7594d8d4a02bf2f3f7d9fe2609d" version="991082d63ec04d0bac0e9ca762c9657c" lucid_version="igb.sles15@6.19.10-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="ddc8bdca3abc4ab8823e820be1ed4dfd" version="fa241aa0a39b4f01acb7dcad24b81808" lucid_version="smartpqi.sles15.x86_64.rpm@2.1.38-022__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="80ea6cb0c7d14159a1a37d37866e5b0c" version="49e6c99f43004489b7e90043d5d9952d" lucid_version="nicfwpkg_bcme_57412_2p10ocp@235.1.164.14-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="2433baff8f4443ed8ddae6e9a115bc4d" version="a556c13877764198a3876ee835f32a53" lucid_version="intel_pvl.w2k22@14.0.13.0(B)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="23452ce6ae6f410f8e11e448b677d128" version="31e159c4f47f4f6ea06ca59bb182517d" lucid_version="HPE_MR416i-o_Gen11@52.36.3-6584__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="7f5cc2735e814d67a516e6e72cb03eec" version="29e86213c3ab4e94b0b54906f7366af0" lucid_version="SmartPqi.win019@1016.10.0.1004(B)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="4899e6b54e3941a4b9c3090a539cf6db" version="2933eb4cd94144adb521f0300cd2a420" lucid_version="Gen10P_Gen11_Storcli-sut.esxi80@2026.03.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="1ba6abb4e9ff40ab8c8d2a6c0f1a1860" version="51e4703baf5541a39b8cedc42cbdbead" lucid_version="Gen10P_Gen11_StorCLI.ubuntu@007.3604.0000.0000__pubsw-linux_de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="38ed4a06a93d4f528109cbfb58421372" version="02f87f09479c47c8978da9100dcc6c4f" lucid_version="genoa-bergamo-siena-turin.win2022.x64@8.3.16.641__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="58dd146b67a34b2492cfd64a1feceec4" version="d4aa3d00e1e34dccbb8740f00844aded" lucid_version="mlnx_en_roce_mlx5.sles15sp6.x86_64.rpm@26.01__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="8927cfd49bdd4662a4005f15b8eb6847" version="40bbed5bc9b4407e9f9fe2ae77e30982" lucid_version="ubuntu2604amsd@4.7.0__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="fd79732b69c747a4ba4278e32ef12a49" version="299e3fe8b55e4a29be6501b2933e902a" lucid_version="broadcom_nxe.w2k25@235.1.122.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="6ca4dd262131408db10af90451555128" version="c3a89bd3dd2e4858859f3d6ee5f7e2cd" lucid_version="FWPKG-P23666-B21@20.43.8004__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="84f4d8cbba034646b75e0fce6c455870" version="65dc772cca1e40df9753ff841de74c49" lucid_version="broadcom_nx1.win64@221.0.8.0(C)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="27053985f2354572a6633cc6a63bb7ef" version="44ffce87ed0447a39042c477864b4c57" lucid_version="FWPKG-P42041-B21@26.48.1000__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="3ba76aeb89f84af9bfe377b634628ab1" version="69e604474754449c9774e704fe9b1a2b" lucid_version="igbn.vmware91@2026.03.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="2bde69486dfb4f12be7e98996160e455" version="3b25f192a6e94fb6b86ac134f5d6bc5c" lucid_version="iLO6_FW.LINUX@1.76__sc-linux-fw-ilo_en"/>
+      </product_version>
+      <product_version>
+        <id product="5413adceb7d241de900274e399d9c777" version="4a14deaf10d5470da0e2b4e08f9da3ee" lucid_version="intel_pvl.w2k19@14.0.7.0(B)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="cd4b5a9c9ed9405abbc5be7a9f037870" version="04fe871c55c6491ea8373a2789ff4804" lucid_version="amsd_sles15@4.7.0__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="01dd36b9ad8145f48edf876566d56fdb" version="66bb24ccc3574c59912c4b91169c0d8e" lucid_version="FWPKG-S2A69A@26.45.1020__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="710acbec2a70445381651a2e1f3c55ab" version="1e8d6ce0a2844f278f512b54bb9813d3" lucid_version="mlnx_en_roce_mlx5.sles15sp7.x86_64.rpm@26.01__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="7a201554eb654a4fa5bf0b9e23666148" version="a2c5105a57a74840af432657928cad01" lucid_version="nicfwpkg_bcme_57416_2p10ocp@235.1.164.14-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="29a000381a7c4ec8a72063a155821a0a" version="9771c6a4d4534bf7be368c5507723b07" lucid_version="ice.sles15@2.4.5-1-rev1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="b5ac73de9425409183ef365cff98819d" version="041426aa06144075a264fc45d06d4ae7" lucid_version="qlogic_storport_x64.w2k19_rt_gen11@9.4.11.20(d)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="75b226eeea7c4059b46a8ebaf1741729" version="fb0aa12c83184b04a71456cef38dc8e6" lucid_version="ssacli.vmware9.1.sc@2026.03.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="96378e2061d845f3850110a4f2a6ae57" version="d84f28affb894a66b91e00fd038e62d1" lucid_version="trinity.chif.win2025.x64@4.7.2.0(G)__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="0300daf553df4e699178bc1f12267a1f" version="b56236f7b43f42acbc43a51ff5c3bf4d" lucid_version="Gen10P_Gen11_Storcli-sut.esxi90@2026.03.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="435031f572ea43b79bd116d63a99a58a" version="2b965028c8404b848ffa9d7f56cf8f4e" lucid_version="nicfwpkg_bcme_57414_2p25@235.1.164.14-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="641caff481b246c3bc5c2cd37f1fb425" version="bcecd792d2ab47978094bf035e939145" lucid_version="igb.sles16@5.19.10-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="93312d51d8f7459ba48a2a8cbf6722a2" version="1decdc7a90514de49ce94757cbae9943" lucid_version="ssacli.vmware8.0.sc@2026.03.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="573f7f971c6f4f0290ae22ee282e3265" version="2e00fbaea3d34cbc8ca2a4653819c0b5" lucid_version="FWPKG-P45641-B21@28.48.1000-rev1__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="5156ee2ce74d4685bd9c2931c6170220" version="4822206d12a6446a94667a7ef05ef52e" lucid_version="iavf.sles15@4.13.20-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="39676e9bd8d74e11b8837e3f6ebabd5c" version="50cd52f793c142a59934e609300224e8" lucid_version="ssa.linux.x64@6.60.8.0__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="3d51e7d6b8674f16bd8f67bee278e11a" version="c1a1e73eca0649aba8389a70d7e7b502" lucid_version="HPE_SR_Gen10_SR308i_Gen11@8.00__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="7a0e2103ab3d449ea173c873ce94c871" version="b655bf12f1ec45248db5262428b859da" lucid_version="ssaducli.linux.x64@6.60.8.0__pubsw-linux_de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="17ddd4982753427c9eac8be3bb37e260" version="3d0531102ecb4982b8848d2e844ed84a" lucid_version="trinity.asr.win2022.x64@4.7.1.0(I)__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="ea54045e376e4b2ba3a50ebd9d55a9a5" version="4691d6d97ad14b04b51d012ce2158bab" lucid_version="mlnx_en_roce_mlx5.sles16.x86_64@26.01__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="6b0653271f3e4e3a8e730542d61ffed8" version="4d76931c26af4d43986103fc1ca896c6" lucid_version="Gen10P_Gen11_MR_Controller.esxi8.0_bundle@2026.03.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="deacd63eca7d4b18a289de656e325260" version="1539852ca9094c07b5816ee6673cc315" lucid_version="trinity.chif.win2019.x64@4.7.1.0(E)__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="b8cab2acffab4f63833f5213954deee9" version="88c91b35200f48c9859426ecf3d2836f" lucid_version="HPE_MR416i-p_Gen11@52.36.3-6584__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="a07f8ac11b4a440d99aa61ea5fb0b63f" version="2726ab012ef34fed81d4afe7df3657cd" lucid_version="bnxtnet.vmware80@2025.11.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="0b5ea35199d249309413cdf1ab404c23" version="af1dca40ea14406c99ff8d8fa1f958af" lucid_version="nicfwupg_intel_open.win64@5.4.7.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="6ca442c991c749709fbf69d8d57a3358" version="ec125a04c65848c09f2ceb45d6aa89b6" lucid_version="UBM5_FWPKG@1.16-rev1__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="000bfbde35e84381b78976b2c1748662" version="2782e9828ea24cbfb4448825ce1a9cba" lucid_version="intel_vf.w2k22@1.18.161.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="188764648e874fd98523f669c6e5a042" version="bb3447a059d64fbba936fb336cf6f42c" lucid_version="intel_cvl.w2k22@1.20.39.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="c013d920d5db4350b0283f4634a4df97" version="570b95e792e14a2d994ae68b730ee8fa" lucid_version="nicfwpkg_bcme_57608_2p100ocp@235.1.164.14-rev1__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="3ac61ed209fd49fb908341fa7b77c3ea" version="bca28cc15a484d30b263b703e9e833ce" lucid_version="ssaducli.win_x64@6.60.8.0__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="955cffa0d4fe4b76923c0ea7afeca0bf" version="081aedd3c74d4f6ba6a7d66111ca7300" lucid_version="nicfwpkg_intel_e810_xxv4@4.91__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="74e8451e230741319455926a99f9eebc" version="bcc49fb9f2b04da186a208f3551937e7" lucid_version="igb.rhel10@5.19.10-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="d80efba56d6440a59887be20b62b45c9" version="59f5aeac00c741ae91df0f9662b39eb5" lucid_version="A56.win.x64@3.12_04-02-2026__sc-windows-uefi-sys_en"/>
+      </product_version>
+      <product_version>
+        <id product="96fe9c5a9b9741d5bcf4ae73623359e0" version="a81c9cecac1b4a8fa8d6901c0532a8ae" lucid_version="FWPKG-P31246-B21@16.35.8002__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="72b6bd7095ec40a7947f8f947956c698" version="8f615e32ccf54da4a7ac306326bb396f" lucid_version="Gen10P_Gen11_Storcli-sut.esxi91@2026.03.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="7f5cc2735e814d67a516e6e72cb03eec" version="6c1e95ec13354cdd998cd911da77c3d9" lucid_version="SmartPqi.win2022.2025@1016.30.0.1014__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="ad3fba5acbb54355b6ab78730e8d2635" version="27e0af300e254765a9b481eb030268f2" lucid_version="intel_vf.w2k25@1.18.158.0__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="dcff0c4699e341cf85f18eb94d85147c" version="5c2ad4196c7e42169f6d89cfef5629c4" lucid_version="tg3.rhel9@3.139w-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="ae86717eaef841a7919ea42f85ca3fe7" version="1bee086dba7449cbb397135184317107" lucid_version="Gen10P_Gen11_MR_Controller.win2025@7.736.3.0__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="f56420e1793d48958fc061b802e973db" version="b86554bf52994fa69e0aa1a946645fcf" lucid_version="FWPKG-P45642-B22@28.48.1000-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="745e0fe9bd84457584ee2742aafdffba" version="d5f95882303749f8b2614b0790bc74f9" lucid_version="genoa-bergamo-siena-turin.win2019.x64@6.9.12.232__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="b50552ebf09d445294b0b81e162643cf" version="ba7d8ce8c9444440b2fabed4f0887ce2" lucid_version="FWPKG-P42044-B21@26.48.1000__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="e6f849009cd744778f6706ec5a38d5d7" version="54dd745e32fe4b9a891e03e3624df598" lucid_version="qla2xxx.driver.esx80.zip_rt_gen11@2026.04.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="1d4bdf01ac864288af51e73784711598" version="3ec471e24dfc409bb3e1c84690e8ac7d" lucid_version="mlnx_en_roce_mlx5.rhel10.x86_64.rpm@26.01__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="c549eb5726da4e0ab54cbcdd6abecebd" version="66e0ee09018e463c9b0da88f6f3702f5" lucid_version="bnxt.rhel9@1.10.3-235.1.164.14__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="f3f8a4081d78499e9a2dd9c8d9fb4059" version="7ba069824fd74ad0839f78daf18a16bb" lucid_version="nicfwpkg_intel_e810_cq2@4.91__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="eeaaff922a754e178b46a3315fd0a64a" version="bfe9bee2e6884849874b0f4ec7cea816" lucid_version="nicfwupg_intel_open.linux_x64@1.36.0__sc-linux-fw_en"/>
+      </product_version>
+      <product_version>
+        <id product="2e4ac8b988164dc087668639a95037d3" version="946679b18e0a483397d4dc7e3773f91e" lucid_version="tg3.rhel10@3.139w-1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="3c3b18c087cf4abfa2c47b59042d0c23" version="7acf4ed3c2c34b6ca53e4278f6da5fd6" lucid_version="icen.vmware91@2026.03.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="41b320ad66f042c0996f23c6087a171e" version="7119986212bc4928a0c2b52ab982490d" lucid_version="nicfwpkg_bcme_57412_2p10@235.1.164.14-rev2__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="28de3e043e834f31b4e3ce7c0005a2ff" version="e6fc2952468e4c8b814b21ae61d372e2" lucid_version="lpfc.rhel10.x86_64_gen11@14.4.731.6__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="dc41774861a945f28d388059e656b2ca" version="3dac84cbe13f448aa40cc30f6843f523" lucid_version="nicfwpkg_intel_e810_cq2ocp@4.91__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="6aac2d7fdad54ca7910ee0bb1e81d6f3" version="62c7d9e237d4439a913ea50f84c47db9" lucid_version="FWPKG-P45642-B21@28.48.1000-rev1__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="015fb436dd2948789e37f0213e4e8ee0" version="776acf16b7cb4651b5fbd3e97d099240" lucid_version="Gen10P_Gen11_MR_Controller.rhel10.x86_64.rpm@07.736.04.00__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="83f19a40734047f1a91d25f9cd465999" version="be35bd5a9ee946649d38850274696205" lucid_version="nicfwupg_bcm_open.vmware@1.43.0(B)__sc-linux-fw_en"/>
+      </product_version>
+      <product_version>
+        <id product="fee0c98ee3b34ad8b2bf559d463d2acb" version="ace234a43c9d4248808001a8cff4d6d6" lucid_version="iLO6_FW_WIN.X64@1.76__sc-windows-fw-ilo_en"/>
+      </product_version>
+      <product_version>
+        <id product="343e8a6548a64a5db3bb59065b4afa89" version="96f048efa1ba46448cd09f795609669b" lucid_version="qla2xxx.driver.esx91.zip_rt_gen11@2026.04.01__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="3f4d9eceae63421389745abdf06f001a" version="105eae77db3d48ce97184e7c75c7822d" lucid_version="FWPKG-P31348-B21@20.43.8004__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="ce9f91a90e53444d84d0e7a4367d6fd4" version="21aa2066d8ea4cb6b8ed6a9cb6398ce4" lucid_version="icen.vmware80@2026.03.00__component-vmware_en"/>
+      </product_version>
+      <product_version>
+        <id product="8cf1ad038d0041138bca0e81fbfc4764" version="8a3507cf3e914166b8879955e946e215" lucid_version="mlnx_en_roce_mlx5.rhel9u7.x86_64.rpm@26.01__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="51c52bf006bd4c60b09797563ff886bf" version="5ee7637cddbb4b778e4943aa0b18c662" lucid_version="ssacli.linux.x64@6.60.8.0__pubsw-linux_de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="594618f566cc4fbca055e8866278e53d" version="505b38c67605470996f78145939919a0" lucid_version="ssa.win_64@6.60.8.0__sc-windows_cn,de,en,es,fr,it,ja"/>
+      </product_version>
+      <product_version>
+        <id product="a97585904133422cb1c458c1fa560f04" version="e7cae46baff54255a1e66a57ba732f68" lucid_version="matrox.G200eH3.win2025.x64@9.15.1.268(F)__sc-windows_en"/>
+      </product_version>
+      <product_version>
+        <id product="d9d151c798d94a31a9d263cef309ab70" version="a7e83a973d674a43902b49a6eef62041" lucid_version="ubuntu2404amsd@4.7.0__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="a00e6ed1db904ebf80004d7820172e46" version="283804e10b744386918b8ec6ad804f0a" lucid_version="ice.rhel10@2.4.5-1-rev1__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="8796bf21e8204a0da4179cfbcd105e85" version="35defd3e087b41669dcdb71f86fc971a" lucid_version="Gen10P_Gen11_MR_Controller.rhel9.x86_64.rpm@07.736.04.00__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="5a8d151d774940d08a210f6951af49b1" version="a1cdae3a39324df58ad3ebd514ec3641" lucid_version="lpfc.rhel9.x86_64_legacy_gen11@14.4.731.6__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="217841160b0c4aed95a72c22a4036f5d" version="b4124fce68a74de281a4bf6dd1c2c3bf" lucid_version="emulex_storport_x64.w2k25_rt_gen11@14.4.624.1(b)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="df57af7543b34ffbb722ca05255bf445" version="bc8e3b1eb8804b47acb76ad46bb94011" lucid_version="UBM3_FWPKG@1.24(G)__fwpkg-generic_en"/>
+      </product_version>
+      <product_version>
+        <id product="536e0c1257c64ae79953cabc359cd629" version="7ff76655fd4e458f93183ef067149a61" lucid_version="qlogic_storport_x64.w2k22_rt_gen11@9.4.11.20(c)__sc-windows_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="af675de276974e75910c4bb39f260fc6" version="0ebc39c00c2e419cae21faa5e47fd0fa" lucid_version="qla2xxx.sles15.x86_64_legacy_gen11@10.02.15.00-k1__pubsw-linux_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="5f87cfcaa78847d59e1bfff7203034fc" version="a11e2b841a61400ea5dbbb30416951bb" lucid_version="mlnx_en_roce_mlx5.rhel9u6.x86_64.rpm@26.01__pubsw-linux_en"/>
+      </product_version>
+      <product_version>
+        <id product="fc1120f3f40a4668949b2fe6ec27923f" version="d36a7fbcf3334b399e724c961fc1a020" lucid_version="PICGen11.win.x64@1.0.4(D)__sc-windows-fw_en,ja"/>
+      </product_version>
+      <product_version>
+        <id product="d32e3e2c

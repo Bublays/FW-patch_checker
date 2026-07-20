@@ -1,0 +1,1743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest schema_version="2.0.0.0">
+  <meta lang="en">
+    <product id="e9e7d66071a042078eec11daa5bcf114">
+      <product_version>
+        <id product="e9e7d66071a042078eec11daa5bcf114" version="8551199339ce49a099213497fc341f37" lucid_version="EH000900JWCPN_EH000600JWCPL_EH000300JWCPK_deb_x64@HPDB(B)__sc-linux-fw-drive_de,en,es,fr,it,ja"/>
+        <different>new</different>
+        <build number="1"/>
+        <type id="smartcomponent-linux-firmware-drive"/>
+        <name>
+          <name_xlate lang="en">Online HDD/SSD Flash Component for Ubuntu Linux (x64) - EH000300JWCPK, EH000600JWCPL, EH000900JWCPN, EH000300JXLVR, EH000600JXLVT and EH000900JXLVU Drives</name_xlate>
+        </name>
+        <alt_name>
+          <alt_name_xlate lang="en">EH000300JWCPK, EH000600JWCPL, EH000900JWCPN, EH000300JXLVR, EH000600JXLVT and EH000900JXLVU Drives</alt_name_xlate>
+        </alt_name>
+        <version value="HPDB" revision="B" type_of_change="1"/>
+        <manufacturer_name>
+          <manufacturer_name_xlate lang="en">Hewlett Packard Enterprise</manufacturer_name_xlate>
+        </manufacturer_name>
+        <operating_systems>
+          <operating_system key="11447">
+            <operating_system_xlate>Ubuntu 24.04 LTS</operating_system_xlate>
+          </operating_system>
+          <operating_system key="11045">
+            <operating_system_xlate>Ubuntu 22.04 LTS</operating_system_xlate>
+          </operating_system>
+          <operating_system key="11701">
+            <operating_system_xlate>Ubuntu 26.04 LTS</operating_system_xlate>
+          </operating_system>
+        </operating_systems>
+        <products/>
+        <divisions>
+          <division key="9">
+            <division_xlate lang="en">Storage</division_xlate>
+          </division>
+        </divisions>
+        <category key="2900260">
+          <category_xlate lang="en">Firmware - SAS Storage Disk</category_xlate>
+        </category>
+        <languages langlist="en,ja,de,fr,it,es">
+          <languages_xlate lang="en">English (US),Japanese,German,French,Italian,Spanish</languages_xlate>
+        </languages>
+        <release_date year="2026" month="05" day="28" hour="10" minute="46" second="50"/>
+        <description>
+          <description_xlate lang="en"><![CDATA[This x64 Smart Component provides firmware for the following drive models: EH000300JWCPK, EH000600JWCPL, EH000900JWCPN, EH000300JXLVR, EH000600JXLVT and EH000900JXLVU]]></description_xlate>
+        </description>
+        <prerequisite_notes/>
+        <installation_notes>
+          <installation_notes_xlate lang="en">
+            <installation_notes_xlate_part><![CDATA[<p><strong>To update firmware from Ubuntu Linux operating system on target server:</strong></p>
+
+<p><strong>Updating firmware by installing the deb package:</strong></p>
+
+<ul style="list-style-type:square">
+	<li>Install the firmware deb using the command:&nbsp;&nbsp;<em>dpkg -i .&nbsp;</em>&nbsp;This extracts the contents of the deb&nbsp;to the &#39;/usr/lib/x86_64-linux-gnu&#39; location.</li>
+	<li>The CP&lt;nnnnnn&gt;.scexe script is located in the &#39;scexe-compat&#39; folder. The actual name of the &#39;firmware-hdd--*&#39; folder is based on the version of the&nbsp;deb installed in the first step above. &nbsp;</li>
+	<li>To install firmware, you can execute&nbsp;<strong>ONE</strong>&nbsp;of the following commands:
+	<ul style="list-style-type:square">
+		<li>./CP&lt;nnnnnn&gt;.scexe in the &#39;/usr/lib/x86_64-linux-gnu/scexe-compat&#39; location (OR)</li>
+		<li><em>./setup</em>&nbsp;in the &#39;/usr/lib/x86_64-linux-gnu/firmware-hdd--*&#39; location</li>
+	</ul>
+	</li>
+	<li>The results of the firmware upgrade are saved to the Component.log file, located in the /var/cpq/ directory.</li>
+	<li>To uninstall the deb, run the command:&nbsp;<em>dpkg -r&nbsp;</em>, which is the deb filename without the &#39;.deb&#39; extension.</li>
+</ul>
+
+<p><strong>Updating firmware without installing the deb:</strong></p>
+
+<ul style="list-style-type:square">
+	<li>Extract the contents of the deb using the command:&nbsp;<em>dpkg -x.&nbsp;</em>&nbsp;This extracts the contents of the deb to &#39;usr&#39; folder in the current directory.</li>
+	<li>Navigate to the&nbsp;&#39;usr/lib/x86_64-linux-gnu/firmware-hdd--*&#39; location and run&nbsp;<em>./setup</em>&nbsp;to update the firmware. The actual name of the &#39;firmware-hdd--*&#39; folder is based on the version of the deb installed in the step above.</li>
+	<li>The results of the firmware upgrade are saved to the Component.log file, located in the /var/cpq/ directory.</li>
+</ul>
+
+<p><strong>Additional Information:</strong></p>
+
+<p>Installing the firmware deb package (dpkg -i) does not update the firmware.&nbsp;&nbsp;It merely extracts the deb content to the local system. Updating the firmware on the local system requires following the&nbsp;above outlined steps.</p>
+
+<p><strong>To use Smart Update Manager from the Service Pack for ProLiant:</strong><br />
+<br />
+<strong>Offline:</strong></p>
+
+<ul style="list-style-type:square">
+	<li>Place the&nbsp;<a href="https://www.hpe.com/servers/spp/download" style="color:#467886; text-decoration:underline">Service Pack for ProLiant</a>&nbsp;on a USB key using the&nbsp;<a href="https://support.hpe.com/connect/s/softwaredetails?softwareId=MTX_360731071b404454b454390208&amp;language=en_US" style="color:#467886; text-decoration:underline">USB Key Utility for Windows</a>.</li>
+	<li>Place the desired firmware to be updated in the directory, /packages on the USB key.</li>
+	<li>Boot from the newly created Service Pack for Proliant USB key.</li>
+	<li>Follow Smart Update Manager steps to complete firmware update.</li>
+</ul>
+
+<p><strong>Online:</strong></p>
+
+<ul style="list-style-type:square">
+	<li>Login as root. (You must be root in order to apply the ROM update.)</li>
+	<li>Place the desired firmware to be updated in the directory, /packages.</li>
+	<li>Run&nbsp;<em>launch_sum.sh</em>&nbsp;script which is found in the root of the ISO.</li>
+</ul>
+
+<p>Follow the instructions on the screen.</p>
+]]></installation_notes_xlate_part>
+          </installation_notes_xlate>
+        </installation_notes>
+        <availability_notes/>
+        <documentation_notes>
+          <documentation_notes_xlate lang="en">
+            <documentation_notes_xlate_part><![CDATA[<p><strong>Deliverable Name:</strong><br />
+&nbsp; &nbsp;&nbsp; Online&nbsp;HDD/SSD Flash Component for Ubuntu&nbsp;Linux (x64) - EH000300JWCPK, EH000600JWCPL, EH000900JWCPN, EH000300JXLVR, EH000600JXLVT and EH000900JXLVU Drives</p>
+
+<p><strong>Release Version and/or Date:</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp; HPDB<br />
+<strong>Last Recommended or Critical Version:</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp; None<br />
+<strong>Previous Version of Firmware:</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp; None<br />
+<strong>Firmware Dependency:</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp; None</p>
+
+<p><strong>Enhancements/New Features:</strong></p>
+
+<ul>
+	<li>Added support for Ubuntu 26.04</li>
+</ul>
+
+<p><strong>Problems Fixed:</strong></p>
+
+<ul>
+	<li>Fixes&nbsp;Maximum Temperature Reporting in system log.</li>
+</ul>
+
+<p><strong>Known Issues:</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp; None</p>
+]]></documentation_notes_xlate_part>
+          </documentation_notes_xlate>
+        </documentation_notes>
+        <upgrade_requirement value="Recommended"/>
+        <prerequisites>
+          <supported_operating_systems>
+            <supported_operating_system platform="ubuntu2404" major="24" minor="04" sr="OEM" name="Ubuntu 24.04 LTS"/>
+            <supported_operating_system platform="ubuntu2204" major="22" minor="04" sr="OEM" name="Ubuntu 22.04 LTS"/>
+            <supported_operating_system platform="ubuntu2604" major="26" minor="04" sr="OEM" name="Ubuntu 26.04 LTS"/>
+          </supported_operating_systems>
+          <supported_devices>
+            <supported_devices_and>
+              <supported_device type="sas">
+                <supported_device_data name="id">EH000300JWCPK</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="sas">
+                <supported_device_data name="id">EH000600JWCPL</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="sas">
+                <supported_device_data name="id">EH000900JWCPN</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="sas">
+                <supported_device_data name="id">EH000900JXLVU</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="sas">
+                <supported_device_data name="id">EH000300JXLVR</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="sas">
+                <supported_device_data name="id">EH000600JXLVT</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+          </supported_devices>
+          <required_diskspace size_kb="4000"/>
+        </prerequisites>
+        <installation>
+          <install>
+            <install_caps silent="yes" needuseracct="no"/>
+            <command>CP040309.scexe</command>
+            <command_params/>
+            <reboot_required value="no"/>
+            <reboot_details value="Environment Dependent">
+              <reboot_details_xlate lang="en">Reboot may be required after installation for updates to take effect and hardware stability to be maintained.</reboot_details_xlate>
+            </reboot_details>
+            <per_device_install_time_seconds>120</per_device_install_time_seconds>
+          </install>
+          <uninstall>
+            <uninstall_caps silent="no"/>
+            <command/>
+            <command_params/>
+            <reboot_required value="no"/>
+          </uninstall>
+        </installation>
+        <sw_keys>
+          <sw_keys_and>
+            <sw_key name="EH000900JWCPN" guid="">
+              <sw_key_expectedpath>firmware:sd:SAS</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+          <sw_keys_and>
+            <sw_key name="EH000600JWCPL" guid="">
+              <sw_key_expectedpath>firmware:sd:SAS</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+          <sw_keys_and>
+            <sw_key name="EH000300JWCPK" guid="">
+              <sw_key_expectedpath>firmware:sd:SAS</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+          <sw_keys_and>
+            <sw_key name="EH000900JXLVU" guid="">
+              <sw_key_expectedpath>firmware:sd:SAS</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+          <sw_keys_and>
+            <sw_key name="EH000300JXLVR" guid="">
+              <sw_key_expectedpath>firmware:sd:SAS</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+          <sw_keys_and>
+            <sw_key name="EH000600JXLVT" guid="">
+              <sw_key_expectedpath>firmware:sd:SAS</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+        </sw_keys>
+        <filename>firmware-hdd-3d97759111_0HPDB-2.1_amd64.deb</filename>
+        <component_config/>
+        <files>
+          <file size="4MB" bytes="4318612" date_modified="2026-04-28T06:37:59" md5sum="3157f9bacf2b53f0cc0b93fe81bd42c2" sha1sum="b646f8cdd676047c61f58a07cc2a53830cabd899" version="0HPDB" release="2.1">
+            <name>firmware-hdd-3d97759111_0HPDB-2.1_amd64.deb</name>
+            <url id="http://ftp.hp.com"/>
+            <url id="file://.">file://./packages/firmware-hdd-3d97759111_0HPDB-2.1_amd64.deb</url>
+            <file_list>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-3d97759111-HPDB-2.1/.cpq_package.inc</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-3d97759111-HPDB-2.1/.setup</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-3d97759111-HPDB-2.1/CP071768.xml</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-3d97759111-HPDB-2.1/SKESTNDB.rel</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-3d97759111-HPDB-2.1/libsetup.so</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-3d97759111-HPDB-2.1/mnv_cli</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-3d97759111-HPDB-2.1/payload.json</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-3d97759111-HPDB-2.1/setup</file>
+              <file>./usr/lib/x86_64-linux-gnu/scexe-compat/CP071768.scexe</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-3d97759111-HPDB-2.1/hpsetup</file>
+              <file>./usr/lib/x86_64-linux-gnu/hp-scexe-compat/CP071768.scexe</file>
+            </file_list>
+          </file>
+        </files>
+        <file_details/>
+        <payload>
+          <DeviceClass>F6DE0320-2E0F-489A-B238-6DD8AE7C3811</DeviceClass>
+          <Devices>
+            <Device>
+              <DeviceName>EH000900JWCPN</DeviceName>
+              <FirmwareImages>
+                <DelayAfterInstallSec>10</DelayAfterInstallSec>
+                <DirectFlashOk>False</DirectFlashOk>
+                <FileName>SKESTNDB.rel</FileName>
+                <InstallDurationSec>300</InstallDurationSec>
+                <Order>1</Order>
+                <ResetRequired>False</ResetRequired>
+                <Type>Firmware</Type>
+                <UefiFlashable>False</UefiFlashable>
+              </FirmwareImages>
+              <Target>452340a5-3048-3030-3930-304a5743504e</Target>
+              <Version>HPDB</Version>
+            </Device>
+            <Device>
+              <DeviceName>EH000600JWCPL</DeviceName>
+              <FirmwareImages>
+                <DelayAfterInstallSec>10</DelayAfterInstallSec>
+                <DirectFlashOk>False</DirectFlashOk>
+                <FileName>SKESTNDB.rel</FileName>
+                <InstallDurationSec>300</InstallDurationSec>
+                <Order>1</Order>
+                <ResetRequired>False</ResetRequired>
+                <Type>Firmware</Type>
+                <UefiFlashable>False</UefiFlashable>
+              </FirmwareImages>
+              <Target>452340a5-3048-3030-3630-304a5743504c</Target>
+              <Version>HPDB</Version>
+            </Device>
+            <Device>
+              <DeviceName>EH000300JWCPK</DeviceName>
+              <FirmwareImages>
+                <DelayAfterInstallSec>10</DelayAfterInstallSec>
+                <DirectFlashOk>False</DirectFlashOk>
+                <FileName>SKESTNDB.rel</FileName>
+                <InstallDurationSec>300</InstallDurationSec>
+                <Order>1</Order>
+                <ResetRequired>False</ResetRequired>
+                <Type>Firmware</Type>
+                <UefiFlashable>False</UefiFlashable>
+              </FirmwareImages>
+              <Target>452340a5-3048-3030-3330-304a5743504b</Target>
+              <Version>HPDB</Version>
+            </Device>
+            <Device>
+              <DeviceName>EH000900JXLVU</DeviceName>
+              <FirmwareImages>
+                <DelayAfterInstallSec>10</DelayAfterInstallSec>
+                <DirectFlashOk>False</DirectFlashOk>
+                <FileName>SKESTNDB.rel</FileName>
+                <InstallDurationSec>300</InstallDurationSec>
+                <Order>1</Order>
+                <ResetRequired>False</ResetRequired>
+                <Type>Firmware</Type>
+                <UefiFlashable>False</UefiFlashable>
+              </FirmwareImages>
+              <Target>452340a5-3048-3030-3930-304a584c5655</Target>
+              <Version>HPDB</Version>
+            </Device>
+            <Device>
+              <DeviceName>EH000300JXLVR</DeviceName>
+              <FirmwareImages>
+                <DelayAfterInstallSec>10</DelayAfterInstallSec>
+                <DirectFlashOk>False</DirectFlashOk>
+                <FileName>SKESTNDB.rel</FileName>
+                <InstallDurationSec>300</InstallDurationSec>
+                <Order>1</Order>
+                <ResetRequired>False</ResetRequired>
+                <Type>Firmware</Type>
+                <UefiFlashable>False</UefiFlashable>
+              </FirmwareImages>
+              <Target>452340a5-3048-3030-3330-304a584c5652</Target>
+              <Version>HPDB</Version>
+            </Device>
+            <Device>
+              <DeviceName>EH000600JXLVT</DeviceName>
+              <FirmwareImages>
+                <DelayAfterInstallSec>10</DelayAfterInstallSec>
+                <DirectFlashOk>False</DirectFlashOk>
+                <FileName>SKESTNDB.rel</FileName>
+                <InstallDurationSec>300</InstallDurationSec>
+                <Order>1</Order>
+                <ResetRequired>False</ResetRequired>
+                <Type>Firmware</Type>
+                <UefiFlashable>False</UefiFlashable>
+              </FirmwareImages>
+              <Target>452340a5-3048-3030-3630-304a584c5654</Target>
+              <Version>HPDB</Version>
+            </Device>
+          </Devices>
+          <Type>Firmware</Type>
+          <UpdatableBy>RuntimeAgent</UpdatableBy>
+        </payload>
+      </product_version>
+    </product>
+    <product id="954cfb4b6d544fe6ae4246347676d978">
+      <product_version>
+        <id product="954cfb4b6d544fe6ae4246347676d978" version="cc65dcf4f2e94cdba3ba96a38ab716d2" lucid_version="UBM7_FWPKG@1.10(B)__fwpkg-generic_en"/>
+        <different>new</different>
+        <build number="3"/>
+        <type id="universal-fw-generic"/>
+        <name>
+          <name_xlate lang="en">Firmware Package - UBM7 Backplane PIC PLDM Firmware</name_xlate>
+        </name>
+        <alt_name>
+          <alt_name_xlate lang="en">Firmware Package - UBM7 Backplane PIC PLDM Firmware</alt_name_xlate>
+        </alt_name>
+        <version value="1.10" revision="B" type_of_change="1"/>
+        <manufacturer_name>
+          <manufacturer_name_xlate lang="en">Hewlett Packard Enterprise</manufacturer_name_xlate>
+        </manufacturer_name>
+        <operating_systems>
+          <operating_system key="9531">
+            <operating_system_xlate>Microsoft Windows Server 2019</operating_system_xlate>
+          </operating_system>
+          <operating_system key="9398">
+            <operating_system_xlate>SUSE Linux Enterprise Server 15</operating_system_xlate>
+          </operating_system>
+          <operating_system key="10705">
+            <operating_system_xlate>Microsoft Windows Server 2022</operating_system_xlate>
+          </operating_system>
+          <operating_system key="11032">
+            <operating_system_xlate>VMware ESXi 8.0</operating_system_xlate>
+          </operating_system>
+          <operating_system key="10967">
+            <operating_system_xlate>Red Hat Enterprise Linux 9 Server</operating_system_xlate>
+          </operating_system>
+          <operating_system key="11458">
+            <operating_system_xlate>Microsoft Windows Server 2025</operating_system_xlate>
+          </operating_system>
+        </operating_systems>
+        <products>
+          <product rom="A55"/>
+          <product rom="U54"/>
+          <product rom="U59"/>
+          <product rom="A56"/>
+          <product rom="U63"/>
+          <product rom="U58"/>
+          <product rom="U57"/>
+        </products>
+        <divisions>
+          <division key="68">
+            <division_xlate lang="en">ServerOptions</division_xlate>
+          </division>
+          <division key="6">
+            <division_xlate lang="en">Server</division_xlate>
+          </division>
+        </divisions>
+        <category key="2900027">
+          <category_xlate lang="en">Firmware - System</category_xlate>
+        </category>
+        <languages langlist="en">
+          <languages_xlate lang="en">English (US)</languages_xlate>
+        </languages>
+        <release_date year="2025" month="03" day="13" hour="00" minute="00" second="00"/>
+        <description>
+          <description_xlate lang="en"><![CDATA[This firmware package contains PLDM firmware for UBM7 storage backplanes.]]></description_xlate>
+        </description>
+        <prerequisite_notes>
+          <prerequisite_notes_xlate lang="en">
+            <prerequisite_notes_xlate_part><![CDATA[<ul>
+	<li>For Gen11 servers, iLO 6 version 1.10 or later is required.</li>
+</ul>
+]]></prerequisite_notes_xlate_part>
+          </prerequisite_notes_xlate>
+        </prerequisite_notes>
+        <installation_notes>
+          <installation_notes_xlate lang="en">
+            <installation_notes_xlate_part><![CDATA[<p>Flash the PLDM firmware using any below methods</p>
+
+<ol>
+	<li>Flash using iLOrest tool&nbsp;</li>
+	<li>Flash using&nbsp;Smart Update Manager (SUM).</li>
+	<li>Flash from iLO GUI</li>
+</ol>
+
+<p>1. To flash this firmware package, use the following iLOrest command. &nbsp;See&nbsp;<a href="http://www.hpe.com/servers/resttool">http://www.hpe.com/servers/resttool</a>&nbsp;to download the latest version of the iLOrest tool.</p>
+
+<p>&nbsp; &nbsp; localhost OS example:<br />
+<strong><em>&nbsp; &nbsp; ilorest flashfwpkg &lt;file_name.fwpkg&gt;&nbsp;</em></strong></p>
+
+<p>&nbsp; &nbsp; remote example:<br />
+<strong><em>&nbsp; &nbsp; ilorest flashfwpkg &lt;file_name.fwpkg&gt; --url &lt;iLO_IP_Address&gt; -u &lt;iLO_username&gt; -p &lt;iLO_password&gt;</em></strong></p>
+
+<p>2. This firmware package can also be installed with the latest version of Smart Update Manager (SUM).</p>
+
+<p><strong>&nbsp; &nbsp; Supplemental updates</strong>&nbsp;for supported ProLiant servers and options can be done by using&nbsp;SUM, which is found on the&nbsp;<strong><a href="http://www.hpe.com/info/spp">Service Pack for ProLiant</a></strong>&nbsp;(SPP) ISO.</p>
+
+<ul>
+	<li>
+	<p>Place the Service Pack for ProLiant on a USB key using the&nbsp;USB Key Creator Utility.</p>
+	</li>
+	<li>
+	<p>Place the desired&nbsp;firmware packages and components&nbsp;to be updated in the directory&nbsp;&quot;\packages&quot; on the USB key.</p>
+	</li>
+</ul>
+
+<p>&nbsp; &nbsp; &nbsp;Update the firmware and software&nbsp;in the usual manner.</p>
+
+<p>3.&nbsp;Flash from iLO GUI</p>
+
+<ul>
+	<li>Browse iLO IP using any browser and login using the credential&nbsp;</li>
+	<li>Make sure the PLDM supported adapter is present in the server</li>
+	<li>Go to iLO GUI -&gt; Click on &quot;Firmware and OS software&quot; from left side&nbsp;&nbsp;-&gt; Click on &quot;Update Firmware&quot; -&gt; Click on &quot;Choose File&quot; and browse to the supported PLDM file -&gt; Then click on &quot;Flash&quot; button.&nbsp;</li>
+	<li>Update status will be show in the Top and a log entry can be seen in Integrated Managenment Log (IML)&nbsp;</li>
+</ul>
+]]></installation_notes_xlate_part>
+          </installation_notes_xlate>
+        </installation_notes>
+        <availability_notes/>
+        <documentation_notes/>
+        <upgrade_requirement value="Recommended"/>
+        <prerequisites>
+          <supported_operating_systems>
+            <supported_operating_system platform="oi" major="0" minor="0" sr="OEM" name="Cross Operating System"/>
+            <supported_operating_system platform="vmware_esx_server" major="7" minor="0" sr="OEM" name="VMware ESXi 7.0"/>
+            <supported_operating_system platform="nt_x86-64" major="10" minor="0" sr="OEM" minimumbuild="17600" maximumbuild="18999" name="Microsoft Windows Server 2019"/>
+            <supported_operating_system platform="red_hat_enterprise_linux_x86_64" major="8" minor="0" sr="OEM" name="Red Hat Enterprise Linux 8 Server"/>
+            <supported_operating_system platform="suse_linux_enterprise_server_x86_64" major="15" minor="0" sr="OEM" name="SUSE Linux Enterprise Server 15"/>
+            <supported_operating_system platform="nt_x86-64" major="10" minor="0" sr="OEM" minimumbuild="20317" maximumbuild="25398" name="Microsoft Windows Server 2022"/>
+            <supported_operating_system platform="vmware_esx_server" major="8" minor="0" sr="OEM" name="VMware ESXi 8.0"/>
+            <supported_operating_system platform="red_hat_enterprise_linux_x86_64" major="9" minor="0" sr="OEM" name="Red Hat Enterprise Linux 9"/>
+            <supported_operating_system platform="nt_x86-64" major="10" minor="0" sr="OEM" minimumbuild="25399" name="Microsoft Windows Server 2025"/>
+          </supported_operating_systems>
+          <supported_devices>
+            <supported_devices_and>
+              <supported_device type="nvmeubmpicnew">
+                <supported_device_data name="id">9675b54e-1c96-44c3-a7a1-901507000000</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+          </supported_devices>
+          <required_diskspace size_kb="11000"/>
+        </prerequisites>
+        <installation>
+          <install>
+            <install_caps silent="yes" needuseracct="no"/>
+            <command/>
+            <command_params/>
+            <reboot_required value="no"/>
+            <reboot_details value="No">
+              <reboot_details_xlate lang="en">Reboot is not required after installation for updates to take effect and hardware stability to be maintained.</reboot_details_xlate>
+            </reboot_details>
+            <per_device_install_time_seconds>600</per_device_install_time_seconds>
+          </install>
+          <uninstall>
+            <uninstall_caps silent="yes"/>
+            <command/>
+            <command_params/>
+            <reboot_required value="no"/>
+          </uninstall>
+        </installation>
+        <sw_keys>
+          <sw_keys_and>
+            <sw_key name="UBM7PIC" guid="">
+              <sw_key_expectedpath>firmware:sd:ubm</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+        </sw_keys>
+        <filename>HPE_UBM7_1.10_B.fwpkg</filename>
+        <component_config/>
+        <files>
+          <file size="77KB" bytes="79340" date_modified="2025-02-14T06:45:14" md5sum="bc8e17a3819317e36a826dc7e54261b1" sha1sum="140991a471116dafef3d5e11b6318fe775043756">
+            <name>HPE_UBM7_1.10_B.fwpkg</name>
+            <url id="http://ftp.hp.com"/>
+            <url id="file://.">file://./packages/HPE_UBM7_1.10_B.fwpkg</url>
+            <file_list>
+              <file>HPE_UBM7_1.10_B.HPb</file>
+              <file>HPE_UBM7_1.10_B.xml</file>
+              <file>payload.json</file>
+            </file_list>
+          </file>
+        </files>
+        <file_details/>
+        <payload>
+          <DeviceClass>4149ebb7-d64b-4654-b679-4280f349ea50</DeviceClass>
+          <Devices>
+            <Device>
+              <DeviceName>UBM7 Backplane PIC</DeviceName>
+              <FirmwareImages>
+                <DelayAfterInstallSec>0</DelayAfterInstallSec>
+                <DirectFlashOk>True</DirectFlashOk>
+                <FileName>HPE_UBM7_1.10_B.HPb</FileName>
+                <InstallDurationSec>600</InstallDurationSec>
+                <Order>1</Order>
+                <PLDMImage>True</PLDMImage>
+                <ResetRequired>False</ResetRequired>
+                <ServerPowerOff>False</ServerPowerOff>
+                <SysPowerON>True</SysPowerON>
+                <Type>Firmware</Type>
+                <UefiFlashable>False</UefiFlashable>
+              </FirmwareImages>
+              <Target>9675b54e-1c96-44c3-a7a1-901507000000</Target>
+              <Version>1.10</Version>
+            </Device>
+          </Devices>
+          <PackageFormat>FWPKG-v2</PackageFormat>
+          <Type>Firmware</Type>
+          <UpdatableBy>Bmc</UpdatableBy>
+        </payload>
+      </product_version>
+    </product>
+    <product id="270849c2dba647ceb1f5f641d466f681">
+      <product_version>
+        <id product="270849c2dba647ceb1f5f641d466f681" version="108c2c6c505e48f1a6dd0e16f4cb61d5" lucid_version="bnxtnet.vmware90@2025.11.00__component-vmware_en"/>
+        <different>new</different>
+        <build number="3"/>
+        <type id="component-vmware"/>
+        <name>
+          <name_xlate lang="en">HPE Broadcom NetXtreme-E Drivers for VMware vSphere 9.0</name_xlate>
+        </name>
+        <alt_name>
+          <alt_name_xlate lang="en">HPE Broadcom NetXtreme-E Drivers for VMware vSphere 9.0</alt_name_xlate>
+        </alt_name>
+        <version value="2025.11.00" revision="" type_of_change="1"/>
+        <manufacturer_name>
+          <manufacturer_name_xlate lang="en">Hewlett Packard Enterprise</manufacturer_name_xlate>
+        </manufacturer_name>
+        <operating_systems>
+          <operating_system key="11449">
+            <operating_system_xlate>VMware ESXi 9.0</operating_system_xlate>
+          </operating_system>
+        </operating_systems>
+        <products>
+          <product rom="H11"/>
+          <product rom="U63"/>
+          <product rom="A59"/>
+          <product rom="U58"/>
+          <product rom="A55"/>
+          <product rom="A58"/>
+          <product rom="U65"/>
+          <product rom="U62"/>
+          <product rom="U54"/>
+          <product rom="U59"/>
+          <product rom="A56"/>
+        </products>
+        <divisions>
+          <division key="65">
+            <division_xlate lang="en">Networking</division_xlate>
+          </division>
+          <division key="6">
+            <division_xlate lang="en">Server</division_xlate>
+          </division>
+          <division key="68">
+            <division_xlate lang="en">ServerOptions</division_xlate>
+          </division>
+        </divisions>
+        <category key="11300095">
+          <category_xlate lang="en">Driver - Network</category_xlate>
+        </category>
+        <languages langlist="en">
+          <languages_xlate lang="en">English (US)</languages_xlate>
+        </languages>
+        <release_date year="2025" month="09" day="27" hour="06" minute="17" second="07"/>
+        <description>
+          <description_xlate lang="en"><![CDATA[This product contains the NIC and RoCE drivers for HPE Broadcom NetXtreme-E devices running under VMware vSphere 9.0.]]></description_xlate>
+        </description>
+        <prerequisite_notes/>
+        <installation_notes>
+          <installation_notes_xlate lang="en">
+            <installation_notes_xlate_part><![CDATA[<p><strong>To use Smart Update Manager from the HPE Service Pack for ProLiant:</strong></p>
+
+<ol>
+	<li>Download the appropriate&nbsp;HPE Service Pack for ProLiant baseline</li>
+	<li>Add the component files to the&nbsp;Service Pack for ProLiant using SUM from the ISO to create a new custom ISO</li>
+	<li>Mount the&nbsp;new&nbsp;Service Pack for ProLiant on a server running Windows or Linux that has a network connection to the ESXi host to be updated</li>
+	<li>Run Smart Update Manager via launch_sum.bat for Windows or launch_sum.sh for Linux</li>
+	<li>Add the ESXi host to be updated as a remote target node</li>
+	<li>Enter the IP address or hostname of the ESXi host to be updated followed by the ESXi host credentials</li>
+	<li>Select both the Additional Package with the added component and the Service Pack for ProLiant Baseline on the node Inventory page.</li>
+	<li>Follow Smart Update Manager Steps and complete the update using Smart Update Tools along with configuring Smart Update Tools on the server</li>
+	<li>Refer to the Smart Update Manager and iSUT documentation for detailed instructions at&nbsp;<a href="https://www.hpe.com/info/SmartUpdate/docs">https://www.hpe.com/info/SmartUpdate/docs</a></li>
+</ol>
+
+<p><strong>To update the driver using VMware tools:</strong></p>
+
+<ol>
+	<li>Unzip this HPE component to extract the driver offline bundle</li>
+	<li>Use VMware vSphere Lifecycle Manager or esxcli commands to install the offline bundle.</li>
+	<li>Refer to VMware documentation for information on vSphere Lifecycle Manager and the esxcli commands</li>
+</ol>
+
+<p><strong>To update the driver using HPE OneView and the HPE Smart Update Tool:</strong></p>
+
+<ol>
+	<li>Upload the HPE Service Pack for ProLiant baseline and the component files into HPE OneView</li>
+	<li>Create a custom firmware bundle that includes the hotfix components</li>
+	<li>Apply the custom baseline to a logical enclosure, server profile, or server profile template</li>
+	<li>Install the driver from the custom baseline by choosing the profile installation method Firmware and OS Driver using Smart Update Tools along with configuring Smart Update Tools on the server</li>
+	<li>Refer to the HPE OneView online help and iSUT documentation for detailed instructions at&nbsp;<a href="https://www.hpe.com/info/SmartUpdate/docs">https://www.hpe.com/info/SmartUpdate/docs</a></li>
+</ol>
+]]></installation_notes_xlate_part>
+          </installation_notes_xlate>
+        </installation_notes>
+        <availability_notes/>
+        <documentation_notes>
+          <documentation_notes_xlate lang="en">
+            <documentation_notes_xlate_part><![CDATA[<p>This product contains NIC driver version&nbsp;233.0.156.0 and RoCE driver version&nbsp;233.0.156.0.</p>
+]]></documentation_notes_xlate_part>
+          </documentation_notes_xlate>
+        </documentation_notes>
+        <upgrade_requirement value="Recommended"/>
+        <prerequisites>
+          <supported_operating_systems>
+            <supported_operating_system platform="vmware_esx_server" major="9" minor="0" sr="OEM" name="VMware ESXi 9.0"/>
+          </supported_operating_systems>
+          <supported_devices>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16D7</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">0211</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16D7</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">020E</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16D7</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1597</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16D7</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1596</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16D8</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">0212</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16D8</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">020C</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16D7</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">02C3</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16D7</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">02C5</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16D8</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1593</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16D8</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1592</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16D6</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1595</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16D6</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1594</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EE</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">0212</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EE</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">020C</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EC</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">0211</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EC</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">020E</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EE</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1593</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EE</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1592</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">1760</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">E124</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">1760</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">E324</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EF</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">0212</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EF</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">020C</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16ED</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">0211</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16ED</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">020E</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EF</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1593</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EF</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1592</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">1760</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">E124</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">1760</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">E324</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EB</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1595</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EB</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1594</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16ED</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1597</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16ED</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1596</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16DE</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1595</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16DE</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1594</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EC</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1597</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EC</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1596</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EC</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">02C3</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16EC</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">02C5</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16ED</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">02C3</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">16ED</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">02C5</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">1760</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">E124</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">1760</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">E324</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14e4</supported_device_data>
+                <supported_device_data name="dev">1801</supported_device_data>
+                <supported_device_data name="subven">14e4</supported_device_data>
+                <supported_device_data name="subdev">1599</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14e4</supported_device_data>
+                <supported_device_data name="dev">1801</supported_device_data>
+                <supported_device_data name="subven">14e4</supported_device_data>
+                <supported_device_data name="subdev">1598</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14e4</supported_device_data>
+                <supported_device_data name="dev">1804</supported_device_data>
+                <supported_device_data name="subven">14e4</supported_device_data>
+                <supported_device_data name="subdev">1599</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14e4</supported_device_data>
+                <supported_device_data name="dev">1804</supported_device_data>
+                <supported_device_data name="subven">14e4</supported_device_data>
+                <supported_device_data name="subdev">1598</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">1751</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1599</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">14E4</supported_device_data>
+                <supported_device_data name="dev">1751</supported_device_data>
+                <supported_device_data name="subven">14E4</supported_device_data>
+                <supported_device_data name="subdev">1598</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+          </supported_devices>
+          <required_diskspace size_kb="512"/>
+        </prerequisites>
+        <installation>
+          <install>
+            <install_caps silent="no" needuseracct="no"/>
+            <command/>
+            <command_params>maintenancemode=true</command_params>
+            <reboot_required value="yes"/>
+            <reboot_details value="Required">
+              <reboot_details_xlate lang="en">Reboot is required after installation for updates to take effect and hardware stability to be maintained.</reboot_details_xlate>
+            </reboot_details>
+            <per_device_install_time_seconds>360</per_device_install_time_seconds>
+          </install>
+          <uninstall>
+            <uninstall_caps silent="no"/>
+            <command/>
+            <command_params/>
+            <reboot_required value="no"/>
+          </uninstall>
+        </installation>
+        <sw_keys>
+          <sw_keys_and>
+            <sw_key name="Broadcom-bnxt-Net-RoCE:235.1.240.0-1OEM.900.0.24755229" guid="20a6e8e4-bf33-4c71-a6bf-d9ecc7b58dd7">
+              <sw_key_expectedpath>driver.component:vmware:zip</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+          <sw_keys_and>
+            <sw_key name="bnxtroce:235.1.140.0-1OEM.900.0.24755229" guid="20a6e8e4-bf33-4c71-a6bf-d9ec55e4f476">
+              <sw_key_expectedpath>driver:vmware:zip</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+          <sw_keys_and>
+            <sw_key name="bnxtnet:235.1.140.0-1OEM.900.0.24755229" guid="20a6e8e4-bf33-4c71-a6bf-d9ec158e843a">
+              <sw_key_expectedpath>driver:vmware:zip</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+        </sw_keys>
+        <filename>cp068543.zip</filename>
+        <component_config/>
+        <files>
+          <file size="376KB" bytes="385329" date_modified="2025-10-02T08:11:56" md5sum="b27df3eb2c38b85d796498dc45a206a3" sha1sum="0c5bff3fe4716ad90bca5cd8175ee17c28c49503">
+            <name>cp068543.zip</name>
+            <url id="http://ftp.hp.com"/>
+            <url id="file://.">file://./packages/cp068543.zip</url>
+            <file_list>
+              <file>Broadcom-bnxt-Net-RoCE_235.1.240.0-1OEM.900.0.24755229.zip</file>
+              <file>cp068543.xml</file>
+              <file>Broadcom-bnxt-Net-RoCE_235.1.240.0-1OEM.900.0.24755229.zip/index.xml</file>
+              <file>Broadcom-bnxt-Net-RoCE_235.1.240.0-1OEM.900.0.24755229.zip/vendor-index.xml</file>
+              <file>Broadcom-bnxt-Net-RoCE_235.1.240.0-1OEM.900.0.24755229.zip/metadata.zip</file>
+              <file>Broadcom-bnxt-Net-RoCE_235.1.240.0-1OEM.900.0.24755229.zip/vib20/bnxtroce/BCM_bootbank_bnxtroce_235.1.140.0-1OEM.900.0.24755229.vib</file>
+              <file>Broadcom-bnxt-Net-RoCE_235.1.240.0-1OEM.900.0.24755229.zip/vib20/bnxtnet/BCM_bootbank_bnxtnet_235.1.140.0-1OEM.900.0.24755229.vib</file>
+              <file>Broadcom-bnxt-Net-RoCE_235.1.240.0-1OEM.900.0.24755229.zip/metadata.zip/vendor-index.xml</file>
+              <file>Broadcom-bnxt-Net-RoCE_235.1.240.0-1OEM.900.0.24755229.zip/metadata.zip/vmware.xml</file>
+              <file>Broadcom-bnxt-Net-RoCE_235.1.240.0-1OEM.900.0.24755229.zip/metadata.zip/vibs/bnxtroce-3432817445946840263.xml</file>
+              <file>Broadcom-bnxt-Net-RoCE_235.1.240.0-1OEM.900.0.24755229.zip/metadata.zip/vibs/bnxtnet-149725367173716768.xml</file>
+              <file>Broadcom-bnxt-Net-RoCE_235.1.240.0-1OEM.900.0.24755229.zip/metadata.zip/bulletins/Broadcom-bnxt-Net-RoCE_235.1.240.0-1OEM.900.0.24755229.xml</file>
+            </file_list>
+          </file>
+        </files>
+        <file_details type="VibMetaData">
+          <metadataResponse>
+            <version>3.0</version>
+            <timestamp>2025-09-30T03:47:47.558377</timestamp>
+            <bulletin>
+              <id>Broadcom-bnxt-Net-RoCE_235.1.240.0-1OEM.900.0.24755229</id>
+              <vendor>Broadcom</vendor>
+              <summary>Broadcom NetXtreme-E VMKAPI network and RoCE driver</summary>
+              <severity>general</severity>
+              <category>enhancement</category>
+              <urgency>important</urgency>
+              <releaseType>extension</releaseType>
+              <description>Broadcom NetXtreme-E VMKAPI network and RoCE driver for VMWare ESXi</description>
+              <kbUrl>http://kb.vmware.com/kb/example.html</kbUrl>
+              <contact>dcsg.support@broadcom.com</contact>
+              <componentNameSpec name="Broadcom-bnxt-Net-RoCE" uiString="Broadcom NetXtreme-E VMKAPI network and RoCE driver for VMWare ESXi"/>
+              <componentVersionSpec version="235.1.240.0-1OEM.900.0.24755229" uiString="235.1.240.0-1OEM"/>
+              <releaseDate>2025-08-19T02:24:52+00:00</releaseDate>
+              <platforms>
+                <softwarePlatform version="9.0.0" locale="" productLineID="embeddedEsx"/>
+              </platforms>
+              <vibList>
+                <vib>
+                  <vibVersion>1.4.5</vibVersion>
+                  <vibID>BCM_bootbank_bnxtnet_235.1.140.0-1OEM.900.0.24755229</vibID>
+                  <name>bnxtnet</name>
+                  <version>235.1.140.0-1OEM.900.0.24755229</version>
+                  <vendor>BCM</vendor>
+                  <vibType>bootbank</vibType>
+                  <summary>VMware Esx VIB</summary>
+                  <systemReqs>
+                    <maintenanceMode>true</maintenanceMode>
+                    <swPlatform version="9.0" locale="" productLineID="embeddedEsx"/>
+                  </systemReqs>
+                  <relationships>
+                    <depends>
+                      <constraint name="vmkapi_3_0_0_0"/>
+                      <constraint name="zstd-compression" relation="=" version="1.0"/>
+                    </depends>
+                    <conflicts/>
+                    <replaces/>
+                    <provides/>
+                    <compatibleWith/>
+                  </relationships>
+                  <postInstall>
+                    <rebootRequired>true</rebootRequired>
+                    <hostdRestart>false</hostdRestart>
+                  </postInstall>
+                  <softwareTags>
+                    <tag>PCIID 14e41604</tag>
+                    <tag>PCIID 14e4160414e4d140</tag>
+                    <tag>PCIID 14e4160414e4d340</tag>
+                    <tag>PCIID 14e41605</tag>
+                    <tag>PCIID 14e4160514e4d140</tag>
+                    <tag>PCIID 14e4160514e4d340</tag>
+                    <tag>PCIID 14e41606</tag>
+                    <tag>PCIID 14e41609</tag>
+                    <tag>PCIID 14e4160914e4d140</tag>
+                    <tag>PCIID 14e4160914e4d340</tag>
+                    <tag>PCIID 14e41614</tag>
+                    <tag>PCIID 14e4161414e4d140</tag>
+                    <tag>PCIID 14e4161414e4d340</tag>
+                    <tag>PCIID 14e41614152d8b11</tag>
+                    <tag>PCIID 14e4161417aa4047</tag>
+                    <tag>PCIID 14e4161417aa4100</tag>
+                    <tag>PCIID 14e4161417aa4101</tag>
+                    <tag>PCIID 14e4161417aa4102</tag>
+                    <tag>PCIID 14e416c0</tag>
+                    <tag>PCIID 14e416c1</tag>
+                    <tag>PCIID 14e416cc</tag>
+                    <tag>PCIID 14e416ce</tag>
+                    <tag>PCIID 14e416cf</tag>
+                    <tag>PCIID 14e416d6</tag>
+                    <tag>PCIID 14e416d614e44125</tag>
+                    <tag>PCIID 14e416d614e44126</tag>
+                    <tag>PCIID 14e416d614e44420</tag>
+                    <tag>PCIID 14e416d614e44430</tag>
+                    <tag>PCIID 14e416d614e44440</tag>
+                    <tag>PCIID 14e416d614e44442</tag>
+                    <tag>PCIID 14e416d614e4a140</tag>
+                    <tag>PCIID 14e416d614e4a340</tag>
+                    <tag>PCIID 14e416d6159002c5</tag>
+                    <tag>PCIID 14e416d617aa4120</tag>
+                    <tag>PCIID 14e416d7</tag>
+                    <tag>PCIID 14e416d710280bdd</tag>
+                    <tag>PCIID 14e416d714e44145</tag>
+                    <tag>PCIID 14e416d714e44146</tag>
+                    <tag>PCIID 14e416d714e44422</tag>
+                    <tag>PCIID 14e416d714e44432</tag>
+                    <tag>PCIID 14e416d7159002c3</tag>
+                    <tag>PCIID 14e416d7159002c5</tag>
+                    <tag>PCIID 14e416d717aa4105</tag>
+                    <tag>PCIID 14e416d717aa4140</tag>
+                    <tag>PCIID 14e416d71bd4008e</tag>
+                    <tag>PCIID 14e416d71bd4008f</tag>
+                    <tag>PCIID 14e416d8</tag>
+                    <tag>PCIID 14e416d810281feb</tag>
+                    <tag>PCIID 14e416d811202e11</tag>
+                    <tag>PCIID 14e416d81120d340</tag>
+                    <tag>PCIID 14e416d814e44165</tag>
+                    <tag>PCIID 14e416d814e44166</tag>
+                    <tag>PCIID 14e416d8159002c2</tag>
+                    <tag>PCIID 14e416d817aa4048</tag>
+                    <tag>PCIID 14e416d817aa4051</tag>
+                    <tag>PCIID 14e416d817aa4160</tag>
+                    <tag>PCIID 14e416d817aa4161</tag>
+                    <tag>PCIID 14e416d817aa4162</tag>
+                    <tag>PCIID 14e416d817aa4163</tag>
+                    <tag>PCIID 14e416d9</tag>
+                    <tag>PCIID 14e416dc</tag>
+                    <tag>PCIID 14e416de</tag>
+                    <tag>PCIID 14e416df</tag>
+                    <tag>PCIID 14e416e0</tag>
+                    <tag>PCIID 14e416e1</tag>
+                    <tag>PCIID 14e416e2</tag>
+                    <tag>PCIID 14e416e3</tag>
+                    <tag>PCIID 14e416e4</tag>
+                    <tag>PCIID 14e416e5</tag>
+                    <tag>PCIID 14e416eb</tag>
+                    <tag>PCIID 14e416ec</tag>
+                    <tag>PCIID 14e416ec10280bdd</tag>
+                    <tag>PCIID 14e416ed</tag>
+                    <tag>PCIID 14e416ed10280bdd</tag>
+                    <tag>PCIID 14e416ee</tag>
+                    <tag>PCIID 14e416ef</tag>
+                    <tag>PCIID 14e41750</tag>
+                    <tag>PCIID 14e4175011202e12</tag>
+                    <tag>PCIID 14e4175014e4159a</tag>
+                    <tag>PCIID 14e4175014e4159b</tag>
+                    <tag>PCIID 14e4175014e42100</tag>
+                    <tag>PCIID 14e4175014e45208</tag>
+                    <tag>PCIID 14e4175014e45209</tag>
+                    <tag>PCIID 14e4175014e4d124</tag>
+                    <tag>PCIID 14e4175014e4d324</tag>
+                    <tag>PCIID 14e4175014e4df24</tag>
+                    <tag>PCIID 14e4175017aa404c</tag>
+                    <tag>PCIID 14e4175017aa4103</tag>
+                    <tag>PCIID 14e417507053100f</tag>
+                    <tag>PCIID 14e41751</tag>
+                    <tag>PCIID 14e4175110280b1b</tag>
+                    <tag>PCIID 14e4175110280b91</tag>
+                    <tag>PCIID 14e4175111202e13</tag>
+                    <tag>PCIID 14e4175114e41100</tag>
+                    <tag>PCIID 14e4175114e41598</tag>
+                    <tag>PCIID 14e4175114e41599</tag>
+                    <tag>PCIID 14e4175114e44250</tag>
+                    <tag>PCIID 14e4175114e45045</tag>
+                    <tag>PCIID 14e4175114e45046</tag>
+                    <tag>PCIID 14e4175114e45047</tag>
+                    <tag>PCIID 14e4175114e45048</tag>
+                    <tag>PCIID 14e4175114e45049</tag>
+                    <tag>PCIID 14e4175114e45100</tag>
+                    <tag>PCIID 14e4175114e45105</tag>
+                    <tag>PCIID 14e4175114e45250</tag>
+                    <tag>PCIID 14e4175114e45425</tag>
+                    <tag>PCIID 14e4175114e4d142</tag>
+                    <tag>PCIID 14e4175115900420</tag>
+                    <tag>PCIID 14e4175115900437</tag>
+                    <tag>PCIID 14e4175117aa4050</tag>
+                    <tag>PCIID 14e4175117aa4107</tag>
+                    <tag>PCIID 14e41752</tag>
+                    <tag>PCIID 14e4175214e41002</tag>
+                    <tag>PCIID 14e4175214e41003</tag>
+                    <tag>PCIID 14e4175214e45150</tag>
+                    <tag>PCIID 14e4175214e45410</tag>
+                    <tag>PCIID 14e41760</tag>
+                    <tag>PCIID 14e4176011202e22</tag>
+                    <tag>PCIID 14e4176011202e23</tag>
+                    <tag>PCIID 14e4176014e49110</tag>
+                    <tag>PCIID 14e4176014e49120</tag>
+                    <tag>PCIID 14e4176014e49125</tag>
+                    <tag>PCIID 14e4176014e49126</tag>
+                    <tag>PCIID 14e4176014e49140</tag>
+                    <tag>PCIID 14e4176014e49310</tag>
+                    <tag>PCIID 14e4176014e49311</tag>
+                    <tag>PCIID 14e4176014e49320</tag>
+                    <tag>PCIID 14e4176014e49325</tag>
+                    <tag>PCIID 14e4176014e49326</tag>
+                    <tag>PCIID 14e4176014e49340</tag>
+                    <tag>PCIID 14e4176014e49345</tag>
+                    <tag>PCIID 14e4176014e4a120</tag>
+                    <tag>PCIID 14e4176014e4d125</tag>
+                    <tag>PCIID 14e4176014e4e116</tag>
+                    <tag>PCIID 14e4176014e4e124</tag>
+                    <tag>PCIID 14e4176014e4e324</tag>
+                    <tag>PCIID 14e4176014e4f320</tag>
+                    <tag>PCIID 14e41800</tag>
+                    <tag>PCIID 14e41801</tag>
+                    <tag>PCIID 14e4180110280b1b</tag>
+                    <tag>PCIID 14e4180110280b91</tag>
+                    <tag>PCIID 14e4180111202e13</tag>
+                    <tag>PCIID 14e4180114e41598</tag>
+                    <tag>PCIID 14e4180114e41599</tag>
+                    <tag>PCIID 14e4180114e4d142</tag>
+                    <tag>PCIID 14e41802</tag>
+                    <tag>PCIID 14e4180211202e12</tag>
+                    <tag>PCIID 14e4180214e4159a</tag>
+                    <tag>PCIID 14e4180214e4159b</tag>
+                    <tag>PCIID 14e4180214e4d124</tag>
+                    <tag>PCIID 14e4180214e4df24</tag>
+                    <tag>PCIID 14e41803</tag>
+                    <tag>PCIID 14e41804</tag>
+                    <tag>PCIID 14e4180410280b1b</tag>
+                    <tag>PCIID 14e4180410280b91</tag>
+                    <tag>PCIID 14e4180411202e13</tag>
+                    <tag>PCIID 14e4180414e41598</tag>
+                    <tag>PCIID 14e4180414e41599</tag>
+                    <tag>PCIID 14e4180414e4d142</tag>
+                    <tag>PCIID 14e41805</tag>
+                    <tag>PCIID 14e4180511202e12</tag>
+                    <tag>PCIID 14e4180514e4159a</tag>
+                    <tag>PCIID 14e4180514e4159b</tag>
+                    <tag>PCIID 14e4180514e4d124</tag>
+                    <tag>PCIID 14e4180514e4df24</tag>
+                    <tag>PCIID 14e41806</tag>
+                    <tag>PCIID 14e4180610280b91</tag>
+                    <tag>PCIID 14e4180614e41598</tag>
+                    <tag>PCIID 14e4180614e41599</tag>
+                    <tag>PCIID 14e4180614e4159a</tag>
+                    <tag>PCIID 14e4180614e4159b</tag>
+                    <tag>PCIID 14e4180614e4d124</tag>
+                    <tag>PCIID 14e4180614e4d142</tag>
+                    <tag>PCIID 14e4180614e4df24</tag>
+                    <tag>PCIID 14e41807</tag>
+                    <tag>PCIID 14e4180710280b91</tag>
+                    <tag>PCIID 14e4180714e41598</tag>
+                    <tag>PCIID 14e4180714e41599</tag>
+                    <tag>PCIID 14e4180714e4159a</tag>
+                    <tag>PCIID 14e4180714e4159b</tag>
+                    <tag>PCIID 14e4180714e4d124</tag>
+                    <tag>PCIID 14e4180714e4d142</tag>
+                    <tag>PCIID 14e4180714e4df24</tag>
+                    <tag>PCIID 14e41808</tag>
+                    <tag>PCIID 14e41809</tag>
+                    <tag>PCIID 14e4d80214e48021</tag>
+                    <tag>PCIID 14e4d80214e48028</tag>
+                    <tag>PCIID 14e4d82e</tag>
+                    <tag>module</tag>
+                    <tag>driver</tag>
+                    <tag>sdkname:nativeddk</tag>
+                    <tag>sdkversion:9.0.0-24755229</tag>
+                    <tag>epkname:esxpackagingkit</tag>
+                    <tag>epkversion:9.0.0-24755229</tag>
+                  </softwareTags>
+                  <vibFile>
+                    <sourceUrl/>
+                    <relativePath>vib20/bnxtnet/BCM_bootbank_bnxtnet_235.1.140.0-1OEM.900.0.24755229.vib</relativePath>
+                    <packedSize>275078</packedSize>
+                    <checksum>
+                      <checksumType>sha-256</checksumType>
+                      <checksum>d85b9ab07152c8e99b44895b3a86a28d81a01a9d45147134c49fc0fc4af98719</checksum>
+                    </checksum>
+                  </vibFile>
+                </vib>
+                <vib>
+                  <vibVersion>1.4.5</vibVersion>
+                  <vibID>BCM_bootbank_bnxtroce_235.1.140.0-1OEM.900.0.24755229</vibID>
+                  <name>bnxtroce</name>
+                  <version>235.1.140.0-1OEM.900.0.24755229</version>
+                  <vendor>BCM</vendor>
+                  <vibType>bootbank</vibType>
+                  <summary>VMware Esx VIB</summary>
+                  <systemReqs>
+                    <maintenanceMode>true</maintenanceMode>
+                    <swPlatform version="9.0" locale="" productLineID="embeddedEsx"/>
+                  </systemReqs>
+                  <relationships>
+                    <depends>
+                      <constraint name="vmkapi_3_0_0_0"/>
+                      <constraint name="zstd-compression" relation="=" version="1.0"/>
+                    </depends>
+                    <conflicts/>
+                    <replaces/>
+                    <provides/>
+                    <compatibleWith/>
+                  </relationships>
+                  <postInstall>
+                    <rebootRequired>true</rebootRequired>
+                    <hostdRestart>false</hostdRestart>
+                  </postInstall>
+                  <softwareTags>
+                    <tag>module</tag>
+                    <tag>driver</tag>
+                    <tag>sdkname:nativeddk</tag>
+                    <tag>sdkversion:9.0.0-24755229</tag>
+                    <tag>epkname:esxpackagingkit</tag>
+                    <tag>epkversion:9.0.0-24755229</tag>
+                  </softwareTags>
+                  <vibFile>
+                    <sourceUrl/>
+                    <relativePath>vib20/bnxtroce/BCM_bootbank_bnxtroce_235.1.140.0-1OEM.900.0.24755229.vib</relativePath>
+                    <packedSize>105278</packedSize>
+                    <checksum>
+                      <checksumType>sha-256</checksumType>
+                      <checksum>4c82b34ad4b16da24693aa4384c9049387ad0edac53ea0f27488b6f26e66311c</checksum>
+                    </checksum>
+                  </vibFile>
+                </vib>
+              </vibList>
+            </bulletin>
+          </metadataResponse>
+        </file_details>
+      </product_version>
+    </product>
+    <product id="b53b7ee55fb34198a842e8fa3306a80a">
+      <product_version>
+        <id product="b53b7ee55fb34198a842e8fa3306a80a" version="3b1777d993b140908654ed4a59f78e10" lucid_version="MB010000JWZHA_MB012000JWZHB_MB014000JWZHC_deb_x64@HPD4(B)__sc-linux-fw-drive_de,en,es,fr,it,ja"/>
+        <different>new</different>
+        <build number="1"/>
+        <type id="smartcomponent-linux-firmware-drive"/>
+        <name>
+          <name_xlate lang="en">Online HDD/SSD Flash Component for Ubuntu Linux (x64) - MB010000JWZHA, MB012000JWZHB, MB014000JWZHC and MB016000JWZHE Drives</name_xlate>
+        </name>
+        <alt_name>
+          <alt_name_xlate lang="en">MB010000JWZHA, MB012000JWZHB, MB014000JWZHC and MB016000JWZHE Drives</alt_name_xlate>
+        </alt_name>
+        <version value="HPD4" revision="B" type_of_change="1"/>
+        <manufacturer_name>
+          <manufacturer_name_xlate lang="en">Hewlett Packard Enterprise</manufacturer_name_xlate>
+        </manufacturer_name>
+        <operating_systems>
+          <operating_system key="11045">
+            <operating_system_xlate>Ubuntu 22.04 LTS</operating_system_xlate>
+          </operating_system>
+          <operating_system key="11447">
+            <operating_system_xlate>Ubuntu 24.04 LTS</operating_system_xlate>
+          </operating_system>
+          <operating_system key="11701">
+            <operating_system_xlate>Ubuntu 26.04 LTS</operating_system_xlate>
+          </operating_system>
+        </operating_systems>
+        <products/>
+        <divisions>
+          <division key="9">
+            <division_xlate lang="en">Storage</division_xlate>
+          </division>
+        </divisions>
+        <category key="2900260">
+          <category_xlate lang="en">Firmware - SAS Storage Disk</category_xlate>
+        </category>
+        <languages langlist="en,ja,de,fr,it,es">
+          <languages_xlate lang="en">English (US),Japanese,German,French,Italian,Spanish</languages_xlate>
+        </languages>
+        <release_date year="2026" month="05" day="29" hour="06" minute="40" second="55"/>
+        <description>
+          <description_xlate lang="en"><![CDATA[This x64 Smart Component provides firmware for the following drive models: MB010000JWZHA, MB012000JWZHB, MB014000JWZHC and MB016000JWZHE]]></description_xlate>
+        </description>
+        <prerequisite_notes/>
+        <installation_notes>
+          <installation_notes_xlate lang="en">
+            <installation_notes_xlate_part><![CDATA[<p><strong>To update firmware from Ubuntu Linux operating system on target server:</strong></p>
+
+<p><strong>Updating firmware by installing the deb package:</strong></p>
+
+<ul style="list-style-type:square">
+	<li>Install the firmware deb using the command:&nbsp;&nbsp;<em>dpkg -i .&nbsp;</em>&nbsp;This extracts the contents of the deb&nbsp;to the &#39;/usr/lib/x86_64-linux-gnu&#39; location.</li>
+	<li>The CP&lt;nnnnnn&gt;.scexe script is located in the &#39;scexe-compat&#39; folder. The actual name of the &#39;firmware-hdd--*&#39; folder is based on the version of the&nbsp;deb installed in the first step above. &nbsp;</li>
+	<li>To install firmware, you can execute&nbsp;<strong>ONE</strong>&nbsp;of the following commands:
+	<ul style="list-style-type:square">
+		<li>./CP&lt;nnnnnn&gt;.scexe in the &#39;/usr/lib/x86_64-linux-gnu/scexe-compat&#39; location (OR)</li>
+		<li><em>./setup</em>&nbsp;in the &#39;/usr/lib/x86_64-linux-gnu/firmware-hdd--*&#39; location</li>
+	</ul>
+	</li>
+	<li>The results of the firmware upgrade are saved to the Component.log file, located in the /var/cpq/ directory.</li>
+	<li>To uninstall the deb, run the command:&nbsp;<em>dpkg -r&nbsp;</em>, which is the deb filename without the &#39;.deb&#39; extension.</li>
+</ul>
+
+<p><strong>Updating firmware without installing the deb:</strong></p>
+
+<ul style="list-style-type:square">
+	<li>Extract the contents of the deb using the command:&nbsp;<em>dpkg -x.&nbsp;</em>&nbsp;This extracts the contents of the deb to &#39;usr&#39; folder in the current directory.</li>
+	<li>Navigate to the&nbsp;&#39;usr/lib/x86_64-linux-gnu/firmware-hdd--*&#39; location and run&nbsp;<em>./setup</em>&nbsp;to update the firmware. The actual name of the &#39;firmware-hdd--*&#39; folder is based on the version of the deb installed in the step above.</li>
+	<li>The results of the firmware upgrade are saved to the Component.log file, located in the /var/cpq/ directory.</li>
+</ul>
+
+<p><strong>Additional Information:</strong></p>
+
+<p>Installing the firmware deb package (dpkg -i) does not update the firmware.&nbsp;&nbsp;It merely extracts the deb content to the local system. Updating the firmware on the local system requires following the&nbsp;above outlined steps.</p>
+
+<p><strong>To use Smart Update Manager from the Service Pack for ProLiant:</strong><br />
+<br />
+<strong>Offline:</strong></p>
+
+<ul style="list-style-type:square">
+	<li>Place the&nbsp;<a href="https://www.hpe.com/servers/spp/download" style="color:#467886; text-decoration:underline">Service Pack for ProLiant</a>&nbsp;on a USB key using the&nbsp;<a href="https://support.hpe.com/connect/s/softwaredetails?softwareId=MTX_360731071b404454b454390208&amp;language=en_US" style="color:#467886; text-decoration:underline">USB Key Utility for Windows</a>.</li>
+	<li>Place the desired firmware to be updated in the directory, /packages on the USB key.</li>
+	<li>Boot from the newly created Service Pack for Proliant USB key.</li>
+	<li>Follow Smart Update Manager steps to complete firmware update.</li>
+</ul>
+
+<p><strong>Online:</strong></p>
+
+<ul style="list-style-type:square">
+	<li>Login as root. (You must be root in order to apply the ROM update.)</li>
+	<li>Place the desired firmware to be updated in the directory, /packages.</li>
+	<li>Run&nbsp;<em>launch_sum.sh</em>&nbsp;script which is found in the root of the ISO.</li>
+</ul>
+
+<p>Follow the instructions on the screen.</p>
+]]></installation_notes_xlate_part>
+          </installation_notes_xlate>
+        </installation_notes>
+        <availability_notes/>
+        <documentation_notes>
+          <documentation_notes_xlate lang="en">
+            <documentation_notes_xlate_part><![CDATA[<p><strong>Deliverable Name:</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Online HDD/SSD Flash Component for Ubuntu Linux (x64) - MB010000JWZHA, MB012000JWZHB, MB014000JWZHC and MB016000JWZHE Drives</p>
+
+<p><strong>Release Version and/or Date:</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp; HPD4<br />
+<strong>Last Recommended or Critical Version:</strong><br />
+&nbsp; &nbsp;&nbsp; None<br />
+<strong>Previous Version of Firmware:</strong><br />
+&nbsp; &nbsp;&nbsp; None<br />
+<strong>Firmware Dependency:</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp; None</p>
+
+<p><strong>Enhancements/New Features:</strong></p>
+
+<ul>
+	<li>Added support for Ubuntu 26.04</li>
+</ul>
+
+<p><strong>Problems Fixed:</strong></p>
+
+<ul>
+	<li>Addresses a hot plug reporting concern.</li>
+	<li>Increased the buffer memory size used for sequential write data to resolve performance degradation seen in a RAID60 configuration.</li>
+	<li>Remove Background Media Scan (BMS) with Super parity and Directed Offline Scan (DOS).</li>
+</ul>
+
+<p><strong>Known Issues:</strong><br />
+&nbsp; &nbsp; &nbsp; None</p>
+]]></documentation_notes_xlate_part>
+          </documentation_notes_xlate>
+        </documentation_notes>
+        <upgrade_requirement value="Recommended"/>
+        <prerequisites>
+          <supported_operating_systems>
+            <supported_operating_system platform="ubuntu2204" major="22" minor="04" sr="OEM" name="Ubuntu 22.04 LTS"/>
+            <supported_operating_system platform="ubuntu2404" major="24" minor="04" sr="OEM" name="Ubuntu 24.04 LTS"/>
+            <supported_operating_system platform="ubuntu2604" major="26" minor="04" sr="OEM" name="Ubuntu 26.04 LTS"/>
+          </supported_operating_systems>
+          <supported_devices>
+            <supported_devices_and>
+              <supported_device type="sas">
+                <supported_device_data name="id">MB010000JWZHA</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="sas">
+                <supported_device_data name="id">MB016000JWZHE</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="sas">
+                <supported_device_data name="id">MB014000JWZHC</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="sas">
+                <supported_device_data name="id">MB012000JWZHB</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+          </supported_devices>
+          <required_diskspace size_kb="4000"/>
+        </prerequisites>
+        <installation>
+          <install>
+            <install_caps silent="yes" needuseracct="no"/>
+            <command>CP040294.scexe</command>
+            <command_params/>
+            <reboot_required value="no"/>
+            <reboot_details value="Environment Dependent">
+              <reboot_details_xlate lang="en">Reboot may be required after installation for updates to take effect and hardware stability to be maintained.</reboot_details_xlate>
+            </reboot_details>
+            <per_device_install_time_seconds>120</per_device_install_time_seconds>
+          </install>
+          <uninstall>
+            <uninstall_caps silent="no"/>
+            <command/>
+            <command_params/>
+            <reboot_required value="no"/>
+          </uninstall>
+        </installation>
+        <sw_keys>
+          <sw_keys_and>
+            <sw_key name="MB010000JWZHA" guid="">
+              <sw_key_expectedpath>firmware:sd:SAS</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+          <sw_keys_and>
+            <sw_key name="MB012000JWZHB" guid="">
+              <sw_key_expectedpath>firmware:sd:SAS</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+          <sw_keys_and>
+            <sw_key name="MB014000JWZHC" guid="">
+              <sw_key_expectedpath>firmware:sd:SAS</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+          <sw_keys_and>
+            <sw_key name="MB016000JWZHE" guid="">
+              <sw_key_expectedpath>firmware:sd:SAS</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+        </sw_keys>
+        <filename>firmware-hdd-cf0b6cabe1_0HPD4-2.1_amd64.deb</filename>
+        <component_config/>
+        <files>
+          <file size="4MB" bytes="4622964" date_modified="2026-04-29T02:38:17" md5sum="6fce7de118be161f588ce530672b82ea" sha1sum="0680317ae8bd200dcd1b569e6c5285bd040495ee" version="0HPD4" release="2.1">
+            <name>firmware-hdd-cf0b6cabe1_0HPD4-2.1_amd64.deb</name>
+            <url id="http://ftp.hp.com"/>
+            <url id="file://.">file://./packages/firmware-hdd-cf0b6cabe1_0HPD4-2.1_amd64.deb</url>
+            <file_list>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-cf0b6cabe1-HPD4-2.1/.cpq_package.inc</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-cf0b6cabe1-HPD4-2.1/.setup</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-cf0b6cabe1-HPD4-2.1/CP071784.xml</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-cf0b6cabe1-HPD4-2.1/SHPEEVANSSD4.rel</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-cf0b6cabe1-HPD4-2.1/libsetup.so</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-cf0b6cabe1-HPD4-2.1/mnv_cli</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-cf0b6cabe1-HPD4-2.1/payload.json</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-cf0b6cabe1-HPD4-2.1/setup</file>
+              <file>./usr/lib/x86_64-linux-gnu/scexe-compat/CP071784.scexe</file>
+              <file>./usr/lib/x86_64-linux-gnu/firmware-hdd-cf0b6cabe1-HPD4-2.1/hpsetup</file>
+              <file>./usr/lib/x86_64-linux-gnu/hp-scexe-compat/CP071784.scexe</file>
+            </file_list>
+          </file>
+        </files>
+        <file_details/>
+        <payload>
+          <DeviceClass>F6DE0320-2E0F-489A-B238-6DD8AE7C3811</DeviceClass>
+          <Devices>
+            <Device>
+              <DeviceName>MB010000JWZHA</DeviceName>
+              <FirmwareImages>
+                <DelayAfterInstallSec>10</DelayAfterInstallSec>
+                <DirectFlashOk>False</DirectFlashOk>
+                <FileName>SHPEEVANSSD4.rel</FileName>
+                <InstallDurationSec>300</InstallDurationSec>
+                <Order>1</Order>
+                <ResetRequired>False</ResetRequired>
+                <Type>Firmware</Type>
+                <UefiFlashable>False</UefiFlashable>
+              </FirmwareImages>
+              <Target>4d2340a5-3042-3031-3030-304a575a4841</Target>
+              <Version>HPD4</Version>
+            </Device>
+            <Device>
+              <DeviceName>MB012000JWZHB</DeviceName>
+              <FirmwareImages>
+                <DelayAfterInstallSec>10</DelayAfterInstallSec>
+                <DirectFlashOk>False</DirectFlashOk>
+                <FileName>SHPEEVANSSD4.rel</FileName>
+                <InstallDurationSec>300</InstallDurationSec>
+                <Order>1</Order>
+                <ResetRequired>False</ResetRequired>
+                <Type>Firmware</Type>
+                <UefiFlashable>False</UefiFlashable>
+              </FirmwareImages>
+              <Target>4d2340a5-3042-3231-3030-304a575a4842</Target>
+              <Version>HPD4</Version>
+            </Device>
+            <Device>
+              <DeviceName>MB014000JWZHC</DeviceName>
+              <FirmwareImages>
+                <DelayAfterInstallSec>10</DelayAfterInstallSec>
+                <DirectFlashOk>False</DirectFlashOk>
+                <FileName>SHPEEVANSSD4.rel</FileName>
+                <InstallDurationSec>300</InstallDurationSec>
+                <Order>1</Order>
+                <ResetRequired>False</ResetRequired>
+                <Type>Firmware</Type>
+                <UefiFlashable>False</UefiFlashable>
+              </FirmwareImages>
+              <Target>4d2340a5-3042-3431-3030-304a575a4843</Target>
+              <Version>HPD4</Version>
+            </Device>
+            <Device>
+              <DeviceName>MB016000JWZHE</DeviceName>
+              <FirmwareImages>
+                <DelayAfterInstallSec>10</DelayAfterInstallSec>
+                <DirectFlashOk>False</DirectFlashOk>
+                <FileName>SHPEEVANSSD4.rel</FileName>
+                <InstallDurationSec>300</InstallDurationSec>
+                <Order>1</Order>
+                <ResetRequired>False</ResetRequired>
+                <Type>Firmware</Type>
+                <UefiFlashable>False</UefiFlashable>
+              </FirmwareImages>
+              <Target>4d2340a5-3042-3631-3030-304a575a4845</Target>
+              <Version>HPD4</Version>
+            </Device>
+          </Devices>
+          <Type>Firmware</Type>
+          <UpdatableBy>RuntimeAgent</UpdatableBy>
+        </payload>
+      </product_version>
+    </product>
+    <product id="6559625804344daab70667e2f1b0b044">
+      <product_version>
+        <id product="6559625804344daab70667e2f1b0b044" version="e3c7f7487e78456cbb96dab8196735b3" lucid_version="MB004000JWWQB_MB002000JWWQA_x64@HPD8(H)__sc-linux-fw-drive_de,en,es,fr,it,ja"/>
+        <different>new</different>
+        <build number="1"/>
+        <type id="smartcomponent-linux-firmware-drive"/>
+        <name>
+          <name_xlate lang="en">Online HDD/SSD Flash Component for Linux (x64) - MB004000JWWQB and MB002000JWWQA Drives</name_xlate>
+        </name>
+        <alt_name>
+          <alt_name_xlate lang="en">MB004000JWWQB and MB002000JWWQA Drives</alt_name_xlate>
+        </alt_name>
+        <version value="HPD8" revision="H" type_of_change="1"/>
+        <manufacturer_name>
+          <manufacturer_name_xlate lang="en">Hewlett Packard Enterprise</manufacturer_name_xlate>
+        </manufacturer_name>
+        <operating_systems>
+          <operating_system key="10967">
+            <operating_system_xlate>Red Hat Enterprise Linux 9 Server</operating_system_xlate>
+          </operating_system>
+          <operating_system key="9398">
+            <operating_system_xlate>SUSE Linux Enterprise Server 15</operating_system_xlate>
+          </operating_system>
+          <operating_system key="11552">
+            <operating_system_xlate>Red Hat Enterprise Linux 10</operating_system_xlate>
+          </operating_system>
+          <operating_system key="11729">
+            <operating_system_xlate>SUSE Linux Enterprise Server 16</operating_system_xlate>
+          </operating_system>
+        </operating_systems>
+        <products/>
+        <divisions>
+          <division key="9">
+            <division_xlate lang="en">Storage</division_xlate>
+          </division>
+        </divisions>
+        <category key="2900260">
+          <category_xlate lang="en">Firmware - SAS Storage Disk</category_xlate>
+        </category>
+        <languages langlist="en,ja,de,fr,it,es">
+          <languages_xlate lang="en">English (U

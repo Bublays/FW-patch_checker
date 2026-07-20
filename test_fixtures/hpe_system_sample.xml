@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest schema_version="2.0.0.0">
+  <systems>
+    <system id="1" systemid="" firmwareid="U54" effectivedate="">
+      <name>
+        <name_xlate lang="en">HPE ProLiant DL380 Gen11 Server</name_xlate>
+      </name>
+      <product_version>
+        <id product="prodA" version="verA" lucid_version="x"/>
+      </product_version>
+      <product_version>
+        <id product="prodB" version="verB" lucid_version="y"/>
+      </product_version>
+    </system>
+    <system id="2" systemid="" firmwareid="U32" effectivedate="">
+      <name>
+        <name_xlate lang="en">HPE ProLiant DL380 Gen10 Plus Server</name_xlate>
+      </name>
+      <product_version>
+        <id product="prodB" version="verB" lucid_version="y"/>
+      </product_version>
+    </system>
+    <system id="3" systemid="" firmwareid="U30" effectivedate="">
+      <name>
+        <name_xlate lang="en">HPE ProLiant DL325 Gen10 Server</name_xlate>
+      </name>
+      <product_version>
+        <id product="prodA" version="verA" lucid_version="x"/>
+      </product_version>
+    </system>
+  </systems>
+</manifest>

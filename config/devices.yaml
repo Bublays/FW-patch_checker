@@ -1,0 +1,42 @@
+# Seznam sledovaných zařízení.
+# Uprav podle potřeby - přidání/odebrání modelu nebo generace stačí, kód
+# nemusíš měnit.
+
+hpe:
+  # Generace, které nás zajímají u každé z rodin níže.
+  generations: ["Gen10", "Gen10 Plus", "Gen11", "Gen12"]
+  families:
+    - DL320
+    - DL360
+    - DL365
+    - DL380
+    - DL385
+
+ibm:
+  # FlashSystem produkty - firmware = úroveň IBM Storage Virtualize.
+  flashsystem:
+    - id: FS7300
+      display_name: "IBM FlashSystem 7300"
+      support_info_page: "https://www.ibm.com/support/pages/support-information-flashsystem-7000-family"
+    - id: FS5300
+      display_name: "IBM FlashSystem 5300"
+      support_info_page: "https://www.ibm.com/support/pages/support-information-flashsystem-5000-family"
+    - id: FS5200
+      display_name: "IBM FlashSystem 5200"
+      support_info_page: "https://www.ibm.com/support/pages/support-information-flashsystem-5000-family"
+
+  # Tape knihovny - firmware distribuovaný přes IBM Fix Central / delivery04.
+  tape:
+    - id: TS4300
+      display_name: "IBM TS4300 Tape Library"
+      fix_readme_page: "https://www.ibm.com/support/pages/ts4300-fix-readme"
+    - id: Diamondback
+      display_name: "IBM Diamondback Tape Library"
+      fix_readme_page: "https://www.ibm.com/support/pages/diamondback-tape-library-fix-readme"
+      docs_page: "https://www.ibm.com/docs/en/dtl?topic=system-updating-library-firmware"
+
+dell:
+  models:
+    - "PowerEdge R440"
+    - "PowerEdge R740"
+    - "PowerEdge T140"

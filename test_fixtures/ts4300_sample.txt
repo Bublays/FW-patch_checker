@@ -1,0 +1,30 @@
+TS4300 Tape Library Fix List
+
+
+===================================================================================================
+
+Firmware Level: 1.5.0.2-C00
+Release Date: 11/30/22
+
+===================================================================================================
+
+New Features:
+- None
+
+Fixes:
+- Fixed issue A
+- Fixed issue B
+
+===================================================================================================
+
+Firmware Level: 1.4.1.0-B00
+Release Date: 05/31/21
+
+===================================================================================================
+
+New Features:
+- None
+
+Fixes:
+- Documentation improvements for library and drive diagnostics
+- Fixed issue where non admin users were not allowed to change their password
