@@ -45,6 +45,31 @@ class Update:
         return d
 
 
+# Kategorie, ktere povazujeme za "firmware" a necháváme vzdy (bez ohledu na
+# to, jestli jde o bezpecnostni opravu, nebo jen o novou funkci).
+_FIRMWARE_CATEGORY_HINTS = ("firmware", "bios", "rom", "storage virtualize")
+
+# Pro vse ostatni (typicky OS ovladace) necháváme jen zaznamy, ktere vypadaji
+# jako bezpecnostni patch - podle kategorie, popisu nebo cisla update.
+_SECURITY_HINTS = (
+    "security", "vulnerab", "cve-", "cve_", "exploit",
+    "security fix", "security update", "security patch", "critical patch",
+)
+
+
+def is_relevant_update(u: "Update") -> bool:
+    """True, pokud ma update zustat ve vystupu.
+
+    Firmware/BIOS necháváme vzdy. Ovladace a ostatni software necháváme jen
+    pokud jde o bezpecnostni patch (zminka o CVE/security v kategorii,
+    popisu nebo cisle update)."""
+    category = (u.category or "").lower()
+    if any(hint in category for hint in _FIRMWARE_CATEGORY_HINTS):
+        return True
+    haystack = f"{u.category} {u.description} {u.update_id}".lower()
+    return any(hint in haystack for hint in _SECURITY_HINTS)
+
+
 def get(url: str, **kwargs) -> requests.Response:
     """requests.get s rozumnym default timeoutem, hlavickou a retry na 1 pokus navic."""
     headers = {**DEFAULT_HEADERS, **kwargs.pop("headers", {})}
