@@ -156,19 +156,26 @@ def scrape(families: List[str], generations: List[str]) -> List[Update]:
             continue
         logger.info("%s: nacteno %d komponent (firmware/ovladacu) z manifestu", repo, len(meta))
 
-        repo_had_any_match = False
+        matched_system_names: List[str] = []
+        total_product_refs = 0
+        resolved_product_refs = 0
+        unresolved_pid_sample: List[str] = []
+
         for family in families:
             for generation in generations:
                 if GENERATION_TO_REPO.get(generation.lower()) != repo:
                     continue
                 matching_systems = [s for s in systems if _system_matches(s["name"], family, generation)]
-                if matching_systems:
-                    repo_had_any_match = True
                 for sys_entry in matching_systems:
+                    matched_system_names.append(sys_entry["name"])
                     for pid in sys_entry["product_ids"]:
+                        total_product_refs += 1
                         info = meta.get(pid)
                         if not info or not info["name"]:
+                            if len(unresolved_pid_sample) < 5:
+                                unresolved_pid_sample.append(pid)
                             continue
+                        resolved_product_refs += 1
                         upd = Update(
                             vendor="HPE",
                             family=family,
@@ -181,12 +188,26 @@ def scrape(families: List[str], generations: List[str]) -> List[Update]:
                         )
                         updates.append(upd)
 
-        if not repo_had_any_match:
+        if not matched_system_names:
             sample = [s["name"] for s in systems[:15]]
             logger.warning(
-                "%s: pro zadanou kombinaci rodina/generace se nenaslo nic. Ukazka nazvu systemu v tomto "
-                "repozitari (over, jestli sedi ocekavany format 'HPE ProLiant <rodina> <generace> Server'): %s",
+                "%s: pro zadanou kombinaci rodina/generace se nenasel zadny system. Ukazka nazvu systemu v "
+                "tomto repozitari (over, jestli sedi ocekavany format 'HPE ProLiant <rodina> <generace> "
+                "Server'): %s",
                 repo, sample,
+            )
+        elif resolved_product_refs == 0:
+            logger.warning(
+                "%s: nalezeno %d odpovidajicich systemu (napr. %s), ale ZADNY z %d odkazu na komponenty "
+                "se nesparoval s meta.xml. Ukazka nenalezenych product_id: %s. Ukazka klicu, ktere meta.xml "
+                "opravdu obsahuje: %s",
+                repo, len(matched_system_names), matched_system_names[:3], total_product_refs,
+                unresolved_pid_sample, list(meta.keys())[:5],
+            )
+        else:
+            logger.info(
+                "%s: nalezeno %d odpovidajicich systemu, sparovano %d/%d odkazu na komponenty",
+                repo, len(matched_system_names), resolved_product_refs, total_product_refs,
             )
 
     # dedup
