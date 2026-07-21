@@ -267,17 +267,32 @@ function render() {{
   }}
 }}
 
-function populateFilters() {{
+function populateVendors() {{
   const vendors = [...new Set(DATA.updates.map(r => r.vendor))].sort();
-  const families = [...new Set(DATA.updates.map(r => r.family))].sort();
   const vendorSel = document.getElementById("vendorFilter");
-  const familySel = document.getElementById("familyFilter");
   for (const v of vendors) {{
     const o = document.createElement("option"); o.value = v; o.textContent = v; vendorSel.appendChild(o);
   }}
+}}
+
+// Kaskadovity filtr: nabidka modelu se prizpusobuje aktualne vybranemu
+// vyrobci - pri vyberu IBM se v seznamu modelu neobjevi Dell/HPE zarizeni.
+function updateFamilyOptions() {{
+  const vendor = document.getElementById("vendorFilter").value;
+  const familySel = document.getElementById("familyFilter");
+  const previous = familySel.value;
+
+  const families = [...new Set(
+    DATA.updates.filter(r => !vendor || r.vendor === vendor).map(r => r.family)
+  )].sort();
+
+  familySel.innerHTML = '<option value="">Všechny modely</option>';
   for (const f of families) {{
     const o = document.createElement("option"); o.value = f; o.textContent = f; familySel.appendChild(o);
   }}
+
+  // ponechej predchozi vyber modelu, pokud u noveho vyrobce jeste dava smysl
+  familySel.value = families.includes(previous) ? previous : "";
 }}
 
 document.querySelectorAll("th[data-key]").forEach(th => {{
@@ -288,11 +303,15 @@ document.querySelectorAll("th[data-key]").forEach(th => {{
   }});
 }});
 document.getElementById("search").addEventListener("input", render);
-document.getElementById("vendorFilter").addEventListener("change", render);
+document.getElementById("vendorFilter").addEventListener("change", () => {{
+  updateFamilyOptions();
+  render();
+}});
 document.getElementById("familyFilter").addEventListener("change", render);
 
 renderCards();
-populateFilters();
+populateVendors();
+updateFamilyOptions();
 render();
 </script>
 </body>
