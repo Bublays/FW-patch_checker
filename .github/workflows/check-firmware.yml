@@ -44,7 +44,7 @@ jobs:
         working-directory: scripts
         run: python build_site.py
 
-     - name: Commit updated data
+      - name: Commit updated data
         run: |
           git config user.name "fw-checker-bot"
           git config user.email "actions@users.noreply.github.com"
