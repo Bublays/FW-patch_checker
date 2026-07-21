@@ -61,7 +61,11 @@ def main() -> int:
     logger.info("=== IBM ===")
     try:
         all_updates.extend(
-            scrape_ibm.scrape(cfg["ibm"]["flashsystem"], cfg["ibm"]["tape"])
+            scrape_ibm.scrape(
+                cfg["ibm"]["flashsystem"],
+                cfg["ibm"]["tape_fixlist"],
+                cfg["ibm"]["tape_recommendation"],
+            )
         )
     except Exception as exc:  # noqa: BLE001
         logger.exception("IBM scraper spadl: %s", exc)
