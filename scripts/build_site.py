@@ -36,6 +36,10 @@ TEMPLATE = """<!doctype html>
     --ibm-bg: #eceef2;
     --radius: 10px;
     --shadow: 0 1px 2px rgba(16, 24, 40, .04), 0 1px 3px rgba(16, 24, 40, .06);
+    /* skutecna vyska .controls se dopocitava v JS (syncStickyOffset), aby se
+       posuvna hlavicka tabulky nikdy neprekryvala s panelem filtru/hledani -
+       tohle je jen bezpecnostni hodnota pro pripad, ze by se JS nestihl spustit. */
+    --controls-h: 60px;
   }}
   * {{ box-sizing: border-box; }}
   body {{
@@ -95,8 +99,17 @@ TEMPLATE = """<!doctype html>
     font-size: .87rem;
     color: var(--text);
   }}
-  input[type="search"] {{ flex: 1 1 220px; min-width: 180px; }}
-  select {{ min-width: 140px; }}
+  /* Select ma pevnou sirku (neroste/nezmensuje se), aby zmena delky textu
+     vybrane polozky (napr. kratsi nazvy modelu po prepnuti vyrobce) nemenila
+     zbyvajici prostor pro pole hledani vedle nej. */
+  input[type="search"] {{ flex: 1 1 auto; min-width: 160px; }}
+  select {{
+    flex: 0 0 170px;
+    width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }}
   select:focus, input:focus {{ outline: 2px solid var(--accent); outline-offset: 1px; }}
 
   .table-wrap {{
@@ -117,7 +130,7 @@ TEMPLATE = """<!doctype html>
   col.c-source {{ width: 8%; }}
   th {{
     cursor: pointer; user-select: none;
-    position: sticky; top: 52px;
+    position: sticky; top: var(--controls-h);
     background: #fafbfc;
     color: var(--text-muted);
     font-weight: 600;
@@ -161,7 +174,6 @@ TEMPLATE = """<!doctype html>
 
   @media (max-width: 640px) {{
     .cards {{ grid-template-columns: repeat(2, 1fr); }}
-    th {{ top: 96px; }}
   }}
 </style>
 </head>
@@ -267,6 +279,16 @@ function render() {{
   }}
 }}
 
+// Zmeri skutecnou vysku panelu s filtry a nastavi ji jako offset pro
+// prilepenou hlavicku tabulky (viz CSS pravidlo pro "th"), aby se hlavicka
+// nikdy neprekryvala s prvnim radkem vypisu. Panel se muze zalomit na vic
+// radku na uzsi obrazovce, proto se prepocitava i pri zmene velikosti okna.
+function syncStickyOffset() {{
+  const controls = document.querySelector(".controls");
+  const h = controls.getBoundingClientRect().height;
+  document.documentElement.style.setProperty("--controls-h", h + "px");
+}}
+
 function populateVendors() {{
   const vendors = [...new Set(DATA.updates.map(r => r.vendor))].sort();
   const vendorSel = document.getElementById("vendorFilter");
@@ -308,11 +330,13 @@ document.getElementById("vendorFilter").addEventListener("change", () => {{
   render();
 }});
 document.getElementById("familyFilter").addEventListener("change", render);
+window.addEventListener("resize", syncStickyOffset);
 
 renderCards();
 populateVendors();
 updateFamilyOptions();
 render();
+syncStickyOffset();
 </script>
 </body>
 </html>
