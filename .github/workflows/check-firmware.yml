@@ -47,15 +47,25 @@ jobs:
       - name: Commit updated data
         run: |
           git config user.name "fw-checker-bot"
-          git config user.email "actions@users.noreply.github.com"
+          git config user.email "bublays@google.com"
+
+          # data/latest.json a data/history.json jsou pokazde kompletne
+          # znovu vygenerovane timto behem - nema smysl je "mergovat" po
+          # radcich s tim, co mezitim pripadne pushnul jiny bezici/predchozi
+          # beh. Misto rebase/merge proto vezmeme nejnovejsi stav vetve
+          # z GitHubu a na nej jen znovu polozime nasi cerstvou verzi souboru.
           git add data/latest.json data/history.json
           if git diff --cached --quiet; then
             echo "Zadna zmena v datech, nic se necommituje."
             exit 0
           fi
           git commit -m "chore: update firmware/patch data ($(date -u +%Y-%m-%d))"
-          git pull --rebase --autostash origin main
-          git push
+
+          git fetch origin main
+          git reset --soft origin/main
+          git add data/latest.json data/history.json
+          git commit -m "chore: update firmware/patch data ($(date -u +%Y-%m-%d))"
+          git push origin HEAD:main
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
