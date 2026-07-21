@@ -21,7 +21,7 @@ import yaml
 
 sys.path.insert(0, os.path.dirname(__file__))
 
-from common import Update, save_json, load_json  # noqa: E402
+from common import Update, save_json, load_json, is_relevant_update  # noqa: E402
 import scrape_dell  # noqa: E402
 import scrape_hpe  # noqa: E402
 import scrape_ibm  # noqa: E402
@@ -69,6 +69,14 @@ def main() -> int:
         )
     except Exception as exc:  # noqa: BLE001
         logger.exception("IBM scraper spadl: %s", exc)
+
+    before_filter = len(all_updates)
+    all_updates = [u for u in all_updates if is_relevant_update(u)]
+    logger.info(
+        "Filtr firmware/security: ponechano %d z %d zaznamu (vyrazeny obecne OS ovladace bez "
+        "bezpecnostni relevance).",
+        len(all_updates), before_filter,
+    )
 
     now_iso = dt.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
     latest_records = [u.to_dict() for u in all_updates]
