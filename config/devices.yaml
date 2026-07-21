@@ -25,15 +25,20 @@ ibm:
       display_name: "IBM FlashSystem 5200"
       support_info_page: "https://www.ibm.com/support/pages/support-information-flashsystem-5000-family"
 
-  # Tape knihovny - firmware distribuovaný přes IBM Fix Central / delivery04.
-  tape:
+  # Tape knihovny s plnou historii firmware (primy .txt soubor + zaloha na
+  # verejnou fix-readme stranku, kdyby primy odkaz prestal fungovat).
+  tape_fixlist:
     - id: TS4300
       display_name: "IBM TS4300 Tape Library"
+      fixlist_txt_url: "https://delivery04.dhe.ibm.com/sar/CMA/STA/09qng/0/TS4300_fixlist.txt"
       fix_readme_page: "https://www.ibm.com/support/pages/ts4300-fix-readme"
+
+  # Tape knihovny bez samostatne historie - misto toho tabulka "Code Update
+  # Recommendation" (Minimum / Recommended / Latest Level).
+  tape_recommendation:
     - id: Diamondback
       display_name: "IBM Diamondback Tape Library"
-      fix_readme_page: "https://www.ibm.com/support/pages/diamondback-tape-library-fix-readme"
-      docs_page: "https://www.ibm.com/docs/en/dtl?topic=system-updating-library-firmware"
+      recommendation_page: "https://www.ibm.com/support/pages/ibm-diamondback-code-update-recommendation"
 
 dell:
   models:
