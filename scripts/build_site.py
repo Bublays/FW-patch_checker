@@ -36,10 +36,6 @@ TEMPLATE = """<!doctype html>
     --ibm-bg: #eceef2;
     --radius: 10px;
     --shadow: 0 1px 2px rgba(16, 24, 40, .04), 0 1px 3px rgba(16, 24, 40, .06);
-    /* skutecna vyska .controls se dopocitava v JS (syncStickyOffset), aby se
-       posuvna hlavicka tabulky nikdy neprekryvala s panelem filtru/hledani -
-       tohle je jen bezpecnostni hodnota pro pripad, ze by se JS nestihl spustit. */
-    --controls-h: 60px;
   }}
   * {{ box-sizing: border-box; }}
   body {{
@@ -130,7 +126,6 @@ TEMPLATE = """<!doctype html>
   col.c-source {{ width: 8%; }}
   th {{
     cursor: pointer; user-select: none;
-    position: sticky; top: var(--controls-h);
     background: #fafbfc;
     color: var(--text-muted);
     font-weight: 600;
@@ -279,16 +274,6 @@ function render() {{
   }}
 }}
 
-// Zmeri skutecnou vysku panelu s filtry a nastavi ji jako offset pro
-// prilepenou hlavicku tabulky (viz CSS pravidlo pro "th"), aby se hlavicka
-// nikdy neprekryvala s prvnim radkem vypisu. Panel se muze zalomit na vic
-// radku na uzsi obrazovce, proto se prepocitava i pri zmene velikosti okna.
-function syncStickyOffset() {{
-  const controls = document.querySelector(".controls");
-  const h = controls.getBoundingClientRect().height;
-  document.documentElement.style.setProperty("--controls-h", h + "px");
-}}
-
 function populateVendors() {{
   const vendors = [...new Set(DATA.updates.map(r => r.vendor))].sort();
   const vendorSel = document.getElementById("vendorFilter");
@@ -330,13 +315,11 @@ document.getElementById("vendorFilter").addEventListener("change", () => {{
   render();
 }});
 document.getElementById("familyFilter").addEventListener("change", render);
-window.addEventListener("resize", syncStickyOffset);
 
 renderCards();
 populateVendors();
 updateFamilyOptions();
 render();
-syncStickyOffset();
 </script>
 </body>
 </html>
