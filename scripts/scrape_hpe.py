@@ -65,7 +65,18 @@ def _fetch_xml(url: str) -> ET.Element | None:
         return None
 
 
-def _load_meta(repo: str, version: str) -> Dict[str, dict]:
+def _first_nonempty_text(el, *paths: str) -> str:
+    """Zkusi vic moznych cest/hledani a vrati prvni nepradzny text.
+    Pouziva '//' (kdekoliv v podstromu), aby prezilo mirne odchylky ve
+    vnoreni mezi generacemi/schema verzemi manifestu."""
+    for path in paths:
+        found = el.find(path)
+        if found is not None and found.text and found.text.strip():
+            return found.text.strip()
+    return ""
+
+
+def _load_meta(repo: str, version: str, debug_dump_first_empty: bool = False) -> Dict[str, dict]:
     """Nacte manifest/meta.xml a vrati mapu product_id -> metadata."""
     url = f"{SDR_BASE}/{repo}/{version}/manifest/meta.xml"
     root = _fetch_xml(url)
@@ -73,14 +84,24 @@ def _load_meta(repo: str, version: str) -> Dict[str, dict]:
     if root is None:
         return meta
 
+    dumped = False
     for product in root.iter("product"):
         pid = product.get("id")
-        pv = product.find("product_version")
-        name_el = product.find("name/name_xlate")
+        if pid is None:
+            continue
+
+        # Zkousime jak strukturu "primy potomek" (name/name_xlate), tak
+        # "kdekoliv v podstromu" (.//name_xlate) - ruzne generace/schema
+        # verze manifestu HPE se v hloubce vnoreni mirne lisi.
+        name = _first_nonempty_text(product, "name/name_xlate", ".//name_xlate", "name", ".//name")
         version_el = product.find("version")
+        if version_el is None:
+            version_el = product.find(".//version")
         rd = product.find("release_date")
-        cat_el = product.find("category/category_xlate")
-        desc_el = product.find("description/description_xlate")
+        if rd is None:
+            rd = product.find(".//release_date")
+        category = _first_nonempty_text(product, "category/category_xlate", ".//category_xlate")
+        description = _first_nonempty_text(product, "description/description_xlate", ".//description_xlate")
 
         release_date = ""
         if rd is not None:
@@ -95,12 +116,21 @@ def _load_meta(repo: str, version: str) -> Dict[str, dict]:
             revision = version_el.get("revision", "")
             version_str = f"{value}({revision})" if revision else value
 
+        if not name and debug_dump_first_empty and not dumped:
+            dumped = True
+            child_tags = [c.tag for c in product]
+            logger.warning(
+                "DEBUG %s: product id=%s ma prazdne jmeno. Primi potomci elementu <product>: %s. "
+                "Cely XML fragment (prvnich 2000 znaku): %s",
+                repo, pid, child_tags, ET.tostring(product, encoding="unicode")[:2000],
+            )
+
         meta[pid] = {
-            "name": (name_el.text or "").strip() if name_el is not None else "",
+            "name": name,
             "version": version_str,
             "release_date": release_date,
-            "category": (cat_el.text or "").strip() if cat_el is not None else "",
-            "description": (desc_el.text or "").strip() if desc_el is not None else "",
+            "category": category,
+            "description": description,
         }
     return meta
 
@@ -150,7 +180,7 @@ def scrape(families: List[str], generations: List[str]) -> List[Update]:
             logger.warning("%s: system.xml se nepodarilo nacist nebo je prazdny", repo)
             continue
         logger.info("%s: nacteno %d systemu (serverovych modelu) z manifestu", repo, len(systems))
-        meta = _load_meta(repo, latest)
+        meta = _load_meta(repo, latest, debug_dump_first_empty=True)
         if not meta:
             logger.warning("%s: meta.xml se nepodarilo nacist nebo je prazdny", repo)
             continue
