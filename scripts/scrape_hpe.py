@@ -147,16 +147,23 @@ def scrape(families: List[str], generations: List[str]) -> List[Update]:
 
         systems = _load_systems(repo, latest)
         if not systems:
+            logger.warning("%s: system.xml se nepodarilo nacist nebo je prazdny", repo)
             continue
+        logger.info("%s: nacteno %d systemu (serverovych modelu) z manifestu", repo, len(systems))
         meta = _load_meta(repo, latest)
         if not meta:
+            logger.warning("%s: meta.xml se nepodarilo nacist nebo je prazdny", repo)
             continue
+        logger.info("%s: nacteno %d komponent (firmware/ovladacu) z manifestu", repo, len(meta))
 
+        repo_had_any_match = False
         for family in families:
             for generation in generations:
                 if GENERATION_TO_REPO.get(generation.lower()) != repo:
                     continue
                 matching_systems = [s for s in systems if _system_matches(s["name"], family, generation)]
+                if matching_systems:
+                    repo_had_any_match = True
                 for sys_entry in matching_systems:
                     for pid in sys_entry["product_ids"]:
                         info = meta.get(pid)
@@ -173,6 +180,14 @@ def scrape(families: List[str], generations: List[str]) -> List[Update]:
                             source_url=f"https://support.hpe.com/connect/s/product?kmpmoid=&tab=driversAndSoftware",
                         )
                         updates.append(upd)
+
+        if not repo_had_any_match:
+            sample = [s["name"] for s in systems[:15]]
+            logger.warning(
+                "%s: pro zadanou kombinaci rodina/generace se nenaslo nic. Ukazka nazvu systemu v tomto "
+                "repozitari (over, jestli sedi ocekavany format 'HPE ProLiant <rodina> <generace> Server'): %s",
+                repo, sample,
+            )
 
     # dedup
     seen = set()
