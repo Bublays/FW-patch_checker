@@ -1,27 +1,16 @@
 {
-  "count": 697,
-  "generated_at": "2026-07-27T10:01:23Z",
+  "count": 698,
+  "generated_at": "2026-08-03T09:56:16Z",
   "updates": [
     {
-      "category": "BIOS",
-      "description": "Dell Server PowerEdge BIOS R340/R240/T340/T140 Version 2.23.0 — For more information about specific items added and resolved in this BIOS version, see the Fixes and New and enhanced feature sections. If there's any security fix included in this BIOS, we'll address it in the BIOS external release note.",
+      "category": "Firmware",
+      "description": "Dell 14G /15G Internal Dual SD Module — Internal Dual SD Module Firmware Update",
       "family": "T140",
       "generation": "",
-      "key": "80fc308615ac4f0e",
-      "release_date": "2026-03-18",
-      "source_url": "https://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=1N1C0",
-      "update_id": "2.23.0",
-      "vendor": "Dell"
-    },
-    {
-      "category": "BIOS",
-      "description": "Dell Server PowerEdge BIOS R740xd2 Version 2.27.0 — For more information about specific items added and resolved in this BIOS version, see the Fixes and New and enhanced feature sections. If there's any security fix included in this BIOS, we'll address it in the BIOS external release note.",
-      "family": "R740xd2",
-      "generation": "",
-      "key": "014fec5b6ec90fea",
-      "release_date": "2026-03-18",
-      "source_url": "https://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=0V4PY",
-      "update_id": "2.27.0",
+      "key": "9311780c270a69fe",
+      "release_date": "2022-01-19",
+      "source_url": "https://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=X4K6X",
+      "update_id": "A06",
       "vendor": "Dell"
     },
     {
@@ -37,12 +26,34 @@
     },
     {
       "category": "BIOS",
-      "description": "Dell Server PowerEdge BIOS R740/R740xd/R640/R940/7920R Version 2.27.0 — For more information about specific items added and resolved in this BIOS version, see the Fixes and New and enhanced feature sections. If there's any security fix included in this BIOS, we'll address it in the BIOS external release note.",
-      "family": "R740xd",
+      "description": "Dell Server PowerEdge BIOS R340/R240/T340/T140 Version 2.23.0 — For more information about specific items added and resolved in this BIOS version, see the Fixes and New and enhanced feature sections. If there's any security fix included in this BIOS, we'll address it in the BIOS external release note.",
+      "family": "T140",
       "generation": "",
-      "key": "2fe0132024bb17c3",
+      "key": "80fc308615ac4f0e",
       "release_date": "2026-03-18",
+      "source_url": "https://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=1N1C0",
+      "update_id": "2.23.0",
+      "vendor": "Dell"
+    },
+    {
+      "category": "BIOS",
+      "description": "Dell Server PowerEdge BIOS R740/R740xd/R640/R940/7920R Version 2.27.0 — For more information about specific items added and resolved in this BIOS version, see the Fixes and New and enhanced feature sections. If there's any security fix included in this BIOS, we'll address it in the BIOS external release note.",
+      "family": "R740",
+      "generation": "",
+      "key": "2df87a54bf0c9b5f",
+      "release_date": "2026-04-23",
       "source_url": "https://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=N5C9K",
+      "update_id": "2.27.0",
+      "vendor": "Dell"
+    },
+    {
+      "category": "BIOS",
+      "description": "Dell Server PowerEdge BIOS R740xd2 Version 2.27.0 — For more information about specific items added and resolved in this BIOS version, see the Fixes and New and enhanced feature sections. If there's any security fix included in this BIOS, we'll address it in the BIOS external release note.",
+      "family": "R740xd2",
+      "generation": "",
+      "key": "014fec5b6ec90fea",
+      "release_date": "2026-03-18",
+      "source_url": "https://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=0V4PY",
       "update_id": "2.27.0",
       "vendor": "Dell"
     },
