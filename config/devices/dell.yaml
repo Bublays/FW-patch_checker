@@ -1,0 +1,8 @@
+# Modely Dell PowerEdge, ktere chceme sledovat.
+# Pridani noveho modelu = jen uprava tohoto souboru, scripts/scrape_dell.py
+# se nemusi menit (matchuje se presne cislo modelu proti Dell katalogu).
+
+models:
+  - "PowerEdge R440"
+  - "PowerEdge R740"
+  - "PowerEdge T140"
