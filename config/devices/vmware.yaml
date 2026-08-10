@@ -1,0 +1,25 @@
+# VMware / Broadcom - ESXi a vCenter Server.
+#
+# Zdroj: verejne Broadcom Knowledge Base clanky se seznamem VSECH vydanych
+# verzi/patchu (stejne udaje jako komercni "build number" prehledy). Zadne
+# prihlaseni neni potreba - jen VMware Fix Central / techdocs pro STAZENI
+# patche vyzaduje login, samotny seznam verzi + data vydani je verejny.
+#
+# Kazda stranka ma vic tabulek - jednu na "major verzi" (napr. "ESXi 8.0",
+# "vCenter Server 7.0"...) a historii sahajici zpet do roku ~2007. Klic
+# "versions" niz urcuje, ktere major verze (podle textu nadpisu nad
+# tabulkou) nas zajimaji - zbytek se preskoci. Pridani dalsi major verze
+# (napr. az vyjde "ESXi 10.0") = jen pridani retezce do "versions".
+
+products:
+  - id: ESXi
+    display_name: "VMware ESXi"
+    source_page: "https://knowledge.broadcom.com/external/article/316595/build-numbers-and-versions-of-vmware-esx.html"
+    versions: ["8.0", "9.0", "9.1"]
+    category: "Firmware/Hypervisor"
+
+  - id: vCenter
+    display_name: "VMware vCenter Server"
+    source_page: "https://knowledge.broadcom.com/external/article/326316/build-numbers-and-versions-of-vmware-vce.html"
+    versions: ["8.0", "9.0", "9.1"]
+    category: "Firmware/Management"
