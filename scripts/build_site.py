@@ -111,6 +111,36 @@ TEMPLATE = """<!doctype html>
   }}
   select:focus, input:focus {{ outline: 2px solid var(--accent); outline-offset: 1px; }}
 
+  .date-range {{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2px;
+    flex: 0 0 auto;
+  }}
+  .date-range label {{
+    display: inline-flex;
+    align-items: center;
+    padding: .38rem .65rem;
+    border-radius: 6px;
+    font-size: .82rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    white-space: nowrap;
+  }}
+  .date-range input {{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }}
+  .date-range label.active {{
+    background: var(--accent);
+    color: #fff;
+  }}
+
   .table-wrap {{
     background: var(--surface);
     border: 1px solid var(--border);
@@ -186,6 +216,10 @@ TEMPLATE = """<!doctype html>
   <input id="search" type="search" placeholder="Hledat (model, verze, popis)...">
   <select id="vendorFilter"><option value="">Všichni výrobci</option></select>
   <select id="familyFilter"><option value="">Všechny modely</option></select>
+  <div class="date-range" id="dateRange">
+    <label class="active"><input type="radio" name="dateRange" value="year" checked><span>Poslední rok</span></label>
+    <label><input type="radio" name="dateRange" value="all"><span>Vše</span></label>
+  </div>
 </div>
 
 <div class="table-wrap">
@@ -233,6 +267,11 @@ function render() {{
   const search = document.getElementById("search").value.toLowerCase();
   const vendor = document.getElementById("vendorFilter").value;
   const family = document.getElementById("familyFilter").value;
+  const dateRange = document.querySelector('input[name="dateRange"]:checked').value;
+
+  const yearAgo = new Date();
+  yearAgo.setFullYear(yearAgo.getFullYear() - 1);
+  const yearAgoStr = yearAgo.toISOString().slice(0, 10);
 
   let rows = DATA.updates.filter(r => {{
     if (vendor && r.vendor !== vendor) return false;
@@ -241,6 +280,9 @@ function render() {{
       const hay = (r.vendor + " " + r.family + " " + r.generation + " " + r.update_id + " " + r.description).toLowerCase();
       if (!hay.includes(search)) return false;
     }}
+    // zaznamy bez zname data vydani se nefiltruji - potichu skryt neco,
+    // u ceho nezname stari, by mohlo snadno uniknout pozornosti.
+    if (dateRange === "year" && r.release_date && r.release_date < yearAgoStr) return false;
     return true;
   }});
 
@@ -319,6 +361,13 @@ document.getElementById("vendorFilter").addEventListener("change", () => {{
   render();
 }});
 document.getElementById("familyFilter").addEventListener("change", render);
+document.querySelectorAll('input[name="dateRange"]').forEach(input => {{
+  input.addEventListener("change", () => {{
+    document.querySelectorAll("#dateRange label").forEach(l => l.classList.remove("active"));
+    input.closest("label").classList.add("active");
+    render();
+  }});
+}});
 
 renderCards();
 populateVendors();
