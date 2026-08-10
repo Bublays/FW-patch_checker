@@ -1,0 +1,11 @@
+# Rodiny a generace serveru HPE ProLiant, ktere chceme sledovat.
+# Pridani noveho modelu/generace = jen uprava tohoto souboru, scripts/scrape_hpe.py
+# se nemusi menit.
+
+generations: ["Gen10", "Gen10 Plus", "Gen11", "Gen12"]
+families:
+  - DL320
+  - DL360
+  - DL365
+  - DL380
+  - DL385
