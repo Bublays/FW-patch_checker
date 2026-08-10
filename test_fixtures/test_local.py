@@ -24,6 +24,7 @@ import common  # noqa: E402
 import scrape_hpe  # noqa: E402
 import scrape_ibm  # noqa: E402
 import scrape_dell  # noqa: E402
+import scrape_vmware  # noqa: E402
 import run_all  # noqa: E402
 
 
@@ -209,18 +210,77 @@ def test_ibm_ts4300_recommendation_table():
     print("  OK -", len(updates), "zaznamu, nejnovejsi verze (Apr 2026) spravne zachycena")
 
 
+def test_vmware_esxi_heading_table_pairing():
+    print("== VMware: parovani nadpisu (major verze) s nasledujici tabulkou (ESXi) ==")
+    sample_path = os.path.join(HERE, "vmware_esxi_sample.html")
+
+    def fake_get(url, **kwargs):
+        with open(sample_path, "r", encoding="utf-8") as f:
+            return FakeResponse(text=f.read())
+
+    with patch.object(scrape_vmware, "get", fake_get):
+        updates = scrape_vmware._scrape_page(
+            "ESXi", "VMware ESXi", "https://example.com/esxi", ["8.0", "9.0", "9.1"], "Firmware/Hypervisor"
+        )
+
+    generations = {u.generation for u in updates}
+    print("  nalezene sekce:", generations)
+    assert generations == {"ESX 9.1", "ESX 9.0", "ESXi 8.0"}, (
+        "sekce 'Older releases' se nema zpracovat, neni v pozadovanych verzich"
+    )
+
+    names = {u.update_id for u in updates}
+    assert "ESXi 8.0 Update 3k" in names, "nazev rozdeleny do 2 <a> tagu se musi spravne slozit dohromady"
+    assert "ESXi 8.0 Update 3j" in names
+    assert "ESX 9.1.0.0200" in names
+
+    u3k = next(u for u in updates if u.update_id == "ESXi 8.0 Update 3k")
+    assert u3k.release_date == "2026-07-29"
+    assert "25595708" in u3k.description
+    print("  OK -", len(updates), "zaznamu, 'Older releases' spravne vynechano")
+
+
+def test_vmware_column_mapping_vcenter():
+    print("== VMware: mapovani sloupcu podle hlavicky (vCenter, ruzne tvary tabulky) ==")
+    sample_path = os.path.join(HERE, "vmware_vcenter_sample.html")
+
+    def fake_get(url, **kwargs):
+        with open(sample_path, "r", encoding="utf-8") as f:
+            return FakeResponse(text=f.read())
+
+    with patch.object(scrape_vmware, "get", fake_get):
+        updates = scrape_vmware._scrape_page(
+            "vCenter", "VMware vCenter Server", "https://example.com/vcenter", ["8.0", "9.0", "9.1"], "Firmware/Management"
+        )
+
+    generations = {u.generation for u in updates}
+    print("  nalezene sekce:", generations)
+    assert generations == {"vCenter 9.1", "vCenter Server 8.0"}, (
+        "sekce '6.5 and older' se nema zpracovat, neni v pozadovanych verzich"
+    )
+
+    names = {u.update_id for u in updates}
+    # vCenter 9.1 tabulka nema sloupec "Release name" - musi se pouzit "Version"
+    assert "9.1.0.0300" in names
+    # vCenter Server 8.0 tabulka "Release name" MA - musi se preferovat pred "Version"
+    assert "vCenter Server 8.0 Update 3k" in names
+    assert "8.0.3.01000" not in names, "kdyz existuje sloupec 'Release name', nemel by se pouzit surovy 'Version' kod"
+    print("  OK -", len(updates), "zaznamu, sloupce spravne namapovany podle hlavicky")
+
+
 def test_run_all_auto_discovery():
     print("== run_all: auto-discovery vyrobcu z config/devices/*.yaml ==")
     configs = run_all.discover_vendor_configs()
     print("  nalezene config soubory:", sorted(configs.keys()))
-    assert {"hpe", "dell", "ibm"} <= set(configs.keys()), (
-        "ocekavany minimalne hpe/dell/ibm config soubory v config/devices/"
+    assert {"hpe", "dell", "ibm", "vmware"} <= set(configs.keys()), (
+        "ocekavany minimalne hpe/dell/ibm/vmware config soubory v config/devices/"
     )
     assert "families" in configs["hpe"] and "generations" in configs["hpe"]
     assert "models" in configs["dell"]
     assert "flashsystem" in configs["ibm"]
+    assert "products" in configs["vmware"]
 
-    for vendor in ("hpe", "dell", "ibm"):
+    for vendor in ("hpe", "dell", "ibm", "vmware"):
         scrape_fn = run_all.load_scraper(vendor)
         assert scrape_fn is not None, f"scrape_{vendor}.py by mel byt dohledatelny a mit funkci scrape(cfg)"
         assert callable(scrape_fn)
@@ -239,5 +299,7 @@ if __name__ == "__main__":
     test_ibm_tape_fixlist_direct_txt()
     test_ibm_diamondback_recommendation_table()
     test_ibm_ts4300_recommendation_table()
+    test_vmware_esxi_heading_table_pairing()
+    test_vmware_column_mapping_vcenter()
     test_run_all_auto_discovery()
     print("\nVSECHNY OFFLINE TESTY PROSLY")
