@@ -1,7 +1,51 @@
 {
-  "count": 640,
-  "generated_at": "2026-08-10T05:14:10Z",
+  "count": 644,
+  "generated_at": "2026-08-10T05:14:37Z",
   "updates": [
+    {
+      "category": "Firmware",
+      "description": "Dell 14G /15G Internal Dual SD Module — Internal Dual SD Module Firmware Update",
+      "family": "T140",
+      "generation": "",
+      "key": "9311780c270a69fe",
+      "release_date": "2022-01-19",
+      "source_url": "https://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=X4K6X",
+      "update_id": "A06",
+      "vendor": "Dell"
+    },
+    {
+      "category": "BIOS",
+      "description": "Dell Server PowerEdge BIOS R440/R540/T440 Version 2.27.0 — For more information about specific items added and resolved in this BIOS version, see the Fixes and New and enhanced feature sections. If there's any security fix included in this BIOS, we'll address it in the BIOS external release note.",
+      "family": "R440",
+      "generation": "",
+      "key": "85d8f17d66f419b3",
+      "release_date": "2026-03-18",
+      "source_url": "https://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=GVC9F",
+      "update_id": "2.27.0",
+      "vendor": "Dell"
+    },
+    {
+      "category": "BIOS",
+      "description": "Dell Server PowerEdge BIOS R340/R240/T340/T140 Version 2.23.0 — For more information about specific items added and resolved in this BIOS version, see the Fixes and New and enhanced feature sections. If there's any security fix included in this BIOS, we'll address it in the BIOS external release note.",
+      "family": "T140",
+      "generation": "",
+      "key": "80fc308615ac4f0e",
+      "release_date": "2026-03-18",
+      "source_url": "https://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=1N1C0",
+      "update_id": "2.23.0",
+      "vendor": "Dell"
+    },
+    {
+      "category": "BIOS",
+      "description": "Dell Server PowerEdge BIOS R740/R740xd/R640/R940/7920R Version 2.27.0 — For more information about specific items added and resolved in this BIOS version, see the Fixes and New and enhanced feature sections. If there's any security fix included in this BIOS, we'll address it in the BIOS external release note.",
+      "family": "R740",
+      "generation": "",
+      "key": "2df87a54bf0c9b5f",
+      "release_date": "2026-04-23",
+      "source_url": "https://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=N5C9K",
+      "update_id": "2.27.0",
+      "vendor": "Dell"
+    },
     {
       "category": "Firmware - Network",
       "description": "This package contains the utilities and binaries for upgrading Broadcom NetXtreme-E Gigabit Ethernet NIC firmware.",
