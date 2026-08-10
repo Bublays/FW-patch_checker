@@ -1,11 +1,11 @@
 # FW checker
 
 Automaticky sleduje dostupné firmware update a patche pro vybraná zařízení
-HPE, Dell a IBM. Jednou týdně (nebo na vyžádání) stáhne aktuální data
+HPE, Dell, IBM a VMware. Jednou týdně (nebo na vyžádání) stáhne aktuální data
 z veřejných portálů výrobců, uloží je do repozitáře a publikuje jako
 přehlednou tabulku na GitHub Pages.
 
-**Žádné přihlašovací údaje nejsou potřeba** — všechny tři scrapery používají
+**Žádné přihlašovací údaje nejsou potřeba** — všechny scrapery používají
 veřejné, nezaheslované zdroje (viz níže).
 
 ## Rychlý start
@@ -22,12 +22,14 @@ veřejné, nezaheslované zdroje (viz níže).
 ## Jak to funguje
 
 ```
-config/devices/hpe.yaml — seznam sledovaných HPE zařízení
-config/devices/dell.yaml — seznam sledovaných Dell zařízení
-config/devices/ibm.yaml  — seznam sledovaných IBM zařízení
+config/devices/hpe.yaml    — seznam sledovaných HPE zařízení
+config/devices/dell.yaml   — seznam sledovaných Dell zařízení
+config/devices/ibm.yaml    — seznam sledovaných IBM zařízení
+config/devices/vmware.yaml — seznam sledovaných VMware produktů/verzí
 scripts/scrape_dell.py  — Dell scraper
 scripts/scrape_hpe.py   — HPE scraper
 scripts/scrape_ibm.py   — IBM scraper
+scripts/scrape_vmware.py — VMware/Broadcom scraper
 scripts/run_all.py      — najde config/devices/*.yaml, spustí odpovídající scrapery,
                            uloží data/latest.json a data/history.json
 scripts/build_site.py   — z data/latest.json vygeneruje statickou stránku do docs/
@@ -56,6 +58,8 @@ nově objevené položky jsou na stránce zvýrazněné.
 | **IBM FlashSystem** (7300/5300/5200) | `ibm.com/support/pages/support-information-flashsystem-*-family` | Veřejná stránka se seznamem vydaných verzí IBM Storage Virtualize a daty vydání. |
 | **IBM TS4300** | `ibm.com/support/pages/ts4300-fix-readme` (bohatá historie s popisem změn) **+** `ibm.com/support/pages/ibm-ts4300-code-update-recommendation` (tabulka Minimum/Recommended/Latest Level) | Kombinace dvou zdrojů — viz níže "Proč dva zdroje pro TS4300". |
 | **IBM Diamondback** | `ibm.com/support/pages/ibm-diamondback-code-update-recommendation` | Diamondback nemá samostatnou historii jako TS4300 — IBM zveřejňuje jen tabulku Minimum/Recommended/Latest Level s daty; parsujeme přímo tuto tabulku. |
+| **VMware ESXi** | `knowledge.broadcom.com/external/article/316595` — veřejný KB článek "Build numbers and versions of VMware ESXi/ESX" | Stránka má samostatnou tabulku pro každou major verzi (historie sahá do ~2007) — parsujeme jen tabulky pod nadpisy uvedenými v `versions` u daného produktu v configu. |
+| **VMware vCenter Server** | `knowledge.broadcom.com/external/article/326316` — veřejný KB článek "VMware vCenter Server versions and build numbers" | Stejný princip jako u ESXi. Sloupce se mezi tabulkami mírně liší (např. novější verze nemají samostatný sloupec "Release name") — scraper sloupce mapuje podle textu hlavičky, ne podle pevné pozice. |
 
 ### Proč dva zdroje pro TS4300
 
@@ -101,14 +105,18 @@ bez nutnosti řešit JS/session automatizaci.
   jednotlivě a nespadne celý běh kvůli jednomu výrobci — zkontroluj vždy log
   běhu (**Actions → poslední běh**), pokud se ti zdá, že pro nějaké
   zařízení chybí data.
+- **VMware stránky mají historii od ~2007** — zpracovávají se jen tabulky
+  pod nadpisy uvedenými v `versions` (viz `config/devices/vmware.yaml`). Až
+  vyjde nová major verze (např. ESXi 10.0), přidej ji do `versions` u
+  daného produktu, jinak se v přehledu neobjeví.
 
 ## Úprava seznamu zařízení
 
 Otevři příslušný soubor v `config/devices/` (`hpe.yaml` / `dell.yaml` /
-`ibm.yaml`) a přidej/uber modely nebo generace. Kód se měnit nemusí —
-filtrování probíhá dynamicky podle configu.
+`ibm.yaml` / `vmware.yaml`) a přidej/uber modely, generace nebo verze. Kód
+se měnit nemusí — filtrování probíhá dynamicky podle configu.
 
-## Přidání nového výrobce (např. Lenovo, VMware, Fortinet)
+## Přidání nového výrobce (např. Lenovo, Fortinet)
 
 Protože každý výrobce publikuje aktualizace jinak (jiný formát stránky/API),
 nejde postavit jeden univerzální scraper pro všechny — nový výrobce si vždy
