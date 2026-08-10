@@ -1,0 +1,45 @@
+# IBM nema jeden jednotny katalog jako Dell/HPE - podle typu zarizeni se
+# pouziva jeden ze 3 zdroju (viz scripts/scrape_ibm.py). Pridani daliho
+# zarizeni STEJNEHO typu (napr. dalsi FlashSystem model) = jen pridani
+# polozky sem, zadna uprava kodu neni potreba.
+
+# FlashSystem produkty - firmware = uroven IBM Storage Virtualize.
+flashsystem:
+  - id: FS7300
+    display_name: "IBM FlashSystem 7300"
+    support_info_page: "https://www.ibm.com/support/pages/support-information-flashsystem-7000-family"
+  - id: FS5300
+    display_name: "IBM FlashSystem 5300"
+    support_info_page: "https://www.ibm.com/support/pages/support-information-flashsystem-5000-family"
+  - id: FS5200
+    display_name: "IBM FlashSystem 5200"
+    support_info_page: "https://www.ibm.com/support/pages/support-information-flashsystem-5000-family"
+
+# Tape knihovny s plnou historii firmware (zaloha na verejnou fix-readme
+# stranku). Pozn.: primy odkaz na "<Model>_fixlist.txt" (delivery04/download4
+# .../sar/CMA/STA/<hash>/...) NEPOUZIVAME jako zdroj - IBM pro kazde nove
+# vydani generuje NOVY hash v ceste, takze jakykoliv jednou zapsany primy
+# odkaz casem zamrzne na stare verzi (takhle jsme kdysi zustali na verzi
+# z roku 2021). Fix-readme stranka na ibm.com/support ma stejny obsah
+# vlozeny primo v tele a je prubezne aktualizovana.
+tape_fixlist:
+  - id: TS4300
+    display_name: "IBM TS4300 Tape Library"
+    fix_readme_page: "https://www.ibm.com/support/pages/ts4300-fix-readme"
+
+# Tape knihovny bez samostatne historie - misto toho tabulka "Code Update
+# Recommendation" (Minimum / Recommended / Latest Level).
+#
+# TS4300 je tu navic i presto, ze ma i fixlist historii vyse - fix-readme
+# stranka se ukazala byt nekdy pozadu za nejnovejsim vydanim (viz komentar
+# vyse), zatimco tahle "Code Update Recommendation" tabulka spolehlive
+# ukazuje aktualne nejnovejsi "Latest Level". Ziskame tak jak bohatou
+# historii s popisem zmen (fixlist), tak jistotu, ze nam neunikne uplne
+# nejnovejsi vydani.
+tape_recommendation:
+  - id: Diamondback
+    display_name: "IBM Diamondback Tape Library"
+    recommendation_page: "https://www.ibm.com/support/pages/ibm-diamondback-code-update-recommendation"
+  - id: TS4300
+    display_name: "IBM TS4300 Tape Library"
+    recommendation_page: "https://www.ibm.com/support/pages/ibm-ts4300-code-update-recommendation"
