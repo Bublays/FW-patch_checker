@@ -1,16 +1,16 @@
 {
   "count": 753,
-  "generated_at": "2026-08-10T07:51:07Z",
+  "generated_at": "2026-08-17T07:05:21Z",
   "updates": [
     {
-      "category": "Firmware",
-      "description": "Dell 14G /15G Internal Dual SD Module — Internal Dual SD Module Firmware Update",
+      "category": "BIOS",
+      "description": "Dell Server PowerEdge BIOS R340/R240/T340/T140 Version 2.23.0 — For more information about specific items added and resolved in this BIOS version, see the Fixes and New and enhanced feature sections. If there's any security fix included in this BIOS, we'll address it in the BIOS external release note.",
       "family": "T140",
       "generation": "",
-      "key": "9311780c270a69fe",
-      "release_date": "2022-01-19",
-      "source_url": "https://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=X4K6X",
-      "update_id": "A06",
+      "key": "80fc308615ac4f0e",
+      "release_date": "2026-03-18",
+      "source_url": "https://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=1N1C0",
+      "update_id": "2.23.0",
       "vendor": "Dell"
     },
     {
@@ -22,17 +22,6 @@
       "release_date": "2026-03-18",
       "source_url": "https://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=GVC9F",
       "update_id": "2.27.0",
-      "vendor": "Dell"
-    },
-    {
-      "category": "BIOS",
-      "description": "Dell Server PowerEdge BIOS R340/R240/T340/T140 Version 2.23.0 — For more information about specific items added and resolved in this BIOS version, see the Fixes and New and enhanced feature sections. If there's any security fix included in this BIOS, we'll address it in the BIOS external release note.",
-      "family": "T140",
-      "generation": "",
-      "key": "80fc308615ac4f0e",
-      "release_date": "2026-03-18",
-      "source_url": "https://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=1N1C0",
-      "update_id": "2.23.0",
       "vendor": "Dell"
     },
     {
@@ -8107,6 +8096,17 @@
       "release_date": "2024-06-25",
       "source_url": "https://knowledge.broadcom.com/external/article/326316/build-numbers-and-versions-of-vmware-vce.html",
       "update_id": "vCenter Server 8.0 Update 3",
+      "vendor": "VMware"
+    },
+    {
+      "category": "Firmware/Management",
+      "description": "vCenter Server 8.0 🔝",
+      "family": "VMware vCenter Server",
+      "generation": "vCenter Server 8.0 🔝",
+      "key": "1b2fca60c6d9f817",
+      "release_date": "2026-08-03",
+      "source_url": "https://knowledge.broadcom.com/external/article/326316/build-numbers-and-versions-of-vmware-vce.html",
+      "update_id": "vCenter Server 8.0 Update 2f",
       "vendor": "VMware"
     },
     {
