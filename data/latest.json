@@ -1,6 +1,6 @@
 {
-  "count": 753,
-  "generated_at": "2026-08-17T07:05:21Z",
+  "count": 755,
+  "generated_at": "2026-08-24T07:08:14Z",
   "updates": [
     {
       "category": "BIOS",
@@ -7506,10 +7506,10 @@
     },
     {
       "category": "Firmware/Hypervisor",
-      "description": "ESX 9.1 🔝 (build 25557999)",
+      "description": "ESX 9.1 (build 25557999)",
       "family": "VMware ESXi",
-      "generation": "ESX 9.1 🔝",
-      "key": "a7721121250e4145",
+      "generation": "ESX 9.1",
+      "key": "743ac30c0aa21cbc",
       "release_date": "2026-07-13",
       "source_url": "https://knowledge.broadcom.com/external/article/316595/build-numbers-and-versions-of-vmware-esx.html",
       "update_id": "ESX 9.1.0.0200",
@@ -7517,10 +7517,10 @@
     },
     {
       "category": "Firmware/Hypervisor",
-      "description": "ESX 9.1 🔝 (build 25433460)",
+      "description": "ESX 9.1 (build 25433460)",
       "family": "VMware ESXi",
-      "generation": "ESX 9.1 🔝",
-      "key": "190b0a52f9c61332",
+      "generation": "ESX 9.1",
+      "key": "2cb7eca20ecbc98c",
       "release_date": "2026-06-05",
       "source_url": "https://knowledge.broadcom.com/external/article/316595/build-numbers-and-versions-of-vmware-esx.html",
       "update_id": "ESX 9.1.0.0100",
@@ -7528,13 +7528,24 @@
     },
     {
       "category": "Firmware/Hypervisor",
-      "description": "ESX 9.1 🔝 (build 25370933)",
+      "description": "ESX 9.1 (build 25370933)",
       "family": "VMware ESXi",
-      "generation": "ESX 9.1 🔝",
-      "key": "f420202e0e1272f3",
+      "generation": "ESX 9.1",
+      "key": "d64a8fcb755489c0",
       "release_date": "2026-05-12",
       "source_url": "https://knowledge.broadcom.com/external/article/316595/build-numbers-and-versions-of-vmware-esx.html",
       "update_id": "ESX 9.1.0.0",
+      "vendor": "VMware"
+    },
+    {
+      "category": "Firmware/Hypervisor",
+      "description": "ESX 9.0 🔝 (build 25595025)",
+      "family": "VMware ESXi",
+      "generation": "ESX 9.0 🔝",
+      "key": "52faa78ffead06f8",
+      "release_date": "2026-07-26",
+      "source_url": "https://knowledge.broadcom.com/external/article/316595/build-numbers-and-versions-of-vmware-esx.html",
+      "update_id": "ESX 9.0.2.0100",
       "vendor": "VMware"
     },
     {
@@ -7700,6 +7711,17 @@
       "release_date": "2024-06-25",
       "source_url": "https://knowledge.broadcom.com/external/article/316595/build-numbers-and-versions-of-vmware-esx.html",
       "update_id": "ESXi 8.0 Update 3",
+      "vendor": "VMware"
+    },
+    {
+      "category": "Firmware/Hypervisor",
+      "description": "ESXi 8.0 🔝 (build 25626445)",
+      "family": "VMware ESXi",
+      "generation": "ESXi 8.0 🔝",
+      "key": "1e6bcc69825167a3",
+      "release_date": "2026-08-03",
+      "source_url": "https://knowledge.broadcom.com/external/article/316595/build-numbers-and-versions-of-vmware-esx.html",
+      "update_id": "ESXi 8.0 Update 2f",
       "vendor": "VMware"
     },
     {
