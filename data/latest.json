@@ -1,6 +1,6 @@
 {
-  "count": 758,
-  "generated_at": "2026-09-14T12:21:29Z",
+  "count": 759,
+  "generated_at": "2026-09-21T12:28:43Z",
   "updates": [
     {
       "category": "BIOS",
@@ -7536,6 +7536,17 @@
       "source_url": "https://www.ibm.com/support/pages/ibm-ts4300-code-update-recommendation",
       "update_id": "1.7.2.0-C00",
       "vendor": "IBM"
+    },
+    {
+      "category": "Firmware/Hypervisor",
+      "description": "ESX 9.1 (build 25714478)",
+      "family": "VMware ESXi",
+      "generation": "ESX 9.1",
+      "key": "7291972bc9e8e977",
+      "release_date": "2026-09-03",
+      "source_url": "https://knowledge.broadcom.com/external/article/316595/build-numbers-and-versions-of-vmware-esx.html",
+      "update_id": "ESX 9.1.1.0",
+      "vendor": "VMware"
     },
     {
       "category": "Firmware/Hypervisor",
