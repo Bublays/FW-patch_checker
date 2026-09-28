@@ -1,6 +1,6 @@
 {
-  "count": 759,
-  "generated_at": "2026-09-21T12:28:43Z",
+  "count": 760,
+  "generated_at": "2026-09-28T13:26:45Z",
   "updates": [
     {
       "category": "BIOS",
@@ -7953,6 +7953,17 @@
       "release_date": "2022-10-11",
       "source_url": "https://knowledge.broadcom.com/external/article/316595/build-numbers-and-versions-of-vmware-esx.html",
       "update_id": "ESXi 8.0 GA",
+      "vendor": "VMware"
+    },
+    {
+      "category": "Firmware/Management",
+      "description": "vCenter 9.1 🔝 (build 25712839)",
+      "family": "VMware vCenter Server",
+      "generation": "vCenter 9.1 🔝",
+      "key": "d35aaa414bf17c7c",
+      "release_date": "2026-09-03",
+      "source_url": "https://knowledge.broadcom.com/external/article/326316/build-numbers-and-versions-of-vmware-vce.html",
+      "update_id": "9.1.1.0",
       "vendor": "VMware"
     },
     {
