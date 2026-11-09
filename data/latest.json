@@ -1,6 +1,6 @@
 {
   "count": 781,
-  "generated_at": "2026-11-02T15:18:03Z",
+  "generated_at": "2026-11-09T15:46:50Z",
   "updates": [
     {
       "category": "BIOS",
@@ -7696,10 +7696,10 @@
       "description": "Uroven dle IBM doporuceni: Recommended \"go to\" Level",
       "family": "IBM TS4300 Tape Library — TS4300 (5544)",
       "generation": "",
-      "key": "17e4127572384c80",
-      "release_date": "2025-10-01",
+      "key": "17bea5d1a1b2bd52",
+      "release_date": "2026-11-01",
       "source_url": "https://www.ibm.com/support/pages/ibm-ts4300-code-update-recommendation",
-      "update_id": "1.7.1.1-A00",
+      "update_id": "1.7.2.1-A00",
       "vendor": "IBM"
     },
     {
@@ -7707,10 +7707,10 @@
       "description": "Uroven dle IBM doporuceni: Latest Level",
       "family": "IBM TS4300 Tape Library — TS4300 (5544)",
       "generation": "",
-      "key": "902fa0ad782aedfd",
-      "release_date": "2026-04-01",
+      "key": "17bea5d1a1b2bd52",
+      "release_date": "2026-11-01",
       "source_url": "https://www.ibm.com/support/pages/ibm-ts4300-code-update-recommendation",
-      "update_id": "1.7.2.0-C00",
+      "update_id": "1.7.2.1-A00",
       "vendor": "IBM"
     },
     {
@@ -7729,10 +7729,10 @@
       "description": "Uroven dle IBM doporuceni: Recommended \"go to\" Level",
       "family": "IBM TS4300 Tape Library — TS4300 (3555)",
       "generation": "",
-      "key": "b456a28c17842ce7",
-      "release_date": "2025-10-01",
+      "key": "4247c592b1b0fdc8",
+      "release_date": "2026-11-01",
       "source_url": "https://www.ibm.com/support/pages/ibm-ts4300-code-update-recommendation",
-      "update_id": "1.7.1.1-A00",
+      "update_id": "1.7.2.1-A00",
       "vendor": "IBM"
     },
     {
@@ -7740,10 +7740,10 @@
       "description": "Uroven dle IBM doporuceni: Latest Level",
       "family": "IBM TS4300 Tape Library — TS4300 (3555)",
       "generation": "",
-      "key": "c2590d74fd3a2146",
-      "release_date": "2026-04-01",
+      "key": "4247c592b1b0fdc8",
+      "release_date": "2026-11-01",
       "source_url": "https://www.ibm.com/support/pages/ibm-ts4300-code-update-recommendation",
-      "update_id": "1.7.2.0-C00",
+      "update_id": "1.7.2.1-A00",
       "vendor": "IBM"
     },
     {
