@@ -1,6 +1,6 @@
 {
   "count": 781,
-  "generated_at": "2026-11-09T15:46:50Z",
+  "generated_at": "2026-11-16T15:21:28Z",
   "updates": [
     {
       "category": "BIOS",
@@ -7575,10 +7575,10 @@
       "description": "Uroven dle IBM doporuceni: Latest Level",
       "family": "IBM Diamondback Tape Library — Diamondback (4882, 4883, 4884, 5881, 5882)",
       "generation": "",
-      "key": "9dacecb80dd0cc7c",
-      "release_date": "2026-07-01",
+      "key": "c59ab57fc042c2a5",
+      "release_date": "2026-11-01",
       "source_url": "https://www.ibm.com/support/pages/ibm-diamondback-code-update-recommendation",
-      "update_id": "2.12.0.3-B00",
+      "update_id": "2.12.0.4-B00",
       "vendor": "IBM"
     },
     {
@@ -7608,10 +7608,10 @@
       "description": "Uroven dle IBM doporuceni: Latest Level",
       "family": "IBM Diamondback Tape Library — LTO-10 FAC, SAC",
       "generation": "",
-      "key": "0582ec666df801f8",
-      "release_date": "2026-06-01",
+      "key": "e1ea32822b155106",
+      "release_date": "2026-11-01",
       "source_url": "https://www.ibm.com/support/pages/ibm-diamondback-code-update-recommendation",
-      "update_id": "LTOA_T3S2",
+      "update_id": "LTOA_TA30",
       "vendor": "IBM"
     },
     {
@@ -7641,10 +7641,10 @@
       "description": "Uroven dle IBM doporuceni: Latest Level",
       "family": "IBM Diamondback Tape Library — LTO-9 F9C, S9C",
       "generation": "",
-      "key": "c9f6f54636fa02ac",
-      "release_date": "2026-04-01",
+      "key": "ae12cb523c6a09b1",
+      "release_date": "2026-11-01",
       "source_url": "https://www.ibm.com/support/pages/ibm-diamondback-code-update-recommendation",
-      "update_id": "LTO9_T3Q0",
+      "update_id": "LTO9_TA20",
       "vendor": "IBM"
     },
     {
