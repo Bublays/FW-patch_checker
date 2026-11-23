@@ -1,6 +1,6 @@
 {
-  "count": 781,
-  "generated_at": "2026-11-16T15:21:28Z",
+  "count": 785,
+  "generated_at": "2026-11-23T17:46:44Z",
   "updates": [
     {
       "category": "BIOS",
@@ -7858,6 +7858,17 @@
     },
     {
       "category": "Firmware/Hypervisor",
+      "description": "ESXi 8.0 🔝 (build 25926933)",
+      "family": "VMware ESXi",
+      "generation": "ESXi 8.0 🔝",
+      "key": "b393791629b4452e",
+      "release_date": "2026-11-19",
+      "source_url": "https://knowledge.broadcom.com/external/article/316595/build-numbers-and-versions-of-vmware-esx.html",
+      "update_id": "ESXi 8.0 Update 3m",
+      "vendor": "VMware"
+    },
+    {
+      "category": "Firmware/Hypervisor",
       "description": "ESXi 8.0 🔝 (build 25595708)",
       "family": "VMware ESXi",
       "generation": "ESXi 8.0 🔝",
@@ -8177,6 +8188,17 @@
     },
     {
       "category": "Firmware/Management",
+      "description": "vCenter 9.1 🔝 (build 25901347)",
+      "family": "VMware vCenter Server",
+      "generation": "vCenter 9.1 🔝",
+      "key": "2744b9756687f655",
+      "release_date": "2026-11-19",
+      "source_url": "https://knowledge.broadcom.com/external/article/326316/build-numbers-and-versions-of-vmware-vce.html",
+      "update_id": "9.1.1.0200",
+      "vendor": "VMware"
+    },
+    {
+      "category": "Firmware/Management",
       "description": "vCenter 9.1 🔝 (build 25784172)",
       "family": "VMware vCenter Server",
       "generation": "vCenter 9.1 🔝",
@@ -8243,6 +8265,17 @@
     },
     {
       "category": "Firmware/Management",
+      "description": "vCenter 9.0 🔝 (build 25901331)",
+      "family": "VMware vCenter Server",
+      "generation": "vCenter 9.0 🔝",
+      "key": "18861eb7c7000bc6",
+      "release_date": "2026-11-19",
+      "source_url": "https://knowledge.broadcom.com/external/article/326316/build-numbers-and-versions-of-vmware-vce.html",
+      "update_id": "9.0.2.0200",
+      "vendor": "VMware"
+    },
+    {
+      "category": "Firmware/Management",
       "description": "vCenter 9.0 🔝 (build 25629525)",
       "family": "VMware vCenter Server",
       "generation": "vCenter 9.0 🔝",
@@ -8283,6 +8316,17 @@
       "release_date": "2025-06-17",
       "source_url": "https://knowledge.broadcom.com/external/article/326316/build-numbers-and-versions-of-vmware-vce.html",
       "update_id": "9.0.0.0",
+      "vendor": "VMware"
+    },
+    {
+      "category": "Firmware/Management",
+      "description": "vCenter Server 8.0 🔝",
+      "family": "VMware vCenter Server",
+      "generation": "vCenter Server 8.0 🔝",
+      "key": "3b801237f395ad5d",
+      "release_date": "2026-11-19",
+      "source_url": "https://knowledge.broadcom.com/external/article/326316/build-numbers-and-versions-of-vmware-vce.html",
+      "update_id": "vCenter Server 8.0 Update 3m",
       "vendor": "VMware"
     },
     {
